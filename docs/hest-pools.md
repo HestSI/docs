@@ -1,43 +1,64 @@
 ---
-description: Perpetual markets on the Robinhood Chain memecoins Hyperliquid does not list, priced on their own Uniswap pools.
+description: Perpetual markets on the Robinhood Chain memecoins Hyperliquid does not list, priced on their own Uniswap pools, with Hest as the counterparty.
 ---
 
 # Hest Pools
 
-Hest Pools are perpetual markets on **Robinhood Chain memecoins that Hyperliquid does not list**. They are where Hest starts: a fresh token with real DEX liquidity can get a perpetual market long before any order book would touch it.
+Hest Pools are perpetual markets on **Robinhood Chain memecoins that Hyperliquid does not list**. They are where Hest starts: a token with real DEX liquidity on Robinhood Chain can get a leveraged market long before any order book would list it.
 
-On a Hest Pools market **Hest is your counterparty**. There is no order book and no other trader on the other side of your order: you open a position against Hest, at a price read from the token's own Uniswap pools on Robinhood Chain.
+On a Hest Pools market **Hest is your counterparty**. There is no order book and no other trader on the other side of your order. You open a position against Hest, at a price read on-chain from the token's own Uniswap v3 pool, and Hest settles it when you close.
 
 ## At a Glance
 
 | | |
 | --- | --- |
-| Tokens | Robinhood Chain memecoins not listed on Hyperliquid |
+| Tokens | Robinhood Chain memecoins with a Uniswap v3 WETH pool, not listed on Hyperliquid |
 | Counterparty | Hest |
-| Price | The token's Uniswap pools on Robinhood Chain: spot and a 15-minute TWAP, whichever is worse for you on every open and close |
-| Collateral | WETH on Robinhood Chain, shown with its live dollar value |
-| Network fees | Paid in ETH on Robinhood Chain |
-| Leverage | Up to 5x |
-| Fee | 0.30% to open, 0.30% to close |
-| Position limits | One position: 10% of the market's capacity and 2% of the token's DEX liquidity. Total open interest per side is capped. |
-| Losses | The remaining collateral returns to your Trading Wallet as soon as the position closes |
-| Profits | Credited to your Earnings balance, locked for 7 days, then reviewed and paid by Hest |
+| Price | Spot and the 15-minute TWAP of the token's Uniswap v3 pool. Every open and close uses whichever is worse for you. See [Hest Pools Pricing](hest-pools-pricing.md). |
+| Collateral | WETH on Robinhood Chain (chain ID 4663), shown with its live dollar value |
+| Network fees | ETH on Robinhood Chain, paid from your Trading Wallet when you open. Closing costs you no network fee. |
+| Leverage | 1x to 5x (a market can have a lower maximum) |
+| Trading fee | 0.30% of the order value to open, 0.30% of the position value to close |
+| Maintenance margin | 6% |
+| Liquidation fee | 1% of the position value at entry |
+| Funding | None |
+| Position limit | 10% of the market's capacity and 2% of the token's DEX liquidity, whichever is lower |
+| Open interest limit | Per side: 50% of capacity and 10% of DEX liquidity, whichever is lower |
+| Order types | Market, with optional take profit and stop loss |
+| Losses | Settled at close. The remaining collateral returns to your Trading Wallet immediately. |
+| Profits | Credited to [Earnings](earnings.md), locked for 7 days, then reviewed and paid by Hest in WETH |
+| Automatic pause | New positions stop when spot and TWAP are more than 10% apart; trading resumes below 5%. Closing always works. |
+
+## How a Trade Settles
+
+1. **Open.** Your margin plus the 0.30% opening fee moves in WETH from your Trading Wallet to the Hest Pools collateral wallet, a Hest wallet used only for Hest Pools.
+2. **Monitor.** Every minute the Hest Pools engine reads each pool and checks every open position for liquidation, take profit and stop loss.
+3. **Close.** The position is settled at the worse of spot and TWAP. What is left of your collateral after any loss and the closing fee is sent back to your Trading Wallet at once. A profit is credited to your Earnings balance.
+
+The full mechanics, with a worked example, are in [How Hest Pools Work](how-hest-pools-work.md).
 
 ## Where to Find Them
 
-Open **Markets** and pick the **Hest Pools** filter, or open **Pools** in the top menu. Every Hest Pools market carries an SI Score like any other market, and Risk Shield checks your order before you click buy.
+* **Pools** in the top menu lists every Hest Pools market with its price, 24h change, 24h volume, capacity and how much of it is used.
+* **Markets** with the **Hest Pools** filter shows them alongside every other market, with the SI Score and route.
+* Every Hest Pools market shows its token contract address next to its name, with a copy button, so you can check you are trading the token you think you are.
 
-New markets are opened through [Open a Market](open-a-market.md). When a token meets the requirements, anyone can apply.
+Risk Shield checks your order before you click buy on Hest Pools markets as on any other, with the worst 1-hour candle of the past week read from the pool's own price history.
+
+New markets are added through [Open a Market](open-a-market.md). Anyone can apply when a token meets the requirements.
 
 ## Before You Trade
 
-1. [Connect a wallet](connect-a-wallet.md) and sign in. Hest creates your [Trading Wallet](trading-wallet.md).
-2. [Deposit](deposit.md) to the **Hest Pools** side. Your deposit arrives as ETH on Robinhood Chain.
-3. Keep a little ETH in the Trading Wallet for network fees. About $1 of ETH covers hundreds of transactions on Robinhood Chain.
+1. [Connect a wallet](connect-a-wallet.md) and sign in. Create your [Trading Wallet](trading-wallet.md) and confirm that you saved its key.
+2. [Deposit](deposit.md) to the **Hest Pools** side. Your deposit arrives as ETH on Robinhood Chain. ETH is wrapped to WETH automatically when you open a position.
+3. Keep a little ETH unwrapped for network fees. The wallet menu at the top right shows roughly how many Robinhood Chain transactions your ETH still covers.
+
+If something is missing, the order button opens a **Not Ready to Trade** checklist that takes you to the next step.
 
 ## Read Next
 
-* [How Hest Pools Work](how-hest-pools-work.md): pricing, limits, what happens when a position closes.
+* [How Hest Pools Work](how-hest-pools-work.md): sizing, liquidation and settlement, with numbers.
+* [Hest Pools Pricing](hest-pools-pricing.md): spot, TWAP, the fill rule and the automatic pause.
 * [Open a Market](open-a-market.md): requirements, the seed and what the opener earns.
 * [Hest Pools Risks](hest-pools-risks.md): read this before you trade or open a market.
 * [Earnings](earnings.md): how profits are locked, reviewed and paid.
