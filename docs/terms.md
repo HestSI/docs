@@ -4,13 +4,9 @@ description: The terms that govern your use of the Hest interface, Hest Pools an
 
 # Terms of Service
 
-{% hint style="warning" %}
-Beta draft. These terms apply during the Beta and will be reviewed by counsel before public launch. Bracketed items are completed at that time. Using Hest after an update means you accept the updated terms.
-{% endhint %}
-
 **Last updated:** October 2026
 
-Please read these Terms of Service (the "Terms") carefully. They are a binding agreement between you and the Hest project, meaning the persons and entities that develop, operate and maintain hest.si and the Services (together "Hest", "we", "us") and govern your access to and use of hest.si, its subdomains, the Hest web application, the Hest Pools smart contracts, Super Intelligence and every related service (together, the "Services"). By connecting a wallet, signing a message or transaction, or otherwise using the Services, you agree to these Terms. If you do not agree, do not use the Services.
+Please read these Terms of Service (the "Terms") carefully. They are a binding agreement between you and Hest Super Intelligence ("Hest", "we", "us") and govern your access to and use of hest.si, its subdomains, the Hest web application, the Hest Pools smart contracts, Super Intelligence and every related service (together, the "Services"). By connecting a wallet, signing a message or transaction, or otherwise using the Services, you agree to these Terms. If you do not agree, do not use the Services.
 
 ## 1. Definitions
 
@@ -156,6 +152,8 @@ Hest may suspend or terminate your access to the Interface at any time, with or 
 18.2 Any dispute arising out of or relating to these Terms or the Services will be resolved by binding arbitration administered by the London Court of International Arbitration (LCIA) under the LCIA Arbitration Rules in force when the request for arbitration is filed, seated in London, England, in the English language, before a single arbitrator. You and Hest waive any right to a jury trial and to participate in a class action, to the extent permitted by law.
 
 18.3 Before starting arbitration, a party must send a written description of the dispute to the other party and allow 30 days for good-faith resolution. For Hest, the notice address is legal@hest.si.
+
+18.4 Nothing in this section limits any mandatory consumer-protection rights you have under the laws of the country where you live, including any right to bring a claim before your local courts where that law does not allow it to be waived.
 
 ## 19. Changes to These Terms
 

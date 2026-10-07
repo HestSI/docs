@@ -4,17 +4,13 @@ description: What Hest collects, why, how long it is kept, and the choices you h
 
 # Privacy Policy
 
-{% hint style="warning" %}
-Beta draft. This policy will be reviewed by counsel before public launch. Bracketed items are completed at that time.
-{% endhint %}
-
 **Last updated:** October 2026
 
-This Privacy Policy explains how the Hest project, meaning the persons and entities that develop, operate and maintain hest.si and the Services (together "Hest", "we", "us"), handles information when you use hest.si, the Hest web application, Hest Pools and Super Intelligence (the "Services"). Hest is non-custodial and does not require an account, a name, an email address or identity documents to trade.
+This Privacy Policy explains how Hest Super Intelligence ("Hest", "we", "us") handles information when you use hest.si, the Hest web application, Hest Pools and Super Intelligence (the "Services"). Hest is non-custodial and does not require an account, a name, an email address or identity documents to trade.
 
 ## 1. Who Is Responsible
 
-The data controller for the Services is Hest, as defined above, reachable at legal@hest.si. Privacy questions: legal@hest.si, or a ticket marked **Privacy** on [discord.gg/hest](https://discord.gg/hest).
+The data controller for the Services is Hest Super Intelligence, reachable at legal@hest.si. Privacy questions: legal@hest.si, or a ticket marked **Privacy** on [discord.gg/hest](https://discord.gg/hest).
 
 ## 2. Information We Collect
 
