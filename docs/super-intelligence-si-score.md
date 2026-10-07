@@ -44,7 +44,7 @@ Applies to BTC, ETH, SOL and every other order book market that is not a Robinho
 | Liquidity depth | 24h volume on the order book. Deep books absorb liquidations; thin ones gap through them. |
 | Worst candle | The largest 1-hour drop in the last 7 days. |
 
-## What the Score Is Used for
+## What the Score Is Used For
 
 * **Listing**: pool markets need 45+; under 60 they open at 2x.
 * **Leverage caps**: Super Intelligence sets the maximum leverage on Hest Pool markets.
