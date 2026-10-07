@@ -5,7 +5,7 @@ site:
     - type: space
       key: hest-docs
       title: Hest Docs
-      path: ""
+      path: docs
       default: true
       content:
         directory: ./

@@ -2,6 +2,8 @@
 
 Risk Shield is the check that runs **before you click buy**, on every trade page, under the order form. It answers one question: *would a normal bad hour in this market liquidate this position?*
 
+![Risk Shield reacting as leverage changes, then answering a question](assets/gifs/risk-shield.gif)
+
 ## The calculation
 
 1. **Liquidation distance** = `100 / leverage − maintenance margin`. At 5x on an order book market with 1.25% maintenance margin, liquidation sits 18.75% away. On a Hest Pool market (6% maintenance margin) at 5x, it sits 14% away.

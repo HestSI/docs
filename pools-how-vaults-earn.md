@@ -1,4 +1,4 @@
-# How vaults earn
+# How Vaults Earn
 
 A Hest Pool vault is a pot of USDC that takes the other side of every trade on one memecoin market. Depositing into it is called being an **LP** (liquidity provider).
 
@@ -23,4 +23,4 @@ A Hest Pool vault is a pot of USDC that takes the other side of every trade on o
 
 ## Deposits and withdrawals
 
-Deposit any amount from the Pools page. Withdrawals settle after the next 15-minute TWAP window so that the vault's value is marked fairly when you leave; you receive USDC including accrued fees. During the Beta a vault needs a community seed of $500 to exist; see [Open a market](markets-open-a-market.md).
+Deposit any amount from the Pools page. Withdrawals settle after the next 15-minute TWAP window so that the vault's value is marked fairly when you leave; you receive USDC including accrued fees. During the Beta a vault needs a community seed of $500 to exist; see [Open a Market](markets-open-a-market.md).

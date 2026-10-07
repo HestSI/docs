@@ -1,6 +1,8 @@
-# Open a market
+# Open a Market
 
 Any bonded Robinhood Chain token can get a perpetual market on Hest. During the Beta this is the only way a new pool market appears: the community opens it.
+
+![Opening a Hest Pool market: paste the address, check eligibility, seed the vault](assets/gifs/open-a-market.gif)
 
 ## Who can open one
 
@@ -8,7 +10,7 @@ Anyone with a connected wallet and at least **$500 USDC** for the vault seed.
 
 ## Eligibility
 
-Paste the token's contract address on the **Open a market** page and click **Check**. Super Intelligence reads the token and shows four checks:
+Paste the token's contract address on the **Open a Market** page and click **Check**. Super Intelligence reads the token and shows four checks:
 
 1. **Bonded on the launchpad** – the token has graduated from its bonding curve to the DEX.
 2. **$50k+ DEX liquidity** – enough depth for a TWAP that cannot be pushed cheaply.
@@ -30,5 +32,5 @@ Paste the token's contract address on the **Open a market** page and click **Che
 Confirm, pay seed + fee, and the market goes live after the first 15-minute TWAP window. It shows up in Markets under **Hest Pools** and in the Pools page with your vault.
 
 {% hint style="warning" %}
-A vault seed is leveraged exposure to the traders of that market, not a deposit. If traders on your market win, the vault, and your seed, lose. Read [Vault risks](pools-vault-risks.md) first.
+A vault seed is leveraged exposure to the traders of that market, not a deposit. If traders on your market win, the vault, and your seed, lose. Read [Vault Risks](pools-vault-risks.md) first.
 {% endhint %}

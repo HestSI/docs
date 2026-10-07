@@ -27,7 +27,7 @@ Pool fees are higher because the vault is taking the other side of your trade an
 * **Funding**: paid or received hourly, see [Funding](trading-funding.md). Not a fee; it flows between traders.
 * **Deposits**: free on Hest; your wallet pays network gas.
 * **Withdrawals**: network gas only.
-* **Opening a market**: $20 listing fee plus your vault seed, see [Open a market](markets-open-a-market.md).
+* **Opening a market**: $20 listing fee plus your vault seed, see [Open a Market](markets-open-a-market.md).
 
 ## Referrals
 

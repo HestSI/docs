@@ -1,4 +1,4 @@
-# Order types
+# Order Types
 
 The order panel offers **Market** and **Limit** directly, and four more under the **Pro** menu.
 

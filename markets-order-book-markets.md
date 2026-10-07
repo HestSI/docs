@@ -1,4 +1,4 @@
-# Order book markets
+# Order Book Markets
 
 Most of Hest's 180+ markets trade on **Hyperliquid**, the deepest perpetuals order book in crypto: BTC, ETH, SOL, HYPE, XRP and the rest of the majors, the large memecoins (DOGE, PEPE, WIF, FARTCOIN and others), and every Robinhood Chain memecoin that has earned a Hyperliquid listing.
 
@@ -10,7 +10,7 @@ Hest is a front end and a brain on top of that book. Your orders are placed on H
 * **Mark and oracle prices.** Positions are valued at Hyperliquid's mark price, which tracks the oracle (an external reference) and cannot be moved by a single trade.
 * **Leverage up to 40x** on the deepest markets, lower on thinner ones. The maximum for each market is shown next to its name and in the Markets table.
 * **Hourly funding.** Longs and shorts pay each other every hour to keep the perpetual pinned to spot. See [Funding](trading-funding.md).
-* **Full order types.** Market, limit, stop market, stop limit, TWAP and scale orders, reduce-only, take profit and stop loss. See [Order types](trading-order-types.md).
+* **Full order types.** Market, limit, stop market, stop limit, TWAP and scale orders, reduce-only, take profit and stop loss. See [Order Types](trading-order-types.md).
 
 ## Robinhood Chain tokens on the book
 

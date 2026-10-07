@@ -2,6 +2,8 @@
 
 Every market on Hest carries a **Super Intelligence Score** from 0 to 100. Higher is safer. It is shown in the Markets table, on every trade page inside Risk Shield, and in full on the Super Intelligence page.
 
+![Browsing Markets and opening the SI Score page for a market](assets/gifs/markets-and-si.gif)
+
 The score is not one formula for every coin. A memecoin and Bitcoin fail in different ways, so they are read with different instruments.
 
 ## Memecoins: on-chain read (60%) + social read (40%)

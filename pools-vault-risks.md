@@ -1,4 +1,4 @@
-# Vault risks
+# Vault Risks
 
 Depositing into a Hest Pool vault is **leveraged exposure to the traders of one memecoin**, not yield farming. Read this before you deposit.
 

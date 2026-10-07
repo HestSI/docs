@@ -1,18 +1,18 @@
-# Table of contents
+# Table of Contents
 
-* [Welcome to Hest](README.md)
+* [Welcome to Hest](welcome.md)
 
-## Getting started
+## Getting Started
 
-* [Connect a wallet](getting-started-connect-a-wallet.md)
+* [Connect a Wallet](getting-started-connect-a-wallet.md)
 * [Deposit USDC](getting-started-deposit.md)
-* [Your first trade](getting-started-first-trade.md)
+* [Your First Trade](getting-started-first-trade.md)
 
 ## Markets
 
-* [Order book markets](markets-order-book-markets.md)
+* [Order Book Markets](markets-order-book-markets.md)
 * [Hest Pools](markets-hest-pools.md)
-* [Open a market](markets-open-a-market.md)
+* [Open a Market](markets-open-a-market.md)
 
 ## Super Intelligence
 
@@ -22,15 +22,15 @@
 
 ## Trading
 
-* [Order types](trading-order-types.md)
-* [Leverage and liquidation](trading-leverage-and-liquidation.md)
+* [Order Types](trading-order-types.md)
+* [Leverage and Liquidation](trading-leverage-and-liquidation.md)
 * [Funding](trading-funding.md)
 * [Fees](trading-fees.md)
 
 ## Pools and LPs
 
-* [How vaults earn](pools-how-vaults-earn.md)
-* [Vault risks](pools-vault-risks.md)
+* [How Vaults Earn](pools-how-vaults-earn.md)
+* [Vault Risks](pools-vault-risks.md)
 
 ## Help
 
@@ -39,6 +39,6 @@
 
 ## Legal
 
-* [Risk disclosure](legal-risk-disclosure.md)
-* [Terms of service](legal-terms.md)
-* [Privacy policy](legal-privacy.md)
+* [Risk Disclosure](legal-risk-disclosure.md)
+* [Terms of Service](legal-terms.md)
+* [Privacy Policy](legal-privacy.md)

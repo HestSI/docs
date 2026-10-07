@@ -2,6 +2,8 @@
 
 All trading on Hest is collateralised in **USDC**. One balance covers every market: order book majors, Robinhood Chain memecoins and Hest Pool markets.
 
+![Depositing USDC from the Account panel](assets/gifs/deposit.gif)
+
 ## How to deposit
 
 1. Connect your wallet.

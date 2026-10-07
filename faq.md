@@ -16,7 +16,7 @@ Order book markets trade on Hyperliquid, with maker/taker fees and leverage up t
 Hyperliquid lists it, which gives it real two-sided liquidity. Robinhood Chain tokens move to the book when Hyperliquid lists them.
 
 **Why are there no Hest Pool markets yet?**
-During the Beta every pool market is opened by its community, with a seed of at least $500. Nobody has opened one yet. You can be first: [Open a market](markets-open-a-market.md).
+During the Beta every pool market is opened by its community, with a seed of at least $500. Nobody has opened one yet. You can be first: [Open a Market](markets-open-a-market.md).
 
 **What does the SI Score mean?**
 How the market can hurt you, 0 to 100, higher is safer. Memecoins are read on-chain and socially; majors are read on funding, crowding, volatility and depth. See [SI Score](super-intelligence-si-score.md).

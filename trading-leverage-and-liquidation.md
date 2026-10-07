@@ -1,4 +1,4 @@
-# Leverage and liquidation
+# Leverage and Liquidation
 
 ## Leverage
 

@@ -1,10 +1,12 @@
-# Your first trade
+# Your First Trade
 
 A trade on Hest takes five decisions, and Super Intelligence checks the dangerous one before you confirm.
 
+![Placing a first order: leverage, size, take profit and stop loss, confirmation](assets/gifs/first-order.gif)
+
 ## 1. Pick a market
 
-Use the market picker at the top left of the trade page, or browse **Markets**. Filters: **Majors**, **Robinhood Chain**, **Hest Pools**, **Other memes**. Every row shows the price, 24h change, volume, open interest, hourly funding, maximum leverage and the SI Score.
+Use the market picker at the top left of the trade page, or browse **Markets**. Filters: **Majors**, **Robinhood Chain**, **Hest Pools**, **Other Memes**. Every row shows the price, 24h change, volume, open interest, hourly funding, maximum leverage and the SI Score.
 
 ## 2. Read the strip
 

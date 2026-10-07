@@ -19,6 +19,6 @@ When a token grows deep enough for a real order book, Hest routes it there and t
 
 ## During the Beta
 
-Hest does not seed vaults. Every pool market is **opened by its community**: whoever seeds the vault (from $500) owns the market and keeps 20% of its fees. See [Open a market](markets-open-a-market.md).
+Hest does not seed vaults. Every pool market is **opened by its community**: whoever seeds the vault (from $500) owns the market and keeps 20% of its fees. See [Open a Market](markets-open-a-market.md).
 
 After launch, bonded tokens that reach $50k of DEX liquidity get a vault and a market automatically.
