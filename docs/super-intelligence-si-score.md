@@ -6,7 +6,7 @@ Every market on Hest carries a **Super Intelligence Score** from 0 to 100. Highe
 
 The score is not one formula for every coin. A memecoin and Bitcoin fail in different ways, so they are read with different instruments.
 
-## Memecoins: on-chain read (60%) + social read (40%)
+## Memecoins: On-chain Read (60%) + Social Read (40%)
 
 Applies to Robinhood Chain tokens, on the order book or in a Hest Pool.
 
@@ -32,7 +32,7 @@ Applies to Robinhood Chain tokens, on the order book or in a Hest Pool.
 
 Each memecoin page also carries **Project notes**: a short written read of the token, the team status and the narrative.
 
-## Majors: market read
+## Majors: Market Read
 
 Applies to BTC, ETH, SOL and every other order book market that is not a Robinhood Chain token. Dev wallets and snipers would score 99 on Bitcoin and tell you nothing, so the score reads the market itself. All five factors are computed live.
 
@@ -44,7 +44,7 @@ Applies to BTC, ETH, SOL and every other order book market that is not a Robinho
 | Liquidity depth | 24h volume on the order book. Deep books absorb liquidations; thin ones gap through them. |
 | Worst candle | The largest 1-hour drop in the last 7 days. |
 
-## What the score is used for
+## What the Score Is Used for
 
 * **Listing**: pool markets need 45+; under 60 they open at 2x.
 * **Leverage caps**: Super Intelligence sets the maximum leverage on Hest Pool markets.

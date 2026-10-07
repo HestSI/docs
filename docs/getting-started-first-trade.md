@@ -4,15 +4,15 @@ A trade on Hest takes five decisions, and Super Intelligence checks the dangerou
 
 ![Placing a first order: leverage, size, take profit and stop loss, confirmation](assets/gifs/first-order.gif)
 
-## 1. Pick a market
+## 1. Pick a Market
 
 Use the market picker at the top left of the trade page, or browse **Markets**. Filters: **Majors**, **Robinhood Chain**, **Hest Pools**, **Other Memes**. Every row shows the price, 24h change, volume, open interest, hourly funding, maximum leverage and the SI Score.
 
-## 2. Read the strip
+## 2. Read the Strip
 
 Across the top: **Mark** (the price your position is valued at), **Oracle** (the external reference price), 24h change, 24h volume, open interest, and **Funding / countdown** (the next hourly funding payment and the time until it hits). On Hest Pool markets the strip shows the vault's TVL and the next TWAP window instead.
 
-## 3. Set the order
+## 3. Set the Order
 
 In the order panel on the right:
 

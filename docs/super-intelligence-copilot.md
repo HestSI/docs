@@ -2,7 +2,7 @@
 
 Copilot is the part of Super Intelligence you can talk to. It lives in two places: the **Super Intelligence** page (full chat, any market) and under **Risk Shield** on every trade page (short chat, this market, your drafted order).
 
-## What it knows
+## What It Knows
 
 Every answer is grounded in live data for the market you are looking at:
 
@@ -13,7 +13,7 @@ Every answer is grounded in live data for the market you are looking at:
 
 It does not invent prices or events. If something is not in that data, it says so.
 
-## What to ask
+## What to Ask
 
 * "Is this size safe at 10x?" – it computes your liquidation distance against the worst candle and gives a yes, a no, or a safer leverage.
 * "Is the long side crowded?" – funding skew and open interest versus volume.

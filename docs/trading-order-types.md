@@ -11,7 +11,7 @@ The order panel offers **Market** and **Limit** directly, and four more under th
 | **TWAP** | Splits the order into equal slices over a **running time** (5 to 1440 minutes), optionally randomised. Slices show up in Trade history as they fill. | Large size on a thin market without moving it. |
 | **Scale** | Places several limit orders between a **start** and **end** price, with an optional size skew toward one end. | Laddering into a range. |
 
-## Options on every order
+## Options on Every Order
 
 * **Reduce only** – the order can only shrink an existing position, never open or flip one.
 * **Take profit / Stop loss** – attach TP and SL prices to the position when it opens. Enter a price or a percentage gain/loss on margin; the other field fills in.
@@ -21,6 +21,6 @@ The order panel offers **Market** and **Limit** directly, and four more under th
 
 Enter size in **USDC** or in the coin (toggle next to the Size field), or drag the slider for a percentage of your available balance at the chosen leverage. The panel shows order value, margin required, liquidation price, estimated slippage and fees before you confirm.
 
-## On Hest Pool markets
+## On Hest Pool Markets
 
 Pool markets have no order book, so there is no slippage: every order fills at the current TWAP. Market, limit, stop and TP/SL all work; TWAP and scale are available but rarely needed.

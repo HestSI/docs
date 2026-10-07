@@ -13,7 +13,7 @@ A Hest Pool vault is a pot of USDC that takes the other side of every trade on o
 * **Trader profits**: when traders win, the vault pays. This is the risk you are being paid for.
 * Nothing else. No management fee, no performance fee; Hest's 10% comes out of the trading fee, not out of the vault.
 
-## The numbers on the Pools page
+## The Numbers on the Pools Page
 
 * **TVL** – USDC in the vault.
 * **APR 30d** – fee income over the last 30 days, annualised, divided by TVL.
@@ -21,6 +21,6 @@ A Hest Pool vault is a pot of USDC that takes the other side of every trade on o
 * **Open interest of cap** – positions open against the vault, out of the 30% cap. A vault near its cap is busy; a vault at zero is idle and earns nothing.
 * **Your share** – your deposit and your percentage of the vault.
 
-## Deposits and withdrawals
+## Deposits and Withdrawals
 
 Deposit any amount from the Pools page. Withdrawals settle after the next 15-minute TWAP window so that the vault's value is marked fairly when you leave; you receive USDC including accrued fees. During the Beta a vault needs a community seed of $500 to exist; see [Open a Market](markets-open-a-market.md).

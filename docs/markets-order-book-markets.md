@@ -4,7 +4,7 @@ Most of Hest's 180+ markets trade on **Hyperliquid**, the deepest perpetuals ord
 
 Hest is a front end and a brain on top of that book. Your orders are placed on Hyperliquid in your name, your positions and margin live on Hyperliquid, and Hest adds Super Intelligence, Risk Shield and Copilot on top.
 
-## What you get
+## What You Get
 
 * **Real depth.** Billions in daily volume across Hyperliquid's book. Your market order fills against resting liquidity, and the order panel shows the estimated slippage before you send it.
 * **Mark and oracle prices.** Positions are valued at Hyperliquid's mark price, which tracks the oracle (an external reference) and cannot be moved by a single trade.
@@ -12,7 +12,7 @@ Hest is a front end and a brain on top of that book. Your orders are placed on H
 * **Hourly funding.** Longs and shorts pay each other every hour to keep the perpetual pinned to spot. See [Funding](trading-funding.md).
 * **Full order types.** Market, limit, stop market, stop limit, TWAP and scale orders, reduce-only, take profit and stop loss. See [Order Types](trading-order-types.md).
 
-## Robinhood Chain tokens on the book
+## Robinhood Chain Tokens on the Book
 
 When Hyperliquid lists a Robinhood Chain memecoin, Hest routes it there instead of a vault, and tags it **Robinhood** in the Markets table. The first one is **CASHCAT**. Order book routing gives the token real two-sided liquidity; the trade-off is that leverage is set by Hyperliquid (typically 3x for new listings).
 

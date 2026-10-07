@@ -9,7 +9,7 @@ Leverage multiplies your exposure: $100 of margin at 10x controls a $1,000 posit
 
 Choose it with the leverage dial in the order panel. Presets show the common steps; the slider goes to the market maximum.
 
-## Margin modes
+## Margin Modes
 
 * **Cross** – all your free USDC backs all your cross positions. A losing position can draw on the rest of your balance before it is liquidated; a winning one supports the others.
 * **Isolated** – only the margin you assign to this position is at risk. Liquidation happens sooner, but the rest of your balance is untouched.
@@ -34,7 +34,7 @@ Liquidation distance from entry, as a percentage: `100 / leverage − maintenanc
 
 The order panel shows the exact liquidation price before you confirm, and **Risk Shield** tests that distance against the worst 1-hour candle of the week.
 
-## What happens at liquidation
+## What Happens at Liquidation
 
 The position is closed at the mark price. On order book markets the clearing engine closes it against the book; on Hest Pool markets it settles against the vault at the TWAP. Remaining margin, if any, is returned to your balance.
 

@@ -4,7 +4,7 @@ Any bonded Robinhood Chain token can get a perpetual market on Hest. During the 
 
 ![Opening a Hest Pool market: paste the address, check eligibility, seed the vault](assets/gifs/open-a-market.gif)
 
-## Who can open one
+## Who Can Open One
 
 Anyone with a connected wallet and at least **$500 USDC** for the vault seed.
 
@@ -17,12 +17,12 @@ Paste the token's contract address on the **Open a Market** page and click **Che
 3. **24 hours old** – no same-block launches.
 4. **SI Score 45+** – below 45 the token does not list. Between 45 and 60 it lists with leverage capped at 2x.
 
-## What you choose
+## What You Choose
 
 * **Max leverage**: 2x, 3x or 5x (capped by the SI Score).
 * **Vault seed**: your USDC, minimum $500. It becomes the first LP deposit; others can add to the vault after launch.
 
-## What you pay and what you earn
+## What You Pay and What You Earn
 
 * **Listing fee**: $20, covering the SI scan and the oracle setup.
 * **Your fee share**: 20% of every trading fee on that market, for as long as the market exists. Vault depositors (including you, through your seed) earn another 70%.

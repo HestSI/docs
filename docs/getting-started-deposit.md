@@ -4,14 +4,14 @@ All trading on Hest is collateralised in **USDC**. One balance covers every mark
 
 ![Depositing USDC from the Account panel](assets/gifs/deposit.gif)
 
-## How to deposit
+## How to Deposit
 
 1. Connect your wallet.
 2. Open any trade page and click **Deposit** in the Account panel (bottom right).
 3. Enter the amount and confirm two transactions in your wallet: an approval (first time only) and the deposit itself.
 4. Your **USDC balance** updates as soon as the transaction confirms.
 
-## Where the USDC comes from
+## Where the USDC Comes From
 
 Hest accepts native USDC on Robinhood Chain. If your USDC is on another network:
 

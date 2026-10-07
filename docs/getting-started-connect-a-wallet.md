@@ -2,7 +2,7 @@
 
 Hest does not hold your keys. You connect a wallet, Hest asks for signatures, your funds stay in your control.
 
-## Browser wallets
+## Browser Wallets
 
 Open [hest.si](https://hest.si) and click **Connect Wallet**. Every wallet extension installed in your browser is detected automatically and listed with its own icon and a `DETECTED` tag: MetaMask, Rabby, Phantom, Trust Wallet, Coinbase Wallet, Robinhood Wallet and any other EVM wallet.
 
@@ -12,12 +12,12 @@ Open [hest.si](https://hest.si) and click **Connect Wallet**. Every wallet exten
 
 Switching accounts or networks inside the wallet updates Hest instantly.
 
-## Mobile wallets
+## Mobile Wallets
 
 * **Inside the wallet's browser**: open hest.si from the browser built into MetaMask, Trust or Rabby mobile. The wallet is detected like an extension.
 * **Desktop site, phone wallet**: the **Mobile wallet (QR)** option in the connect dialog ships with the next build (WalletConnect).
 
-## Email or Google login
+## Email or Google Login
 
 Coming with the next build. It creates a wallet for you behind the scenes so you can start without installing anything.
 

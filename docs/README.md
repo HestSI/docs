@@ -6,7 +6,7 @@ description: Hest is a perpetuals exchange for Robinhood Chain memecoins and 180
 
 Hest is a perpetuals exchange built around one idea: **the market should be read before the order is placed.**
 
-* **Order book markets** – BTC, ETH, SOL, HYPE and 180+ more perpetuals on Hyperliquid's order book, plus the Robinhood Chain memecoins Hyperliquid lists. Up to 40x.
+* **Order Book Markets** – BTC, ETH, SOL, HYPE and 180+ more perpetuals on Hyperliquid's order book, plus the Robinhood Chain memecoins Hyperliquid lists. Up to 40x.
 * **Hest Pools** – fresh Robinhood Chain memecoins trade against a community-funded vault, priced on a 15-minute TWAP. Up to 5x.
 * **Super Intelligence** – every market gets an SI Score, every order gets a Risk Shield verdict, and Copilot answers your questions with the live numbers.
 
@@ -14,7 +14,7 @@ Hest is a perpetuals exchange built around one idea: **the market should be read
 Hest is in **Beta** on mainnet. Markets, fees and limits described here can change; this documentation is updated with every release.
 {% endhint %}
 
-## Start here
+## Start Here
 
 * [Connect a Wallet](getting-started-connect-a-wallet.md)
 * [Deposit USDC](getting-started-deposit.md)

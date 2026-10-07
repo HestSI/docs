@@ -4,13 +4,13 @@ Risk Shield is the check that runs **before you click buy**, on every trade page
 
 ![Risk Shield reacting as leverage changes, then answering a question](assets/gifs/risk-shield.gif)
 
-## The calculation
+## The Calculation
 
 1. **Liquidation distance** = `100 / leverage − maintenance margin`. At 5x on an order book market with 1.25% maintenance margin, liquidation sits 18.75% away. On a Hest Pool market (6% maintenance margin) at 5x, it sits 14% away.
 2. **Worst candle** = the largest 1-hour drop in the last 7 days for this market, read from live candles.
 3. **Ratio** = liquidation distance ÷ worst candle.
 
-## The verdict
+## The Verdict
 
 | Ratio | Verdict | Mascot |
 | --- | --- | --- |
@@ -20,10 +20,10 @@ Risk Shield is the check that runs **before you click buy**, on every trade page
 
 The readout also shows the SI Score so you see the market quality next to the position risk.
 
-## What it does not do
+## What It Does Not Do
 
 Risk Shield does not block orders and does not predict direction. A green verdict means the position survives a repeat of this week's worst hour, not that next week will look like this one. Leverage caps on Hest Pool markets are enforced separately by Super Intelligence.
 
-## Try it on the home page
+## Try It on the Home Page
 
 The home page carries a live Risk Shield demo: pick any market, long or short, 2x to 20x, and watch the verdict change with real numbers.
