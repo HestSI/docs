@@ -17,40 +17,40 @@ This repository is the source of the Hest documentation. It is published with Gi
 
 <br>
 
-<p align="center"><img src="assets/gifs/risk-shield.gif" alt="Risk Shield reacting as leverage changes, then Copilot answering a question" width="100%"></p>
+<p align="center"><img src="assets/risk-shield.gif" alt="Risk Shield reacting as leverage changes, then Copilot answering a question" width="100%"></p>
 <p align="center"><sub>Risk Shield: the worst hour of the week against your liquidation distance, before you click buy. Recorded on the Beta build with test data.</sub></p>
 
 <br>
 
-<a href="getting-started-connect-a-wallet.md"><img src="assets/section-start.png" alt="Getting Started" width="100%"></a>
+<a href="docs/getting-started-connect-a-wallet.md"><img src="assets/section-start.png" alt="Getting Started" width="100%"></a>
 
-[Connect a Wallet](getting-started-connect-a-wallet.md) · [Deposit USDC](getting-started-deposit.md) · [Your First Trade](getting-started-first-trade.md)
+[Connect a Wallet](docs/getting-started-connect-a-wallet.md) · [Deposit USDC](docs/getting-started-deposit.md) · [Your First Trade](docs/getting-started-first-trade.md)
 
-<a href="markets-order-book-markets.md"><img src="assets/section-markets.png" alt="Markets" width="100%"></a>
+<a href="docs/markets-order-book-markets.md"><img src="assets/section-markets.png" alt="Markets" width="100%"></a>
 
-[Order Book Markets](markets-order-book-markets.md) · [Hest Pools](markets-hest-pools.md) · [Open a Market](markets-open-a-market.md)
+[Order Book Markets](docs/markets-order-book-markets.md) · [Hest Pools](docs/markets-hest-pools.md) · [Open a Market](docs/markets-open-a-market.md)
 
-<a href="super-intelligence-si-score.md"><img src="assets/section-si.png" alt="Super Intelligence" width="100%"></a>
+<a href="docs/super-intelligence-si-score.md"><img src="assets/section-si.png" alt="Super Intelligence" width="100%"></a>
 
-[SI Score](super-intelligence-si-score.md) · [Risk Shield](super-intelligence-risk-shield.md) · [Copilot](super-intelligence-copilot.md)
+[SI Score](docs/super-intelligence-si-score.md) · [Risk Shield](docs/super-intelligence-risk-shield.md) · [Copilot](docs/super-intelligence-copilot.md)
 
-<a href="trading-order-types.md"><img src="assets/section-trading.png" alt="Trading" width="100%"></a>
+<a href="docs/trading-order-types.md"><img src="assets/section-trading.png" alt="Trading" width="100%"></a>
 
-[Order Types](trading-order-types.md) · [Leverage and Liquidation](trading-leverage-and-liquidation.md) · [Funding](trading-funding.md) · [Fees](trading-fees.md)
+[Order Types](docs/trading-order-types.md) · [Leverage and Liquidation](docs/trading-leverage-and-liquidation.md) · [Funding](docs/trading-funding.md) · [Fees](docs/trading-fees.md)
 
-<a href="pools-how-vaults-earn.md"><img src="assets/section-pools.png" alt="Pools and LPs" width="100%"></a>
+<a href="docs/pools-how-vaults-earn.md"><img src="assets/section-pools.png" alt="Pools and LPs" width="100%"></a>
 
-[How Vaults Earn](pools-how-vaults-earn.md) · [Vault Risks](pools-vault-risks.md)
+[How Vaults Earn](docs/pools-how-vaults-earn.md) · [Vault Risks](docs/pools-vault-risks.md)
 
-<a href="faq.md"><img src="assets/section-help.png" alt="Help and Legal" width="100%"></a>
+<a href="docs/faq.md"><img src="assets/section-help.png" alt="Help and Legal" width="100%"></a>
 
-[FAQ](faq.md) · [Glossary](glossary.md) · [Terms of Service](legal-terms.md) · [Privacy Policy](legal-privacy.md) · [Risk Disclosure](legal-risk-disclosure.md)
+[FAQ](docs/faq.md) · [Glossary](docs/glossary.md) · [Terms of Service](docs/legal-terms.md) · [Privacy Policy](docs/legal-privacy.md) · [Risk Disclosure](docs/legal-risk-disclosure.md)
 
 <br>
 
 ## Contributing
 
-Found a mistake or something missing? Open an issue or send a pull request. Keep the voice of the existing pages: short, direct, numbers over adjectives. Super Intelligence, SI Score, Risk Shield and Copilot are always written exactly like that. Page files are flat (`section-page.md`) and listed in `SUMMARY.md`; `welcome.md` is the landing page of the published docs.
+Found a mistake or something missing? Open an issue or send a pull request. Keep the voice of the existing pages: short, direct, numbers over adjectives. Super Intelligence, SI Score, Risk Shield and Copilot are always written exactly like that. The published documentation lives in `docs/`: flat page files (`section-page.md`) listed in `docs/SUMMARY.md`, with `docs/README.md` as the landing page.
 
 ## Status
 

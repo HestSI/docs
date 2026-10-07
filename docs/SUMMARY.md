@@ -1,6 +1,6 @@
 # Table of Contents
 
-* [Welcome to Hest](welcome.md)
+* [Welcome to Hest](README.md)
 
 ## Getting Started
 
