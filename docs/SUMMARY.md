@@ -6,6 +6,7 @@
 
 * [Hest Pools](hest-pools.md)
 * [How Hest Pools Work](how-hest-pools-work.md)
+* [Hest Pools Pricing](hest-pools-pricing.md)
 * [Open a Market](open-a-market.md)
 * [Hest Pools Risks](hest-pools-risks.md)
 * [Order Book Markets](order-book-markets.md)
@@ -36,6 +37,7 @@
 
 * [FAQ](faq.md)
 * [Glossary](glossary.md)
+* [Security](security.md)
 
 ## Legal
 

@@ -24,7 +24,7 @@ This repository is the source of the Hest documentation. It is published with Gi
 
 <a href="docs/hest-pools.md"><img src="assets/section-pools.png" alt="Hest Pools" width="100%"></a>
 
-[Hest Pools](docs/hest-pools.md) · [How Hest Pools Work](docs/how-hest-pools-work.md) · [Open a Market](docs/open-a-market.md) · [Hest Pools Risks](docs/hest-pools-risks.md)
+[Hest Pools](docs/hest-pools.md) · [How Hest Pools Work](docs/how-hest-pools-work.md) · [Hest Pools Pricing](docs/hest-pools-pricing.md) · [Open a Market](docs/open-a-market.md) · [Hest Pools Risks](docs/hest-pools-risks.md)
 
 <a href="docs/order-book-markets.md"><img src="assets/section-orderbook.png" alt="Order Book" width="100%"></a>
 
@@ -40,7 +40,7 @@ This repository is the source of the Hest documentation. It is published with Gi
 
 <a href="docs/faq.md"><img src="assets/section-help.png" alt="Help and Legal" width="100%"></a>
 
-[FAQ](docs/faq.md) · [Glossary](docs/glossary.md) · [Risk Disclosure](docs/risk-disclosure.md) · [Terms of Service](docs/terms.md) · [Privacy Policy](docs/privacy.md)
+[FAQ](docs/faq.md) · [Glossary](docs/glossary.md) · [Security](docs/security.md) · [Risk Disclosure](docs/risk-disclosure.md) · [Terms of Service](docs/terms.md) · [Privacy Policy](docs/privacy.md)
 
 <br>
 
