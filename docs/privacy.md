@@ -36,7 +36,7 @@ Hest does **not** collect seed phrases, private keys, identity documents, contac
 
 * To run the Services: show your balances, positions, orders and vault shares; route orders; compute liquidation prices, fees and funding; create and operate markets.
 * To generate Super Intelligence output: SI Scores, Risk Shield verdicts and Copilot answers.
-* To keep the Services safe: detect manipulation, abuse, bugs and attacks; enforce the [Terms of Service](legal-terms.md) and jurisdiction restrictions; respond to security incidents.
+* To keep the Services safe: detect manipulation, abuse, bugs and attacks; enforce the [Terms of Service](terms.md) and jurisdiction restrictions; respond to security incidents.
 * To improve the Services: understand which features are used, where users get stuck, and where errors occur. Usage statistics are analysed in aggregate.
 * To communicate with you when you contact us, and to publish service notices on the official channels.
 * To meet legal obligations, including sanctions screening and responding to lawful requests.

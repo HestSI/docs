@@ -16,9 +16,9 @@ Hest is in **Beta** on mainnet. Markets, fees and limits described here can chan
 
 ## Start Here
 
-* [Connect a Wallet](getting-started-connect-a-wallet.md)
-* [Deposit USDC](getting-started-deposit.md)
-* [Your First Trade](getting-started-first-trade.md)
+* [Connect a Wallet](connect-a-wallet.md)
+* [Deposit USDC](deposit.md)
+* [Your First Trade](first-trade.md)
 
 ## Links
 

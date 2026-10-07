@@ -4,33 +4,33 @@
 
 ## Getting Started
 
-* [Connect a Wallet](getting-started-connect-a-wallet.md)
-* [Deposit USDC](getting-started-deposit.md)
-* [Your First Trade](getting-started-first-trade.md)
+* [Connect a Wallet](connect-a-wallet.md)
+* [Deposit USDC](deposit.md)
+* [Your First Trade](first-trade.md)
 
 ## Markets
 
-* [Order Book Markets](markets-order-book-markets.md)
-* [Hest Pools](markets-hest-pools.md)
-* [Open a Market](markets-open-a-market.md)
+* [Order Book Markets](order-book-markets.md)
+* [Hest Pools](hest-pools.md)
+* [Open a Market](open-a-market.md)
 
 ## Super Intelligence
 
-* [SI Score](super-intelligence-si-score.md)
-* [Risk Shield](super-intelligence-risk-shield.md)
-* [Copilot](super-intelligence-copilot.md)
+* [SI Score](si-score.md)
+* [Risk Shield](risk-shield.md)
+* [Copilot](copilot.md)
 
 ## Trading
 
-* [Order Types](trading-order-types.md)
-* [Leverage and Liquidation](trading-leverage-and-liquidation.md)
-* [Funding](trading-funding.md)
-* [Fees](trading-fees.md)
+* [Order Types](order-types.md)
+* [Leverage and Liquidation](leverage-and-liquidation.md)
+* [Funding](funding.md)
+* [Fees](fees.md)
 
 ## Pools and LPs
 
-* [How Vaults Earn](pools-how-vaults-earn.md)
-* [Vault Risks](pools-vault-risks.md)
+* [How Vaults Earn](how-vaults-earn.md)
+* [Vault Risks](vault-risks.md)
 
 ## Help
 
@@ -39,6 +39,6 @@
 
 ## Legal
 
-* [Risk Disclosure](legal-risk-disclosure.md)
-* [Terms of Service](legal-terms.md)
-* [Privacy Policy](legal-privacy.md)
+* [Risk Disclosure](risk-disclosure.md)
+* [Terms of Service](terms.md)
+* [Privacy Policy](privacy.md)

@@ -10,7 +10,7 @@ Trading perpetual contracts with leverage can result in the loss of your entire 
 
 **Last updated:** October 2026
 
-This disclosure is part of the [Terms of Service](legal-terms.md). It does not list every risk; it describes the ones Hest considers most important. Markets, technology and regulation change, and new risks appear.
+This disclosure is part of the [Terms of Service](terms.md). It does not list every risk; it describes the ones Hest considers most important. Markets, technology and regulation change, and new risks appear.
 
 ## 1. Leverage and Liquidation
 

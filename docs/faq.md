@@ -16,16 +16,16 @@ Order book markets trade on Hyperliquid, with maker/taker fees and leverage up t
 Hyperliquid lists it, which gives it real two-sided liquidity. Robinhood Chain tokens move to the book when Hyperliquid lists them.
 
 **Why are there no Hest Pool markets yet?**
-During the Beta every pool market is opened by its community, with a seed of at least $500. Nobody has opened one yet. You can be first: [Open a Market](markets-open-a-market.md).
+During the Beta every pool market is opened by its community, with a seed of at least $500. Nobody has opened one yet. You can be first: [Open a Market](open-a-market.md).
 
 **What does the SI Score mean?**
-How the market can hurt you, 0 to 100, higher is safer. Memecoins are read on-chain and socially; majors are read on funding, crowding, volatility and depth. See [SI Score](super-intelligence-si-score.md).
+How the market can hurt you, 0 to 100, higher is safer. Memecoins are read on-chain and socially; majors are read on funding, crowding, volatility and depth. See [SI Score](si-score.md).
 
 **What is "Max wick 7d" in Risk Shield?**
 The largest 1-hour drop in the last 7 days. If your liquidation distance is smaller than that, a normal bad hour liquidates you.
 
 **What is funding?**
-An hourly payment between longs and shorts that keeps the perpetual pinned to spot. Positive means longs pay. See [Funding](trading-funding.md).
+An hourly payment between longs and shorts that keeps the perpetual pinned to spot. Positive means longs pay. See [Funding](funding.md).
 
 **What is the builder fee?**
 Hest's 0.03% on order book trades, collected through Hyperliquid's builder code system. You approve it once with a wallet signature (the prompt names Hyperliquid, where the order settles); it is itemised on every order.

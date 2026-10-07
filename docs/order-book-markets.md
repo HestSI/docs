@@ -9,8 +9,8 @@ Hest is a front end and a brain on top of that book. Your orders are placed on H
 * **Real depth.** Billions in daily volume across Hyperliquid's book. Your market order fills against resting liquidity, and the order panel shows the estimated slippage before you send it.
 * **Mark and oracle prices.** Positions are valued at Hyperliquid's mark price, which tracks the oracle (an external reference) and cannot be moved by a single trade.
 * **Leverage up to 40x** on the deepest markets, lower on thinner ones. The maximum for each market is shown next to its name and in the Markets table.
-* **Hourly funding.** Longs and shorts pay each other every hour to keep the perpetual pinned to spot. See [Funding](trading-funding.md).
-* **Full order types.** Market, limit, stop market, stop limit, TWAP and scale orders, reduce-only, take profit and stop loss. See [Order Types](trading-order-types.md).
+* **Hourly funding.** Longs and shorts pay each other every hour to keep the perpetual pinned to spot. See [Funding](funding.md).
+* **Full order types.** Market, limit, stop market, stop limit, TWAP and scale orders, reduce-only, take profit and stop loss. See [Order Types](order-types.md).
 
 ## Robinhood Chain Tokens on the Book
 
@@ -18,7 +18,7 @@ When Hyperliquid lists a Robinhood Chain memecoin, Hest routes it there instead 
 
 ## Fees
 
-Hyperliquid's 0.045% taker and 0.015% maker, plus Hest's builder fee of 0.03%. Details in [Fees](trading-fees.md).
+Hyperliquid's 0.045% taker and 0.015% maker, plus Hest's builder fee of 0.03%. Details in [Fees](fees.md).
 
 ## Settlement
 

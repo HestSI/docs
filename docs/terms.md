@@ -44,11 +44,11 @@ Please read these Terms of Service (the "Terms") carefully. They are a binding a
 
 3.1 You may use the Services only if you are at least 18 years old (or the age of majority where you live, if higher) and have the legal capacity to enter into these Terms.
 
-3.2 You may not use the Services if you are located in, incorporated in, or a resident of a jurisdiction where trading leveraged digital-asset derivatives is prohibited or where Hest has chosen not to offer the Services ("Restricted Jurisdiction"). Restricted Jurisdictions currently are: the United States of America and its territories; Canada; Afghanistan; Belarus; Cuba; the Democratic People's Republic of Korea; Iran; Libya; Myanmar; Russia; Somalia; South Sudan; Sudan; Syria; Venezuela; Yemen; the Crimea, Donetsk, Kherson, Luhansk and Zaporizhzhia regions of Ukraine; and any other country or territory subject to comprehensive sanctions. Hest may add or remove jurisdictions at any time by updating this section, and the current version of this page is the authoritative list.
+3.2 You may not use the Services if doing so is prohibited by the laws that apply to you, including where trading leveraged digital-asset derivatives is not permitted. You are responsible for determining whether your use of the Services is lawful where you live and where you access them from.
 
 3.3 You may not use the Services if you are, or act for, a person on any sanctions list maintained by the United Nations, the European Union, the United Kingdom, the United States or any other competent authority, or if you are otherwise prohibited by applicable law from using them.
 
-3.4 You may not use a VPN, proxy or any other method to disguise your location in order to access the Services from a Restricted Jurisdiction. Hest may use geolocation and on-chain screening to enforce this section and may restrict the Interface for addresses or regions without notice.
+3.4 You may not use a VPN, proxy or any other method to disguise your location in order to evade this section. Hest may use geolocation and on-chain screening to enforce this section and may restrict the Interface for addresses or regions without notice.
 
 3.5 By using the Services you represent and warrant, on every use, that you meet the requirements of this section.
 
@@ -58,25 +58,25 @@ Please read these Terms of Service (the "Terms") carefully. They are a binding a
 
 4.2 Every order, deposit, withdrawal, approval and vault transaction that you sign is your own instruction. Review the confirmation screen and your wallet prompt before signing. Signed transactions are final.
 
-4.3 You are responsible for maintaining enough margin on your positions. Positions that fall to maintenance margin are liquidated automatically, as described in [Leverage and Liquidation](trading-leverage-and-liquidation.md). Liquidation can happen at any time, including while the Interface is unavailable.
+4.3 You are responsible for maintaining enough margin on your positions. Positions that fall to maintenance margin are liquidated automatically, as described in [Leverage and Liquidation](leverage-and-liquidation.md). Liquidation can happen at any time, including while the Interface is unavailable.
 
 4.4 Blockchain networks and the Hyperliquid protocol may be congested, paused or forked. Transactions may fail, be delayed or be included at a different price. Hest is not responsible for these events.
 
 ## 5. Hest Pool Markets and Vaults
 
-5.1 **Creating a market.** A Market Owner may create a Hest Pool Market for a token that meets the eligibility criteria published in [Open a Market](markets-open-a-market.md). The listing fee is non-refundable. The seed deposit becomes vault shares like any other deposit.
+5.1 **Creating a market.** A Market Owner may create a Hest Pool Market for a token that meets the eligibility criteria published in [Open a Market](open-a-market.md). The listing fee is non-refundable. The seed deposit becomes vault shares like any other deposit.
 
-5.2 **Vault deposits.** Depositing USDC into a Vault means taking the opposite side of the traders in that market. The value of vault shares rises when traders lose and falls when traders win, and can fall to zero. Fees paid to LPs do not guarantee a positive return. Withdrawals may be delayed by the withdrawal window described in [How Vaults Earn](pools-how-vaults-earn.md) and may be limited while open interest is high.
+5.2 **Vault deposits.** Depositing USDC into a Vault means taking the opposite side of the traders in that market. The value of vault shares rises when traders lose and falls when traders win, and can fall to zero. Fees paid to LPs do not guarantee a positive return. Withdrawals may be delayed by the withdrawal window described in [How Vaults Earn](how-vaults-earn.md) and may be limited while open interest is high.
 
 5.3 **Pricing.** Hest Pool Markets are marked at the 15-minute TWAP of the token's reference DEX price. TWAP pricing lags spot by design. Hest does not guarantee that the mark reflects any price at which you could trade elsewhere.
 
 5.4 **Parameters.** Hest may change market parameters (maximum leverage, position caps, fees, maintenance margin, oracle sources) and may pause or delist a market whose token no longer meets the criteria, whose oracle fails, or where Hest reasonably suspects manipulation. Open positions in a delisted market can be closed; new positions cannot be opened.
 
-5.5 **Market Owner fee share.** The Market Owner's share of fees is paid as described in [Open a Market](markets-open-a-market.md). It is a share of fees actually collected and is not a guarantee of income. It may be suspended if the Market Owner breaches these Terms.
+5.5 **Market Owner fee share.** The Market Owner's share of fees is paid as described in [Open a Market](open-a-market.md). It is a share of fees actually collected and is not a guarantee of income. It may be suspended if the Market Owner breaches these Terms.
 
 ## 6. Fees
 
-6.1 Fees are shown on the order confirmation before you sign and are described in [Fees](trading-fees.md). Hest may change fees with notice on the official channels. Fees on Order Book Markets consist of Hyperliquid's own fees plus Hest's builder fee.
+6.1 Fees are shown on the order confirmation before you sign and are described in [Fees](fees.md). Hest may change fees with notice on the official channels. Fees on Order Book Markets consist of Hyperliquid's own fees plus Hest's builder fee.
 
 6.2 You are responsible for network (gas) fees on Robinhood Chain and any bridge fees.
 
@@ -100,7 +100,7 @@ You are solely responsible for determining and paying any taxes that apply to yo
 
 You agree not to, and not to help anyone else to:
 
-* violate any law, regulation or sanctions program, or use the Services from a Restricted Jurisdiction;
+* violate any law, regulation or sanctions program, or use the Services where doing so is prohibited;
 * engage in market manipulation of any kind, including wash trading, spoofing, layering, oracle manipulation, pump-and-dump schemes or coordinated trading against a Vault;
 * exploit a bug, vulnerability or unintended behaviour of the Interface, the Hest Pools contracts, Hyperliquid or any oracle, or fail to report one you discover;
 * attack, overload, scrape at scale, reverse engineer or interfere with the Services or their infrastructure;
@@ -135,7 +135,7 @@ THE SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTY OF ANY KIN
 
 ## 14. Assumption of Risk
 
-You acknowledge that you have read and understood the [Risk Disclosure](legal-risk-disclosure.md), that trading leveraged perpetual contracts and depositing into vaults carries a high risk of total loss, that digital-asset markets are volatile and lightly regulated, that smart contracts can contain bugs, that oracles can fail, and that the regulatory treatment of digital assets is uncertain and may change. You assume all of these risks.
+You acknowledge that you have read and understood the [Risk Disclosure](risk-disclosure.md), that trading leveraged perpetual contracts and depositing into vaults carries a high risk of total loss, that digital-asset markets are volatile and lightly regulated, that smart contracts can contain bugs, that oracles can fail, and that the regulatory treatment of digital assets is uncertain and may change. You assume all of these risks.
 
 ## 15. Limitation of Liability
 
@@ -163,7 +163,7 @@ Hest may update these Terms from time to time. The "Last updated" date at the to
 
 ## 20. General
 
-20.1 These Terms, together with the [Privacy Policy](legal-privacy.md) and the [Risk Disclosure](legal-risk-disclosure.md), are the entire agreement between you and Hest regarding the Services.
+20.1 These Terms, together with the [Privacy Policy](privacy.md) and the [Risk Disclosure](risk-disclosure.md), are the entire agreement between you and Hest regarding the Services.
 
 20.2 If any provision of these Terms is held unenforceable, the remaining provisions remain in force and the unenforceable provision is modified to the minimum extent necessary.
 

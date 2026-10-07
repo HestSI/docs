@@ -32,5 +32,5 @@ Paste the token's contract address on the **Open a Market** page and click **Che
 Confirm, pay seed + fee, and the market goes live after the first 15-minute TWAP window. It shows up in Markets under **Hest Pools** and in the Pools page with your vault.
 
 {% hint style="warning" %}
-A vault seed is leveraged exposure to the traders of that market, not a deposit. If traders on your market win, the vault, and your seed, lose. Read [Vault Risks](pools-vault-risks.md) first.
+A vault seed is leveraged exposure to the traders of that market, not a deposit. If traders on your market win, the vault, and your seed, lose. Read [Vault Risks](vault-risks.md) first.
 {% endhint %}

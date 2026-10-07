@@ -22,29 +22,29 @@ This repository is the source of the Hest documentation. It is published with Gi
 
 <br>
 
-<a href="docs/getting-started-connect-a-wallet.md"><img src="assets/section-start.png" alt="Getting Started" width="100%"></a>
+<a href="docs/connect-a-wallet.md"><img src="assets/section-start.png" alt="Getting Started" width="100%"></a>
 
-[Connect a Wallet](docs/getting-started-connect-a-wallet.md) · [Deposit USDC](docs/getting-started-deposit.md) · [Your First Trade](docs/getting-started-first-trade.md)
+[Connect a Wallet](docs/connect-a-wallet.md) · [Deposit USDC](docs/deposit.md) · [Your First Trade](docs/first-trade.md)
 
-<a href="docs/markets-order-book-markets.md"><img src="assets/section-markets.png" alt="Markets" width="100%"></a>
+<a href="docs/order-book-markets.md"><img src="assets/section-markets.png" alt="Markets" width="100%"></a>
 
-[Order Book Markets](docs/markets-order-book-markets.md) · [Hest Pools](docs/markets-hest-pools.md) · [Open a Market](docs/markets-open-a-market.md)
+[Order Book Markets](docs/order-book-markets.md) · [Hest Pools](docs/hest-pools.md) · [Open a Market](docs/open-a-market.md)
 
-<a href="docs/super-intelligence-si-score.md"><img src="assets/section-si.png" alt="Super Intelligence" width="100%"></a>
+<a href="docs/si-score.md"><img src="assets/section-si.png" alt="Super Intelligence" width="100%"></a>
 
-[SI Score](docs/super-intelligence-si-score.md) · [Risk Shield](docs/super-intelligence-risk-shield.md) · [Copilot](docs/super-intelligence-copilot.md)
+[SI Score](docs/si-score.md) · [Risk Shield](docs/risk-shield.md) · [Copilot](docs/copilot.md)
 
-<a href="docs/trading-order-types.md"><img src="assets/section-trading.png" alt="Trading" width="100%"></a>
+<a href="docs/order-types.md"><img src="assets/section-trading.png" alt="Trading" width="100%"></a>
 
-[Order Types](docs/trading-order-types.md) · [Leverage and Liquidation](docs/trading-leverage-and-liquidation.md) · [Funding](docs/trading-funding.md) · [Fees](docs/trading-fees.md)
+[Order Types](docs/order-types.md) · [Leverage and Liquidation](docs/leverage-and-liquidation.md) · [Funding](docs/funding.md) · [Fees](docs/fees.md)
 
-<a href="docs/pools-how-vaults-earn.md"><img src="assets/section-pools.png" alt="Pools and LPs" width="100%"></a>
+<a href="docs/how-vaults-earn.md"><img src="assets/section-pools.png" alt="Pools and LPs" width="100%"></a>
 
-[How Vaults Earn](docs/pools-how-vaults-earn.md) · [Vault Risks](docs/pools-vault-risks.md)
+[How Vaults Earn](docs/how-vaults-earn.md) · [Vault Risks](docs/vault-risks.md)
 
 <a href="docs/faq.md"><img src="assets/section-help.png" alt="Help and Legal" width="100%"></a>
 
-[FAQ](docs/faq.md) · [Glossary](docs/glossary.md) · [Terms of Service](docs/legal-terms.md) · [Privacy Policy](docs/legal-privacy.md) · [Risk Disclosure](docs/legal-risk-disclosure.md)
+[FAQ](docs/faq.md) · [Glossary](docs/glossary.md) · [Terms of Service](docs/terms.md) · [Privacy Policy](docs/privacy.md) · [Risk Disclosure](docs/risk-disclosure.md)
 
 <br>
 
