@@ -1,0 +1,12 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: Hest Docs
+  structure:
+    - type: space
+      key: hest-docs
+      title: Hest Docs
+      path: ""
+      default: true
+      content:
+        directory: ./
+        language: en
