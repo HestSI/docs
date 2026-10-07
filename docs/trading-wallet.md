@@ -17,7 +17,7 @@ After you connect a wallet and sign in, Hest creates a **Trading Wallet** for yo
 
 ## The Private Key
 
-* **You see it once, at creation.** Hest shows the Trading Wallet's private key and asks you to save it. You then confirm you saved it by typing back a few of its characters.
+* **You see it once, at creation.** Hest shows the Trading Wallet's private key and asks you to save it. You then confirm that you saved it with **I Saved My Private Key**, and once more on the next screen.
 * **You can see it again** with **Show Key** in Portfolio, after signing a request with your connected wallet.
 * **Hest keeps a copy of the key.** That is how Hest signs your trades for you, and why there is no wallet pop-up on every order.
 * It is a standard Ethereum private key. With it you can import the Trading Wallet into any EVM wallet that supports importing a private key, and reach your Hyperliquid account directly.
