@@ -57,6 +57,8 @@ Where the GDPR or UK GDPR applies, Hest processes information on these bases: pe
 
 **Infrastructure providers.** Hosting, content delivery, database, analytics and error-reporting providers process data on Hest's behalf under contract and only on our instructions. The current list is available on request.
 
+**AI providers.** When you ask Copilot a question while signed in, the question, the last few messages of the conversation and the market and order context are sent to a third-party language model provider to generate the answer. Your wallet address is not sent. These providers process the data under their own terms and privacy policies.
+
 **Data sources.** To compute Super Intelligence output, Hest queries public blockchain data, DEX pool prices and market data from Hyperliquid. These queries concern tokens and markets, not you.
 
 **Legal and safety.** Hest may disclose information when required by law, regulation, legal process or governmental request, or when necessary to protect the rights, property or safety of Hest, its users or the public.
