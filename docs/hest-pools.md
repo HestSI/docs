@@ -1,24 +1,43 @@
+---
+description: Perpetual markets on the Robinhood Chain memecoins Hyperliquid does not list, priced on their own Uniswap pools.
+---
+
 # Hest Pools
 
-Hest Pools are how a brand-new Robinhood Chain memecoin gets a perpetual market before any order book would list it.
+Hest Pools are perpetual markets on **Robinhood Chain memecoins that Hyperliquid does not list**. They are where Hest starts: a fresh token with real DEX liquidity can get a perpetual market long before any order book would touch it.
 
-## How a Pool Market Works
+On a Hest Pools market **Hest is your counterparty**. There is no order book and no other trader on the other side of your order: you open a position against Hest, at a price read from the token's own Uniswap pools on Robinhood Chain.
 
-* **The vault is the counterparty.** Depositors put USDC into the market's vault. Every trader on that market trades against the vault: when traders lose, the vault gains, and the reverse.
-* **TWAP pricing.** The mark price is the 15-minute time-weighted average of the token's price on the Robinhood Chain DEX. A single wick cannot liquidate you, and a single buyer cannot move the mark. The strip shows the current TWAP and the countdown to the next window.
-* **Position cap.** No single position can exceed 30% of the vault, so one trade can never drain it.
-* **Leverage.** Up to 5x, set per market by Super Intelligence based on the token's volatility and liquidity. Markets with an SI Score under 60 open at 2x.
-* **Maintenance margin** 6%.
-* **Fees.** 0.30% of position size, split 70% to vault depositors, 20% to the market owner, 10% to Hest.
+## At a Glance
 
-## Why Not Just an Order Book?
+| | |
+| --- | --- |
+| Tokens | Robinhood Chain memecoins not listed on Hyperliquid |
+| Counterparty | Hest |
+| Price | The token's Uniswap pools on Robinhood Chain: spot and a 15-minute TWAP, whichever is worse for you on every open and close |
+| Collateral | WETH on Robinhood Chain, shown with its live dollar value |
+| Network fees | Paid in ETH on Robinhood Chain |
+| Leverage | Up to 5x |
+| Fee | 0.30% to open, 0.30% to close |
+| Position limits | One position: 10% of the market's capacity and 2% of the token's DEX liquidity. Total open interest per side is capped. |
+| Losses | The remaining collateral returns to your Trading Wallet as soon as the position closes |
+| Profits | Credited to your Earnings balance, locked for 7 days, then reviewed and paid by Hest |
 
-A fresh memecoin has no market makers. A book would be empty on one side and every market order would gap. A vault gives instant two-sided liquidity from day one, priced on something that cannot be manipulated in a single block.
+## Where to Find Them
 
-When a token grows deep enough for a real order book, Hest routes it there and the vault winds down.
+Open **Markets** and pick the **Hest Pools** filter, or open **Pools** in the top menu. Every Hest Pools market carries an SI Score like any other market, and Risk Shield checks your order before you click buy.
 
-## During the Beta
+New markets are opened through [Open a Market](open-a-market.md). When a token meets the requirements, anyone can apply.
 
-Hest does not seed vaults. Every pool market is **opened by its community**: whoever seeds the vault (from $500) owns the market and keeps 20% of its fees. See [Open a Market](open-a-market.md).
+## Before You Trade
 
-After launch, bonded tokens that reach $50k of DEX liquidity get a vault and a market automatically.
+1. [Connect a wallet](connect-a-wallet.md) and sign in. Hest creates your [Trading Wallet](trading-wallet.md).
+2. [Deposit](deposit.md) to the **Hest Pools** side. Your deposit arrives as ETH on Robinhood Chain.
+3. Keep a little ETH in the Trading Wallet for network fees. About $1 of ETH covers hundreds of transactions on Robinhood Chain.
+
+## Read Next
+
+* [How Hest Pools Work](how-hest-pools-work.md): pricing, limits, what happens when a position closes.
+* [Open a Market](open-a-market.md): requirements, the seed and what the opener earns.
+* [Hest Pools Risks](hest-pools-risks.md): read this before you trade or open a market.
+* [Earnings](earnings.md): how profits are locked, reviewed and paid.

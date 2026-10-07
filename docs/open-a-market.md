@@ -1,36 +1,51 @@
+---
+description: Apply to list a Robinhood Chain token on Hest Pools, seed it, and earn a share of its fees and profit.
+---
+
 # Open a Market
 
-Any bonded Robinhood Chain token can get a perpetual market on Hest. During the Beta this is the only way a new pool market appears: the community opens it.
+Anyone can apply to open a Hest Pools market for a Robinhood Chain token that is not already listed on Hest. The applicant pays a listing fee and puts up a seed in WETH; in return the opener earns a share of the market's trading fees and of its profit.
 
-![Opening a Hest Pool market: paste the address, check eligibility, seed the vault](assets/gifs/open-a-market.gif)
+## Requirements
 
-## Who Can Open One
+A token can be listed only if it meets all four:
 
-Anyone with a connected wallet and at least **$500 USDC** for the vault seed.
+1. **Bonded** from its launchpad: it has graduated from the bonding curve to a DEX pool.
+2. **DEX liquidity of at least $50k.**
+3. **Older than 24 hours.**
+4. **SI Score of 45 or more.**
 
-## Eligibility
+Paste the token's contract address on the **Open a Market** page and click **Check** to see whether it qualifies.
 
-Paste the token's contract address on the **Open a Market** page and click **Check**. Super Intelligence reads the token and shows four checks:
+## Capacity and Seed
 
-1. **Bonded on the launchpad** – the token has graduated from its bonding curve to the DEX.
-2. **$50k+ DEX liquidity** – enough depth for a TWAP that cannot be pushed cheaply.
-3. **24 hours old** – no same-block launches.
-4. **SI Score 45+** – below 45 the token does not list. Between 45 and 60 it lists with leverage capped at 2x.
+Every Hest Pools market has a **capacity**: **20% of the token's DEX liquidity, between $10k and $20k.** Capacity sets the position limits of the market (one position is capped at 10% of capacity).
 
-## What You Choose
+To open a market you pay:
 
-* **Max leverage**: 2x, 3x or 5x (capped by the SI Score).
-* **Vault seed**: your USDC, minimum $500. It becomes the first LP deposit; others can add to the vault after launch.
+| Item | Amount |
+| --- | --- |
+| Listing fee | $20 |
+| Seed | 10% of the market's capacity, minimum $1,000, paid in WETH |
 
-## What You Pay and What You Earn
+## Review
 
-* **Listing fee**: $20, covering the SI scan and the oracle setup.
-* **Your fee share**: 20% of every trading fee on that market, for as long as the market exists. Vault depositors (including you, through your seed) earn another 70%.
+**Hest reviews every application.** If an application is rejected, the listing fee and the seed are refunded.
 
-## Timeline
+## What the Opener Earns
 
-Confirm, pay seed + fee, and the market goes live after the first 15-minute TWAP window. It shows up in Markets under **Hest Pools** and in the Pools page with your vault.
+* **15% of the market's trading fees.** Credited per trade to your [Earnings](earnings.md) balance, each amount locked for 7 days, paid out weekly.
+* **30% of the market's profit as counterparty.** When traders on your market lose overall, you receive 30% of that profit.
+
+## The Seed Is First-Loss
+
+The seed is not a deposit that sits aside. It backs the market:
+
+* **Market losses come out of the seed first.** If traders on your market win, the seed pays before anything else.
+* **The seed is locked for 7 days.**
+* **At withdrawal its value includes the unrealised profit and loss of open positions** on the market. If traders are winning when you withdraw, you receive less.
+* **Withdrawing the seed ends your shares** in that market's fees and profit.
 
 {% hint style="warning" %}
-A vault seed is leveraged exposure to the traders of that market, not a deposit. If traders on your market win, the vault, and your seed, lose. Read [Vault Risks](vault-risks.md) first.
+A seed can lose value, and can be lost entirely, if traders on the market win. Read [Hest Pools Risks](hest-pools-risks.md) before you apply.
 {% endhint %}

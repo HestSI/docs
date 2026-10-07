@@ -2,23 +2,13 @@
 
 * [Welcome to Hest](README.md)
 
-## Getting Started
-
-* [Connect a Wallet](connect-a-wallet.md)
-* [Deposit USDC](deposit.md)
-* [Your First Trade](first-trade.md)
-
 ## Markets
 
-* [Order Book Markets](order-book-markets.md)
 * [Hest Pools](hest-pools.md)
+* [How Hest Pools Work](how-hest-pools-work.md)
 * [Open a Market](open-a-market.md)
-
-## Super Intelligence
-
-* [SI Score](si-score.md)
-* [Risk Shield](risk-shield.md)
-* [Copilot](copilot.md)
+* [Hest Pools Risks](hest-pools-risks.md)
+* [Order Book Markets](order-book-markets.md)
 
 ## Trading
 
@@ -27,10 +17,20 @@
 * [Funding](funding.md)
 * [Fees](fees.md)
 
-## Pools and LPs
+## Super Intelligence
 
-* [How Vaults Earn](how-vaults-earn.md)
-* [Vault Risks](vault-risks.md)
+* [SI Score](si-score.md)
+* [Risk Shield](risk-shield.md)
+* [Copilot](copilot.md)
+
+## Getting Started
+
+* [Connect a Wallet](connect-a-wallet.md)
+* [Hest Trading Wallet](trading-wallet.md)
+* [Deposit](deposit.md)
+* [Your First Trade](first-trade.md)
+* [Withdraw](withdraw.md)
+* [Earnings](earnings.md)
 
 ## Help
 

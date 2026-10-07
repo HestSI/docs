@@ -1,37 +1,37 @@
 # Your First Trade
 
-A trade on Hest takes five decisions, and Super Intelligence checks the dangerous one before you confirm.
+A trade on Hest takes a few decisions, and Super Intelligence checks the dangerous one before you confirm.
 
-![Placing a first order: leverage, size, take profit and stop loss, confirmation](assets/gifs/first-order.gif)
+![Setting up a limit order on ETH: leverage, limit price, size, take profit and stop loss, with the liquidation price, fees and Risk Shield updating live](assets/gifs/first-order.gif)
 
 ## 1. Pick a Market
 
-Use the market picker at the top left of the trade page, or browse **Markets**. Filters: **Majors**, **Robinhood Chain**, **Hest Pools**, **Other Memes**. Every row shows the price, 24h change, volume, open interest, hourly funding, maximum leverage and the SI Score.
+Open **Markets**, or use the market picker at the top left of the trade page. Filters: **All**, **Majors**, **Robinhood Chain**, **Hest Pools**, **Other Memes**. Every row shows the price, 24h change, volume, open interest, hourly funding, maximum leverage, the SI Score and the route.
+
+Make sure the side you are trading is funded: Order Book markets use the USDC in your Hyperliquid account, Hest Pools markets use the WETH in your Trading Wallet on Robinhood Chain. See [Deposit](deposit.md).
 
 ## 2. Read the Strip
 
-Across the top: **Mark** (the price your position is valued at), **Oracle** (the external reference price), 24h change, 24h volume, open interest, and **Funding / countdown** (the next hourly funding payment and the time until it hits). On Hest Pool markets the strip shows the vault's TVL and the next TWAP window instead.
+Across the top of an Order Book market: **Mark** (the price your position is valued at), **Oracle** (the external reference price), 24h change, 24h volume, open interest, and **Funding / Countdown**. Times on the chart are shown in your own time zone.
 
 ## 3. Set the Order
 
 In the order panel on the right:
 
-* **Cross / Isolated** margin and the leverage dial (2x to the market maximum).
-* **Market** or **Limit**; the **Pro** menu adds Stop market, Stop limit, TWAP and Scale orders.
+* **Cross / Isolated** margin and the leverage control.
+* **Market** or **Limit**; the **Pro** menu adds Stop Market, Stop Limit, TWAP and Scale.
 * **Buy / Long** or **Sell / Short**.
 * **Size** in USDC or in the coin, or drag the slider for a share of your available balance.
-* Optional **Reduce only** and **Take profit / Stop loss**.
+* Optional **Reduce Only** and **Take Profit / Stop Loss**.
 
-The panel shows the liquidation price, order value, margin required, estimated slippage (computed from the live order book) and fees before you do anything.
+Before you do anything, the panel shows the liquidation price, order value, margin required, estimated slippage, fees and the route.
 
 ## 4. Check Risk Shield
 
-Below the order form, **Risk Shield** compares your liquidation distance with the worst 1-hour candle of the last 7 days and gives a verdict. Green means your liquidation sits well beyond anything the market did this week. Orange is tight. Red means one normal candle would liquidate you. The mascot's face says the same thing faster.
-
-Ask **Copilot** anything about the trade right there: "Is this size safe?", "Why this score?", "Safer leverage?". It answers with the live numbers for this market and your drafted order.
+Below the order form, **Risk Shield** compares your liquidation distance with the worst 1-hour candle of the last 7 days and gives a verdict: room to breathe, tight, or one normal candle liquidates this. Ask **Copilot** right there: **Is this size safe?**, **Why this score?**, **Safer leverage?** See [Risk Shield](risk-shield.md).
 
 ## 5. Confirm
 
-Click the big button, review the confirmation dialog, confirm. Your position appears in the **Positions** tab under the chart with entry, mark, PnL, liquidation price, margin, funding paid and TP/SL. Close it with **Market** in the same row.
+Click the big button and confirm. Hest signs the order with your Trading Wallet, so there is no wallet pop-up. Your position appears in the **Positions** tab under the chart with entry, mark, profit and loss, liquidation price and margin.
 
-The other tabs keep the full record: Balances, Open orders, TWAP, Trade history, Funding history, Order history.
+The other tabs keep the full record: Balances, Open Orders, TWAP, Trade History, Funding History, Order History.

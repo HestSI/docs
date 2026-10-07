@@ -1,30 +1,41 @@
 # Connect a Wallet
 
-Hest does not hold your keys. You connect a wallet, Hest asks for signatures, your funds stay in your control.
+Your wallet is your identity on Hest. You connect it, sign in with a signature, and Hest creates a separate [Trading Wallet](trading-wallet.md) for you to trade from. Withdrawals always go back to the wallet you connected.
 
-## Browser Wallets
+## Supported Wallets
 
-Open [hest.si](https://hest.si) and click **Connect Wallet**. Every wallet extension installed in your browser is detected automatically and listed with its own icon and a `DETECTED` tag: MetaMask, Rabby, Phantom, Trust Wallet, Coinbase Wallet, Robinhood Wallet and any other EVM wallet.
+Open [hest.si](https://hest.si) and click **Connect Wallet**. The dialog lists the wallets that work with Hest:
 
-1. Click the wallet you want to use.
-2. Approve the connection in the wallet's own window.
-3. Your address appears at the top right. Click it to see the full address, the network you are on, and a **Disconnect** button.
+* MetaMask
+* Phantom
+* Rabby
+* Base (formerly Coinbase Wallet)
+* Trust Wallet
+* OKX Wallet
+* Rainbow
+* Zerion
+* Robinhood Wallet (on mobile, see below)
 
-Switching accounts or networks inside the wallet updates Hest instantly.
+Wallets installed in your browser are shown in colour and marked **Detected**. The others are greyed out; clicking one opens its download page.
 
-## Mobile Wallets
+## Sign In
 
-* **Inside the wallet's browser**: open hest.si from the browser built into MetaMask, Trust or Rabby mobile. The wallet is detected like an extension.
-* **Desktop site, phone wallet**: the **Mobile wallet (QR)** option in the connect dialog ships with the next build (WalletConnect).
+1. Click your wallet and approve the connection in the wallet's own window.
+2. Approve the **sign-in signature**. It is a message, not a transaction: it costs no gas and moves no funds.
+3. Your address appears at the top right. You stay signed in for 7 days on that browser. **Disconnect** signs you out.
 
-## Email or Google Login
+Switching accounts inside your wallet signs you out of the previous account.
 
-Coming with the next build. It creates a wallet for you behind the scenes so you can start without installing anything.
+## On Mobile
 
-## Networks
+Open hest.si inside your wallet app's built-in browser (MetaMask, Phantom, Trust, Rabby and others). The wallet is detected like a browser extension.
 
-Hest lives on **Robinhood Chain**, an Arbitrum Orbit chain, so any EVM wallet works. Deposits are in USDC. If your wallet is on another network when you deposit, Hest asks it to switch.
+**Robinhood Wallet** is a mobile app: open hest.si from the browser inside the Robinhood Wallet app.
+
+## Your Profile
+
+When you first sign in, Hest gives you a username and an avatar. You can change the username once every 30 days and upload your own picture; removing your picture brings back the Hest avatar.
 
 {% hint style="warning" %}
-Hest will never ask for your seed phrase or private key, in the app, on Discord, on X or by email. Anyone asking for it is not Hest.
+Hest will never ask for the seed phrase or private key of your connected wallet, or for your Trading Wallet key, in the app, on Discord, on X or by email. Anyone asking for them is not Hest.
 {% endhint %}
