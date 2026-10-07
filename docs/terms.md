@@ -1,40 +1,44 @@
 ---
-description: The terms that govern your use of the Hest interface, Hest Pools and Super Intelligence.
+description: The terms that govern your use of the Hest interface, the Hest Trading Wallet, Hest Pools and Super Intelligence.
 ---
 
 # Terms of Service
 
 **Last updated:** October 2026
 
-Please read these Terms of Service (the "Terms") carefully. They are a binding agreement between you and Hest Super Intelligence ("Hest", "we", "us") and govern your access to and use of hest.si, its subdomains, the Hest web application, the Hest Pools smart contracts, Super Intelligence and every related service (together, the "Services"). By connecting a wallet, signing a message or transaction, or otherwise using the Services, you agree to these Terms. If you do not agree, do not use the Services.
+Please read these Terms of Service (the "Terms") carefully. They are a binding agreement between you and Hest Super Intelligence ("Hest", "we", "us") and govern your access to and use of hest.si, its subdomains, the Hest web application, the Hest Trading Wallet, Hest Pools, Super Intelligence and every related service (together, the "Services"). By connecting a wallet, signing a message or transaction, or otherwise using the Services, you agree to these Terms. If you do not agree, do not use the Services.
 
 ## 1. Definitions
 
 **Interface** means the hest.si website and web application that Hest operates.
 
-**Order Book Markets** means perpetual markets that the Interface routes to the Hyperliquid protocol. Orders in these markets are signed by your wallet and executed, margined and settled by Hyperliquid under Hyperliquid's own terms.
+**Connected Wallet** means the wallet you connect to the Interface and sign in with. It identifies you, and withdrawals are sent only to it.
 
-**Hest Pool Markets** means perpetual markets created through the Hest Pools smart contracts, priced on a time-weighted average price (TWAP) and settled against a Vault.
+**Trading Wallet** means the wallet Hest creates for you after you sign in, which holds your deposits and from which your trades are placed. Hest keeps a copy of its private key, as described in section 2.1.
 
-**Vault** means the USDC pool that is the counterparty to a Hest Pool Market, funded by depositors ("LPs") who receive vault shares.
+**Order Book Markets** means perpetual markets traded on the Hyperliquid protocol's order book from the Hyperliquid account of your Trading Wallet, and executed, margined and settled by Hyperliquid under Hyperliquid's own terms.
 
-**Market Owner** means the user who created a Hest Pool Market by paying the listing fee and seeding its Vault.
+**Hest Pool Markets** means perpetual markets on Robinhood Chain tokens in which Hest is the counterparty, priced from the token's Uniswap pools on Robinhood Chain and collateralised in WETH.
 
-**Super Intelligence** or **SI** means Hest's automated market analysis, including the SI Score, Risk Shield, Copilot and project notes.
+**Market Opener** means a user whose application to open a Hest Pool Market has been accepted by Hest and who has provided the market's seed.
 
-**Digital Assets** means USDC and any other token supported by the Services.
+**Earnings** means amounts credited to you for profits on Hest Pool Markets, a Market Opener's share of fees and profit, and any bonuses, which are locked and paid as described in section 5.
+
+**Super Intelligence** or **SI** means Hest's automated market analysis, including the SI Score, Risk Shield and Copilot.
+
+**Digital Assets** means USDC, ETH, WETH and any other token supported by the Services.
 
 ## 2. Nature of the Services
 
-2.1 **Non-custodial.** Hest never holds, controls or has access to your Digital Assets or private keys. Every deposit, order, withdrawal and vault action is a transaction or message that you sign with your own wallet. Hest cannot reverse, cancel or recover a transaction after you sign it.
+2.1 **Trading Wallet and custody.** When you sign in, Hest creates a Trading Wallet for you. Its private key is shown to you at creation and again on a request signed with your Connected Wallet. Hest keeps a copy of the key and uses it to sign transactions on your instructions given through the Interface, including orders, transfers of collateral and withdrawals to your Connected Wallet. Hest is therefore not non-custodial for the Trading Wallet: you and Hest can both control it. Hest does not hold the keys of your Connected Wallet. Hest cannot reverse an on-chain transaction once it has been broadcast.
 
-2.2 **Interface, not counterparty.** The Interface is software that helps you interact with third-party protocols (Hyperliquid, Robinhood Chain, token contracts) and with the Hest Pools smart contracts. Hest is not a party to any trade. In Order Book Markets your counterparty is another participant in the Hyperliquid order book; in Hest Pool Markets your counterparty is the Vault.
+2.2 **Counterparties.** In Order Book Markets, Hest is not a party to your trades: your counterparty is another participant in the Hyperliquid order book. In Hest Pool Markets, Hest is your counterparty.
 
-2.3 **Routing to Hyperliquid.** When you trade an Order Book Market, the Interface prepares an order for the Hyperliquid protocol and asks your wallet to sign it. The positions, margin and collateral that result exist on Hyperliquid, are governed by Hyperliquid's terms, and can be managed directly on Hyperliquid without Hest. Hest collects a builder fee on these orders through Hyperliquid's builder code mechanism, which you approve once with a wallet signature and can revoke on Hyperliquid at any time.
+2.3 **Hyperliquid.** When you trade an Order Book Market, Hest signs the order with your Trading Wallet's key on your instruction and it is submitted to the Hyperliquid protocol. The resulting positions, margin and collateral exist in the Hyperliquid account of your Trading Wallet, are governed by Hyperliquid's terms, and can be managed directly on Hyperliquid using your Trading Wallet key. Hest collects a builder fee on these orders through Hyperliquid's builder code mechanism, approved once for your Trading Wallet.
 
-2.4 **No advice.** Nothing on the Services is investment, financial, legal, tax or trading advice. Hest does not recommend any trade, market, leverage or vault. See section 8 for Super Intelligence.
+2.4 **No advice.** Nothing on the Services is investment, financial, legal, tax or trading advice. Hest does not recommend any trade, market, leverage or market seed. See section 8 for Super Intelligence.
 
-2.5 **No brokerage.** Hest is not a broker, dealer, exchange, custodian, money transmitter or investment adviser, and does not act as your agent or fiduciary.
+2.5 **No brokerage.** Hest is not a licensed broker, dealer, exchange, custodian, money transmitter or investment adviser, and does not act as your fiduciary.
 
 ## 3. Eligibility and Restricted Persons
 
@@ -48,47 +52,53 @@ Please read these Terms of Service (the "Terms") carefully. They are a binding a
 
 3.5 By using the Services you represent and warrant, on every use, that you meet the requirements of this section.
 
-## 4. Your Wallet, Your Keys, Your Orders
+## 4. Your Wallets, Your Keys, Your Orders
 
-4.1 You are solely responsible for the wallet you connect, its seed phrase and private keys, and the security of the device and software you use. Hest will never ask for your seed phrase or private key.
+4.1 You are solely responsible for your Connected Wallet, its seed phrase and private keys, your copy of the Trading Wallet key, and the security of the device and software you use. Anyone with the Trading Wallet key can control the Trading Wallet. Hest will never ask for your seed phrase or for your Trading Wallet key.
 
-4.2 Every order, deposit, withdrawal, approval and vault transaction that you sign is your own instruction. Review the confirmation screen and your wallet prompt before signing. Signed transactions are final.
+4.2 Every order, deposit, withdrawal and other action you submit through the Interface is your own instruction, whether you sign it with your Connected Wallet or Hest signs it with your Trading Wallet on your behalf. Review the confirmation shown by the Interface before you confirm. Confirmed transactions are final.
 
 4.3 You are responsible for maintaining enough margin on your positions. Positions that fall to maintenance margin are liquidated automatically, as described in [Leverage and Liquidation](leverage-and-liquidation.md). Liquidation can happen at any time, including while the Interface is unavailable.
 
-4.4 Blockchain networks and the Hyperliquid protocol may be congested, paused or forked. Transactions may fail, be delayed or be included at a different price. Hest is not responsible for these events.
+4.4 Blockchain networks, Relay and the Hyperliquid protocol may be congested, paused or forked. Transactions may fail, be delayed or be included at a different price. Hest is not responsible for these events.
 
-## 5. Hest Pool Markets and Vaults
+4.5 **Deposits.** Deposits are routed to your Trading Wallet by Relay, a third-party service, through a deposit address shown in the Interface. The Interface shows the Hest deposit fee, Relay's fee and network fees before you send. You must send only the token and network shown for that deposit address; Hest cannot recover tokens that are not supported or that are sent on the wrong network.
 
-5.1 **Creating a market.** A Market Owner may create a Hest Pool Market for a token that meets the eligibility criteria published in [Open a Market](open-a-market.md). The listing fee is non-refundable. The seed deposit becomes vault shares like any other deposit.
+4.6 **Withdrawals.** Withdrawals from your Trading Wallet are sent only to your Connected Wallet. Withdrawals from Order Book Markets are subject to Hyperliquid's withdrawal fee and minimum. Bridged withdrawals are routed by Relay.
 
-5.2 **Vault deposits.** Depositing USDC into a Vault means taking the opposite side of the traders in that market. The value of vault shares rises when traders lose and falls when traders win, and can fall to zero. Fees paid to LPs do not guarantee a positive return. Withdrawals may be delayed by the withdrawal window described in [How Vaults Earn](how-vaults-earn.md) and may be limited while open interest is high.
+## 5. Hest Pool Markets
 
-5.3 **Pricing.** Hest Pool Markets are marked at the 15-minute TWAP of the token's reference DEX price. TWAP pricing lags spot by design. Hest does not guarantee that the mark reflects any price at which you could trade elsewhere.
+5.1 **Hest as counterparty.** When you open a position on a Hest Pool Market, Hest takes the other side. Every open and close is priced at the less favourable to you of the token's spot price and its 15-minute time-weighted average price (TWAP) on its Uniswap pools on Robinhood Chain. Hest does not guarantee that this price reflects any price at which you could trade elsewhere.
 
-5.4 **Parameters.** Hest may change market parameters (maximum leverage, position caps, fees, maintenance margin, oracle sources) and may pause or delist a market whose token no longer meets the criteria, whose oracle fails, or where Hest reasonably suspects manipulation. Open positions in a delisted market can be closed; new positions cannot be opened.
+5.2 **Settlement.** When a position closes at a loss, the loss is retained and the remaining collateral is returned to your Trading Wallet. When a position closes at a profit, the collateral is returned to your Trading Wallet and the profit is credited to your Earnings.
 
-5.5 **Market Owner fee share.** The Market Owner's share of fees is paid as described in [Open a Market](open-a-market.md). It is a share of fees actually collected and is not a guarantee of income. It may be suspended if the Market Owner breaches these Terms.
+5.3 **Earnings.** Each amount credited to Earnings is locked for 7 days. After the lock, Hest reviews the activity that gave rise to it and pays it to you. Hest may withhold or reverse Earnings that Hest reasonably determines result from a breach of section 9, from linked accounts trading against each other, or from a faulty or manipulated price.
+
+5.4 **Limits and parameters.** Each Hest Pool Market has a capacity. Position size and open interest are capped as described in [How Hest Pools Work](how-hest-pools-work.md). Hest may change market parameters (maximum leverage, capacity, caps, fees, maintenance margin, price sources), a market may pause automatically on abnormal price moves, and Hest may pause or close a market whose token no longer meets the listing criteria, whose price source fails, or where Hest reasonably suspects manipulation.
+
+5.5 **Opening a market.** You may apply to open a Hest Pool Market for a token that meets the criteria published in [Open a Market](open-a-market.md) by paying the listing fee and providing a seed in WETH. Hest reviews every application and may reject any application; if it does, the listing fee and the seed are refunded.
+
+5.6 **Market Opener terms.** The seed bears the market's losses first. In return the Market Opener receives a share of the market's trading fees and of its profit, as described in [Open a Market](open-a-market.md), credited to Earnings and paid under section 5.3. The seed is locked for 7 days; its value at withdrawal includes the unrealised profit and loss of open positions; and withdrawing the seed ends the Market Opener's shares. The fee and profit shares are not a guarantee of income and may be suspended if the Market Opener breaches these Terms.
 
 ## 6. Fees
 
-6.1 Fees are shown on the order confirmation before you sign and are described in [Fees](fees.md). Hest may change fees with notice on the official channels. Fees on Order Book Markets consist of Hyperliquid's own fees plus Hest's builder fee.
+6.1 Fees are shown in the Interface before you confirm and are described in [Fees](fees.md). Hest may change fees with notice on the official channels. Fees on Order Book Markets consist of Hyperliquid's own fees plus Hest's builder fee. Hest charges a deposit fee and no withdrawal fee.
 
-6.2 You are responsible for network (gas) fees on Robinhood Chain and any bridge fees.
+6.2 You are responsible for network (gas) fees, including ETH for transactions from your Trading Wallet on Robinhood Chain, and for Relay's fees.
 
-6.3 Fees are collected in USDC and are non-refundable once an order is executed.
+6.3 Trading fees are collected in the collateral of the market (USDC on Order Book Markets, WETH on Hest Pool Markets) and are non-refundable once an order is executed, except as stated in section 5.5.
 
 ## 7. Taxes
 
-You are solely responsible for determining and paying any taxes that apply to your use of the Services, including taxes on trading gains, vault income and fee income. Hest does not provide tax reporting or withhold tax.
+You are solely responsible for determining and paying any taxes that apply to your use of the Services, including taxes on trading gains, Earnings and Market Opener income. Hest does not provide tax reporting or withhold tax.
 
 ## 8. Super Intelligence
 
-8.1 SI Scores, Risk Shield verdicts, Copilot answers, project notes and any other Super Intelligence output are informational outputs of automated analysis. They are generated from on-chain data, public social data, market data and statistical models that can be incomplete, delayed, manipulated or wrong.
+8.1 SI Scores, Risk Shield verdicts, Copilot answers and any other Super Intelligence output are informational outputs of automated analysis. They are generated from market data and statistical models that can be incomplete, delayed, manipulated or wrong.
 
 8.2 Super Intelligence output is not investment advice, is not a recommendation to trade, and does not predict prices. A high SI Score does not mean a market is safe; a Risk Shield "ok" verdict does not mean a position cannot be liquidated.
 
-8.3 Copilot is a language-model assistant. It can make mistakes, misread numbers and produce confident but incorrect statements. Verify anything that matters before acting on it.
+8.3 Copilot is an automated assistant. It can make mistakes, misread numbers and produce confident but incorrect statements. Verify anything that matters before acting on it.
 
 8.4 Hest may change the scoring methodology at any time and does not guarantee any level of accuracy, availability or latency for Super Intelligence.
 
@@ -97,11 +107,11 @@ You are solely responsible for determining and paying any taxes that apply to yo
 You agree not to, and not to help anyone else to:
 
 * violate any law, regulation or sanctions program, or use the Services where doing so is prohibited;
-* engage in market manipulation of any kind, including wash trading, spoofing, layering, oracle manipulation, pump-and-dump schemes or coordinated trading against a Vault;
-* exploit a bug, vulnerability or unintended behaviour of the Interface, the Hest Pools contracts, Hyperliquid or any oracle, or fail to report one you discover;
+* engage in market manipulation of any kind, including wash trading, spoofing, layering, manipulation of the price sources of Hest Pool Markets, pump-and-dump schemes, trading between linked accounts or coordinated trading against Hest Pool Markets;
+* exploit a bug, vulnerability or unintended behaviour of the Interface, Hest Pool Markets, Hyperliquid or any price source, or fail to report one you discover;
 * attack, overload, scrape at scale, reverse engineer or interfere with the Services or their infrastructure;
 * use the Services to launder money, finance terrorism or move the proceeds of crime;
-* create markets for tokens you know to be fraudulent, or act as Market Owner while trading against your own market's Vault with information not available to other users;
+* apply to open markets for tokens you know to be fraudulent, or trade on a market you opened using information not available to other users;
 * impersonate Hest, its team or another user, or misrepresent your affiliation with Hest;
 * circumvent any limit, restriction or suspension that Hest has applied.
 
@@ -117,33 +127,33 @@ Hest may restrict, suspend or terminate access to the Interface for any address 
 
 ## 11. Third-Party Services
 
-The Services depend on third parties that Hest does not control, including Hyperliquid, Robinhood Chain, wallet providers, oracles, DEX price sources, data providers, hosting and infrastructure providers. Your use of those services is governed by their own terms. Hest is not responsible for their availability, accuracy, security or conduct, and does not endorse any token that can be traded through the Services.
+The Services depend on third parties that Hest does not control, including Hyperliquid, Robinhood Chain and the other supported networks, Relay, wallet providers, Uniswap and other DEX price sources, data providers, hosting and infrastructure providers. Your use of those services is governed by their own terms. Hest is not responsible for their availability, accuracy, security or conduct, and does not endorse any token that can be traded through the Services.
 
 ## 12. Beta Status and Availability
 
 12.1 The Services are in Beta. Features, parameters, fees, markets and documentation can change, and the Services may be modified, suspended or discontinued, in whole or in part, at any time with notice on the official channels where practical.
 
-12.2 Hest does not guarantee that the Interface will be available, uninterrupted, secure or free of errors. Outages may prevent you from opening, managing or closing positions, including during liquidation. Keep enough margin to withstand periods when the Interface is unavailable. Order Book Market positions can also be managed directly on Hyperliquid.
+12.2 Hest does not guarantee that the Interface will be available, uninterrupted, secure or free of errors. Outages may prevent you from opening, managing or closing positions, including during liquidation. Keep enough margin to withstand periods when the Interface is unavailable. Order Book Market positions can also be managed directly on Hyperliquid using your Trading Wallet key.
 
 ## 13. Disclaimer of Warranties
 
-THE SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. HEST DOES NOT WARRANT THAT THE SERVICES, THE SMART CONTRACTS, THE ORACLES, HYPERLIQUID OR ANY THIRD-PARTY SERVICE WILL BE ACCURATE, RELIABLE, SECURE, UNINTERRUPTED OR FREE OF ERRORS, OR THAT ANY SUPER INTELLIGENCE OUTPUT WILL BE CORRECT. YOU USE THE SERVICES AT YOUR OWN RISK. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES, SO SOME OF THESE EXCLUSIONS MAY NOT APPLY TO YOU.
+THE SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. HEST DOES NOT WARRANT THAT THE SERVICES, THE PRICE SOURCES, RELAY, HYPERLIQUID OR ANY THIRD-PARTY SERVICE WILL BE ACCURATE, RELIABLE, SECURE, UNINTERRUPTED OR FREE OF ERRORS, OR THAT ANY SUPER INTELLIGENCE OUTPUT WILL BE CORRECT. YOU USE THE SERVICES AT YOUR OWN RISK. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES, SO SOME OF THESE EXCLUSIONS MAY NOT APPLY TO YOU.
 
 ## 14. Assumption of Risk
 
-You acknowledge that you have read and understood the [Risk Disclosure](risk-disclosure.md), that trading leveraged perpetual contracts and depositing into vaults carries a high risk of total loss, that digital-asset markets are volatile and lightly regulated, that smart contracts can contain bugs, that oracles can fail, and that the regulatory treatment of digital assets is uncertain and may change. You assume all of these risks.
+You acknowledge that you have read and understood the [Risk Disclosure](risk-disclosure.md), that trading leveraged perpetual contracts and providing a market seed carry a high risk of total loss, that Hest holds a copy of your Trading Wallet key, that digital-asset markets are volatile and lightly regulated, that software and blockchain networks can contain bugs, that price sources can fail, and that the regulatory treatment of digital assets is uncertain and may change. You assume all of these risks.
 
 ## 15. Limitation of Liability
 
-TO THE MAXIMUM EXTENT PERMITTED BY LAW, HEST AND ITS AFFILIATES, CONTRIBUTORS, OFFICERS, EMPLOYEES AND AGENTS WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY OR PUNITIVE DAMAGES, OR FOR ANY LOSS OF PROFITS, REVENUE, DATA, DIGITAL ASSETS OR GOODWILL, ARISING OUT OF OR RELATED TO THE SERVICES, HOWEVER CAUSED AND UNDER ANY THEORY OF LIABILITY, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THIS INCLUDES LOSSES FROM TRADING, LIQUIDATION, VAULT PERFORMANCE, ORACLE OR TWAP PRICING, SMART-CONTRACT BUGS OR EXPLOITS, HYPERLIQUID OR NETWORK FAILURES, WALLET COMPROMISE, PHISHING, OR RELIANCE ON SUPER INTELLIGENCE OUTPUT. IN NO EVENT WILL HEST'S TOTAL LIABILITY TO YOU FOR ALL CLAIMS EXCEED THE GREATER OF (A) THE FEES YOU PAID TO HEST IN THE TWELVE MONTHS BEFORE THE EVENT GIVING RISE TO THE CLAIM AND (B) ONE HUNDRED US DOLLARS (USD 100).
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, HEST AND ITS AFFILIATES, CONTRIBUTORS, OFFICERS, EMPLOYEES AND AGENTS WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY OR PUNITIVE DAMAGES, OR FOR ANY LOSS OF PROFITS, REVENUE, DATA, DIGITAL ASSETS OR GOODWILL, ARISING OUT OF OR RELATED TO THE SERVICES, HOWEVER CAUSED AND UNDER ANY THEORY OF LIABILITY, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THIS INCLUDES LOSSES FROM TRADING, LIQUIDATION, THE PERFORMANCE OF A MARKET YOU OPENED, SPOT OR TWAP PRICING, SOFTWARE BUGS OR EXPLOITS, HYPERLIQUID OR NETWORK FAILURES, WALLET COMPROMISE, PHISHING, OR RELIANCE ON SUPER INTELLIGENCE OUTPUT. IN NO EVENT WILL HEST'S TOTAL LIABILITY TO YOU FOR ALL CLAIMS EXCEED THE GREATER OF (A) THE FEES YOU PAID TO HEST IN THE TWELVE MONTHS BEFORE THE EVENT GIVING RISE TO THE CLAIM AND (B) ONE HUNDRED US DOLLARS (USD 100).
 
 ## 16. Indemnification
 
-You agree to defend, indemnify and hold harmless Hest and its affiliates, contributors, officers, employees and agents from and against any claim, demand, loss, liability, damage, cost or expense (including reasonable legal fees) arising out of or related to your use of the Services, your breach of these Terms, your violation of any law or the rights of a third party, or any market you create or vault you fund.
+You agree to defend, indemnify and hold harmless Hest and its affiliates, contributors, officers, employees and agents from and against any claim, demand, loss, liability, damage, cost or expense (including reasonable legal fees) arising out of or related to your use of the Services, your breach of these Terms, your violation of any law or the rights of a third party, or any market you open.
 
 ## 17. Suspension and Termination
 
-Hest may suspend or terminate your access to the Interface at any time, with or without notice, if it reasonably believes you have breached these Terms, if required by law, or to protect the Services or other users. Because the Services are non-custodial, termination of Interface access does not affect assets in your wallet, positions on Hyperliquid (which remain manageable on Hyperliquid) or vault shares you hold on-chain. Sections 7, 8, 10 and 13 to 20 survive termination.
+Hest may suspend or terminate your access to the Interface at any time, with or without notice, if it reasonably believes you have breached these Terms, if required by law, or to protect the Services or other users. Termination of Interface access does not affect assets in your Connected Wallet. Assets in your Trading Wallet remain yours: you can withdraw them to your Connected Wallet, unless the law requires otherwise, or use your Trading Wallet key to manage them, including positions on Hyperliquid, directly. Sections 7, 8, 10 and 13 to 20 survive termination.
 
 ## 18. Governing Law and Dispute Resolution
 
