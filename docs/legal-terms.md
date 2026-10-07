@@ -10,7 +10,7 @@ Beta draft. These terms apply during the Beta and will be reviewed by counsel be
 
 **Last updated:** October 2026
 
-Please read these Terms of Service (the "Terms") carefully. They are a binding agreement between you and [Hest entity] ("Hest", "we", "us") and govern your access to and use of hest.si, its subdomains, the Hest web application, the Hest Pools smart contracts, Super Intelligence and every related service (together, the "Services"). By connecting a wallet, signing a message or transaction, or otherwise using the Services, you agree to these Terms. If you do not agree, do not use the Services.
+Please read these Terms of Service (the "Terms") carefully. They are a binding agreement between you and the Hest project, meaning the persons and entities that develop, operate and maintain hest.si and the Services (together "Hest", "we", "us") and govern your access to and use of hest.si, its subdomains, the Hest web application, the Hest Pools smart contracts, Super Intelligence and every related service (together, the "Services"). By connecting a wallet, signing a message or transaction, or otherwise using the Services, you agree to these Terms. If you do not agree, do not use the Services.
 
 ## 1. Definitions
 
@@ -44,9 +44,9 @@ Please read these Terms of Service (the "Terms") carefully. They are a binding a
 
 3.1 You may use the Services only if you are at least 18 years old (or the age of majority where you live, if higher) and have the legal capacity to enter into these Terms.
 
-3.2 You may not use the Services if you are located in, incorporated in, or a resident of a jurisdiction where trading leveraged digital-asset derivatives is prohibited or where Hest has chosen not to offer the Services ("Restricted Jurisdiction"). The list of Restricted Jurisdictions is published at [restricted-jurisdictions page] and may change. It includes, at a minimum, the United States of America, and any country or territory subject to comprehensive sanctions.
+3.2 You may not use the Services if you are located in, incorporated in, or a resident of a jurisdiction where trading leveraged digital-asset derivatives is prohibited or where Hest has chosen not to offer the Services ("Restricted Jurisdiction"). Restricted Jurisdictions currently are: the United States of America and its territories; Canada; Afghanistan; Belarus; Cuba; the Democratic People's Republic of Korea; Iran; Libya; Myanmar; Russia; Somalia; South Sudan; Sudan; Syria; Venezuela; Yemen; the Crimea, Donetsk, Kherson, Luhansk and Zaporizhzhia regions of Ukraine; and any other country or territory subject to comprehensive sanctions. Hest may add or remove jurisdictions at any time by updating this section, and the current version of this page is the authoritative list.
 
-3.3 You may not use the Services if you are, or act for, a person on any sanctions list maintained by the United Nations, the European Union, the United Kingdom, the United States or [applicable authority], or if you are otherwise prohibited by applicable law from using them.
+3.3 You may not use the Services if you are, or act for, a person on any sanctions list maintained by the United Nations, the European Union, the United Kingdom, the United States or any other competent authority, or if you are otherwise prohibited by applicable law from using them.
 
 3.4 You may not use a VPN, proxy or any other method to disguise your location in order to access the Services from a Restricted Jurisdiction. Hest may use geolocation and on-chain screening to enforce this section and may restrict the Interface for addresses or regions without notice.
 
@@ -151,9 +151,9 @@ Hest may suspend or terminate your access to the Interface at any time, with or 
 
 ## 18. Governing Law and Dispute Resolution
 
-18.1 These Terms are governed by the laws of [governing jurisdiction], without regard to its conflict-of-laws rules.
+18.1 These Terms are governed by the laws of England and Wales, without regard to its conflict-of-laws rules.
 
-18.2 Any dispute arising out of or relating to these Terms or the Services will be resolved by binding arbitration administered by [arbitral institution] under its rules, seated in [seat], in the English language, before a single arbitrator. You and Hest waive any right to a jury trial and to participate in a class action, to the extent permitted by law.
+18.2 Any dispute arising out of or relating to these Terms or the Services will be resolved by binding arbitration administered by the London Court of International Arbitration (LCIA) under the LCIA Arbitration Rules in force when the request for arbitration is filed, seated in London, England, in the English language, before a single arbitrator. You and Hest waive any right to a jury trial and to participate in a class action, to the extent permitted by law.
 
 18.3 Before starting arbitration, a party must send a written description of the dispute to the other party and allow 30 days for good-faith resolution. For Hest, the notice address is legal@hest.si.
 

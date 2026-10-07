@@ -10,11 +10,11 @@ Beta draft. This policy will be reviewed by counsel before public launch. Bracke
 
 **Last updated:** October 2026
 
-This Privacy Policy explains how [Hest entity] ("Hest", "we", "us") handles information when you use hest.si, the Hest web application, Hest Pools and Super Intelligence (the "Services"). Hest is non-custodial and does not require an account, a name, an email address or identity documents to trade.
+This Privacy Policy explains how the Hest project, meaning the persons and entities that develop, operate and maintain hest.si and the Services (together "Hest", "we", "us"), handles information when you use hest.si, the Hest web application, Hest Pools and Super Intelligence (the "Services"). Hest is non-custodial and does not require an account, a name, an email address or identity documents to trade.
 
 ## 1. Who Is Responsible
 
-The data controller for the Services is [Hest entity], [registered address]. Privacy questions: legal@hest.si, or a ticket marked **Privacy** on [discord.gg/hest](https://discord.gg/hest).
+The data controller for the Services is Hest, as defined above, reachable at legal@hest.si. Privacy questions: legal@hest.si, or a ticket marked **Privacy** on [discord.gg/hest](https://discord.gg/hest).
 
 ## 2. Information We Collect
 
@@ -22,7 +22,7 @@ The data controller for the Services is [Hest entity], [registered address]. Pri
 
 **Usage events.** Pages and markets you view, features you use, orders you place through the Interface, buttons you click, errors you hit, and the approximate time of each event. These events are tied to a pseudonymous visitor identifier and, when a wallet is connected, to your wallet address.
 
-**Technical data.** Browser type and version, operating system, screen size, language, time zone, referrer, and the approximate country or region derived from your connection. Hest stores a salted hash of a visitor identifier rather than your IP address; the raw IP address is processed transiently to derive region and to protect the Services, and is kept in infrastructure logs for no more than [30] days.
+**Technical data.** Browser type and version, operating system, screen size, language, time zone, referrer, and the approximate country or region derived from your connection. Hest stores a salted hash of a visitor identifier rather than your IP address; the raw IP address is processed transiently to derive region and to protect the Services, and is kept in infrastructure logs for no more than 30 days.
 
 **Copilot messages.** The questions you send to Copilot and Risk Shield chat, the market and order context attached to them, and the answers generated. This is needed to produce the answer and to improve Copilot.
 
@@ -69,7 +69,7 @@ Hest's infrastructure providers may process data in countries other than yours, 
 
 ## 7. Retention
 
-Account and trading records tied to your wallet address are kept while the address has activity on the Services and for as long as required by law or to resolve disputes. Raw usage events are aggregated and the raw rows deleted on a rolling basis after [90] days. Copilot messages are kept for [30] days for quality and abuse review, then deleted or anonymised. Infrastructure logs containing IP addresses are kept for no more than [30] days. Support communications are kept for [2] years.
+Account and trading records tied to your wallet address are kept while the address has activity on the Services and for as long as required by law or to resolve disputes. Raw usage events are aggregated and the raw rows deleted on a rolling basis after 90 days. Copilot messages are kept for 30 days for quality and abuse review, then deleted or anonymised. Infrastructure logs containing IP addresses are kept for no more than 30 days. Support communications are kept for 2 years.
 
 On-chain data, including your wallet address and transactions on Robinhood Chain and Hyperliquid, is public by nature and cannot be deleted by Hest.
 
