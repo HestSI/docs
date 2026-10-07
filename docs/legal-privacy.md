@@ -14,7 +14,7 @@ This Privacy Policy explains how [Hest entity] ("Hest", "we", "us") handles info
 
 ## 1. Who Is Responsible
 
-The data controller for the Services is [Hest entity], [registered address]. Privacy questions: privacy at hest.si.
+The data controller for the Services is [Hest entity], [registered address]. Privacy questions: open a ticket marked **Privacy** on [discord.gg/hest](https://discord.gg/hest).
 
 ## 2. Information We Collect
 
@@ -75,7 +75,7 @@ On-chain data, including your wallet address and transactions on Robinhood Chain
 
 ## 8. Your Rights and Choices
 
-Depending on where you live, you may have the right to access, correct, delete or export the personal data we hold about you, to object to or restrict certain processing, and to withdraw consent. You can exercise these rights by writing to privacy at hest.si from a channel that lets us verify your control of the wallet address concerned (for example, by signing a message). We respond within the time required by law, normally within 30 days. If you are in the EEA or UK you may also complain to your supervisory authority.
+Depending on where you live, you may have the right to access, correct, delete or export the personal data we hold about you, to object to or restrict certain processing, and to withdraw consent. You can exercise these rights by opening a ticket marked **Privacy** on [discord.gg/hest](https://discord.gg/hest) and verifying control of the wallet address concerned (for example, by signing a message). We respond within the time required by law, normally within 30 days. If you are in the EEA or UK you may also complain to your supervisory authority.
 
 You can disconnect your wallet at any time from the Interface or from your wallet's connected-sites settings. You can revoke the builder-fee approval directly on Hyperliquid. Browser settings let you block cookies and local storage, though parts of the Interface may stop working.
 
@@ -85,11 +85,11 @@ Hest uses browser local storage for preferences such as theme, chart settings an
 
 ## 10. Security
 
-Hest protects data with encryption in transit, access controls, row-level security on its database, service-role separation for backend writes, and monitoring. No system is perfectly secure. Hest never asks for your seed phrase or private key; if a message claiming to be from Hest asks for them, it is a scam. Report security issues to security at hest.si.
+Hest protects data with encryption in transit, access controls, row-level security on its database, service-role separation for backend writes, and monitoring. No system is perfectly secure. Hest never asks for your seed phrase or private key; if a message claiming to be from Hest asks for them, it is a scam. Report security issues through a ticket marked **Security** on [discord.gg/hest](https://discord.gg/hest).
 
 ## 11. Children
 
-The Services are not directed at anyone under 18, and Hest does not knowingly collect information from children. If you believe a child has used the Services, contact privacy at hest.si.
+The Services are not directed at anyone under 18, and Hest does not knowingly collect information from children. If you believe a child has used the Services, open a ticket on [discord.gg/hest](https://discord.gg/hest).
 
 ## 12. Changes to This Policy
 
@@ -97,4 +97,4 @@ Hest may update this policy. The "Last updated" date shows the current version, 
 
 ## 13. Contact
 
-Privacy: privacy at hest.si · Security: security at hest.si · Legal: legal at hest.si · Support: [discord.gg/hest](https://discord.gg/hest)
+All requests (support, privacy, legal, security) go through tickets on [discord.gg/hest](https://discord.gg/hest). Mark the ticket with the topic and the team routes it. An email address for legal notices will be published at public launch.

@@ -37,4 +37,4 @@ No. Liquidation closes the position at the mark price; your loss is capped at th
 Charts show your browser's local time zone; the zone is printed under the chart. Documentation videos are recorded in Pacific Time (Seattle).
 
 **Where do I get help?**
-Discord, [discord.gg/hest](https://discord.gg/hest), open a ticket. Security issues: write to security at hest.si.
+Discord, [discord.gg/hest](https://discord.gg/hest), open a ticket. Security issues: open a ticket marked **Security** and the team will move it to a private channel.

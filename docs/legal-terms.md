@@ -155,7 +155,7 @@ Hest may suspend or terminate your access to the Interface at any time, with or 
 
 18.2 Any dispute arising out of or relating to these Terms or the Services will be resolved by binding arbitration administered by [arbitral institution] under its rules, seated in [seat], in the English language, before a single arbitrator. You and Hest waive any right to a jury trial and to participate in a class action, to the extent permitted by law.
 
-18.3 Before starting arbitration, a party must send a written description of the dispute to the other party and allow 30 days for good-faith resolution. For Hest, the notice address is legal at hest.si.
+18.3 Before starting arbitration, a party must send a written description of the dispute to the other party and allow 30 days for good-faith resolution. For Hest, notice is given by opening a ticket marked **Legal** on [discord.gg/hest](https://discord.gg/hest) until an email address for legal notices is published.
 
 ## 19. Changes to These Terms
 
@@ -173,8 +173,8 @@ Hest may update these Terms from time to time. The "Last updated" date at the to
 
 20.5 Hest is not liable for any failure or delay caused by events beyond its reasonable control, including network or protocol failures, acts of government, war, pandemic or natural disaster.
 
-20.6 Notices to you may be given through the Interface or the official channels. Notices to Hest go to legal at hest.si.
+20.6 Notices to you may be given through the Interface or the official channels. Notices to Hest are given through a ticket marked **Legal** on [discord.gg/hest](https://discord.gg/hest).
 
 ## 21. Contact
 
-Legal: legal at hest.si · Security: security at hest.si · Support: [discord.gg/hest](https://discord.gg/hest)
+All requests (support, legal, security) go through tickets on [discord.gg/hest](https://discord.gg/hest). Mark the ticket with the topic and the team routes it.
