@@ -57,7 +57,7 @@ The app shows times in your own time zone. Official dates are announced in Pacif
 
 <summary>Can I sign in without a wallet?</summary>
 
-Yes. Click **Connect Wallet**, then **Continue with Google**. You then set one withdrawal address (a wallet you control) that receives your withdrawals; changing it later takes 48 hours, so a stolen Google account cannot move your funds out at once. A Google account and a wallet are separate Hest accounts. See [Sign In with Google](../getting-started/connect-a-wallet.md#sign-in-with-google).
+Yes. Click **Log In**, then **Continue with Google**. You then set one withdrawal address (a wallet you control) that receives your withdrawals; changing it later takes 48 hours, so a stolen Google account cannot move your funds out at once. A Google account and a wallet are separate Hest accounts. See [Sign In with Google](../getting-started/connect-a-wallet.md#sign-in-with-google).
 
 </details>
 

@@ -19,7 +19,7 @@ You need a signed-in wallet, a Trading Wallet whose key you saved, and funds on 
 | Order Book | USDC in your Trading Wallet's Hyperliquid account. See [Deposit](deposit.md).              |
 | Hest Pools | ETH or WETH in your Trading Wallet on Robinhood Chain, plus a little ETH for network fees. |
 
-If anything is missing, the order button says what (for example **Deposit USDC to Trade**) and opens a **Not Ready to Trade** checklist with a button for the next step: Sign In, Create, Finish or Deposit.
+If anything is missing, the order button says what (for example **Deposit USDC to Trade**) and opens a **Not Ready to Trade** checklist with a button for the next step: Log In, Create, Finish or Deposit.
 
 ## 1. Pick a Market
 
@@ -72,3 +72,10 @@ Your margin plus the 0.30% opening fee moves in WETH from your Trading Wallet to
 ## 6. Follow It in Portfolio
 
 **Portfolio** in the top menu shows your total equity on both sides, positions on both venues, open orders, trade history, funding, **Earnings** and **Deposits and Withdrawals**, with account value and profit and loss over 1D, 7D, 30D or All.
+
+How the numbers are counted:
+
+* **Periods are rolling:** 1D is the last 24 hours, 7D the last 7 days and 30D the last 30 days, the same for every time zone. Dates and times are shown in your browser's time zone.
+* **PNL and Volume** cover the side you choose: Order Book, Hest Pools, or both. Hest Pools PNL counts closed positions after fees (what came back, plus profit, minus the margin and opening fee you put in). Volume counts both the opening and the closing of each position. Hest Pools amounts are shown in dollars at the current ETH price.
+* **14 Day Volume** adds your Order Book and Hest Pools volume over the last 14 days.
+* **Account Value** history and **Max Drawdown** are available for the Order Book side only.

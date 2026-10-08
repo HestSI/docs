@@ -10,7 +10,7 @@ No wallet yet? You can also [sign in with Google](#sign-in-with-google). Your Go
 
 ## Supported Wallets
 
-Open [hest.si](https://hest.si) and click **Connect Wallet**. The dialog lists the wallets that work with Hest:
+Open [hest.si](https://hest.si) and click **Log In**. The **Log In to Hest** dialog offers **Continue with Google** and lists the wallets that work with Hest:
 
 * MetaMask
 * Phantom
@@ -49,7 +49,7 @@ Sign-in needs a regular wallet account that signs with its own key. Smart-contra
 
 ## Sign In with Google
 
-Click **Connect Wallet**, then **Continue with Google**, and choose your Google account in Google's window. Hest receives your Google account ID, email address and name, and nothing else: no access to your mail, contacts or files. The Google account needs a verified email address.
+Click **Log In**, then **Continue with Google**, and choose your Google account in Google's window. Hest receives your Google account ID, email address and name, and nothing else: no access to your mail, contacts or files. The Google account needs a verified email address.
 
 Because a Google account has no wallet to send withdrawals to, the next step is **Set Your Withdrawal Address**:
 
