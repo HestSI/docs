@@ -68,7 +68,8 @@ Exceeding a rate limit returns a short message such as "Too many orders. Wait a 
 
 ## What You Should Do
 
-* **Check the address bar.** Hest is only at **hest.si**. The documentation is at hest.gitbook.io/hest-docs.
+* **Check the address bar.** Hest is only at **hest.si**. Only connect your wallet there, never through a link from a DM or another site. The documentation is at hest.gitbook.io/hest-docs.
+* **Discord verification never needs your wallet.** It happens on verify.hest.si with a quick check, and only from the Verify button in the Hest server.
 * **Read every wallet prompt.** Hest only ever asks your connected wallet for message signatures (sign-in and key display) and, if you use **Send from Connected Wallet**, for the deposit transfer you set up.
 * **Store the Trading Wallet key offline.** Never paste it into a website or send it to anyone.
 * **Keep in the Trading Wallet only what you are trading with.** Withdraw the rest.
