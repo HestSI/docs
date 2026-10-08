@@ -22,25 +22,25 @@ This repository is the source of the Hest documentation. It is published with Gi
 
 <br>
 
-<a href="docs/hest-pools.md"><img src="assets/section-pools.png" alt="Hest Pools" width="100%"></a>
+<a href="docs/markets/hest-pools.md"><img src="assets/section-pools.png" alt="Hest Pools" width="100%"></a>
 
-[Hest Pools](docs/hest-pools.md) · [How Hest Pools Work](docs/how-hest-pools-work.md) · [Hest Pools Pricing](docs/hest-pools-pricing.md) · [Open a Market](docs/open-a-market.md) · [Hest Pools Risks](docs/hest-pools-risks.md)
+[Hest Pools](docs/markets/hest-pools.md) · [How Hest Pools Work](docs/markets/how-hest-pools-work.md) · [Hest Pools Pricing](docs/markets/hest-pools-pricing.md) · [Open a Market](docs/markets/open-a-market.md) · [Hest Pools Risks](docs/markets/hest-pools-risks.md)
 
-<a href="docs/order-book-markets.md"><img src="assets/section-orderbook.png" alt="Order Book" width="100%"></a>
+<a href="docs/markets/order-book-markets.md"><img src="assets/section-orderbook.png" alt="Order Book" width="100%"></a>
 
-[Order Book Markets](docs/order-book-markets.md) · [Order Types](docs/order-types.md) · [Leverage and Liquidation](docs/leverage-and-liquidation.md) · [Funding](docs/funding.md) · [Fees](docs/fees.md)
+[Order Book Markets](docs/markets/order-book-markets.md) · [Order Types](docs/trading/order-types.md) · [Leverage and Liquidation](docs/trading/leverage-and-liquidation.md) · [Funding](docs/trading/funding.md) · [Fees](docs/trading/fees.md)
 
-<a href="docs/si-score.md"><img src="assets/section-si.png" alt="Super Intelligence" width="100%"></a>
+<a href="docs/super-intelligence/si-score.md"><img src="assets/section-si.png" alt="Super Intelligence" width="100%"></a>
 
-[SI Score](docs/si-score.md) · [Risk Shield](docs/risk-shield.md) · [Copilot](docs/copilot.md)
+[SI Score](docs/super-intelligence/si-score.md) · [Risk Shield](docs/super-intelligence/risk-shield.md) · [Copilot](docs/super-intelligence/copilot.md)
 
-<a href="docs/connect-a-wallet.md"><img src="assets/section-account.png" alt="Getting Started" width="100%"></a>
+<a href="docs/getting-started/connect-a-wallet.md"><img src="assets/section-account.png" alt="Getting Started" width="100%"></a>
 
-[Connect a Wallet](docs/connect-a-wallet.md) · [Hest Trading Wallet](docs/trading-wallet.md) · [Deposit](docs/deposit.md) · [Your First Trade](docs/first-trade.md) · [Withdraw](docs/withdraw.md) · [Earnings](docs/earnings.md)
+[Connect a Wallet](docs/getting-started/connect-a-wallet.md) · [Hest Trading Wallet](docs/getting-started/trading-wallet.md) · [Deposit](docs/getting-started/deposit.md) · [Your First Trade](docs/getting-started/first-trade.md) · [Withdraw](docs/getting-started/withdraw.md) · [Earnings](docs/getting-started/earnings.md)
 
-<a href="docs/faq.md"><img src="assets/section-help.png" alt="Help and Legal" width="100%"></a>
+<a href="docs/help/faq.md"><img src="assets/section-help.png" alt="Help and Legal" width="100%"></a>
 
-[FAQ](docs/faq.md) · [Glossary](docs/glossary.md) · [Security](docs/security.md) · [Risk Disclosure](docs/risk-disclosure.md) · [Terms of Service](docs/terms.md) · [Privacy Policy](docs/privacy.md)
+[FAQ](docs/help/faq.md) · [Glossary](docs/help/glossary.md) · [Security](docs/help/security.md) · [Risk Disclosure](docs/legal/risk-disclosure.md) · [Terms of Service](docs/legal/terms.md) · [Privacy Policy](docs/legal/privacy.md)
 
 <br>
 
