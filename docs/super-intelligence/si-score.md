@@ -41,11 +41,15 @@ The worst candle (shown as **Max Wick 7d** in Risk Shield) is read from the mark
 * the drop from open to low, as a share of the open, and
 * the full range from high to low, as a share of the high,
 
-and keeps the largest value across the week, rounded to 0.1%. For Order Book markets the candles come from Hyperliquid; for Hest Pools markets they come from the pool's own hourly price history. The value is refreshed every 10 minutes.
+and keeps the largest value across the week, rounded to 0.1%. The value is refreshed every 10 minutes.
+
+* **Order Book markets:** the candles come from Hyperliquid.
+* **Hest Pools markets:** Hest reads each pool's price on Robinhood Chain every minute and keeps its own hourly candles; the hourly candles from GeckoTerminal are used too, and the larger of the two figures counts. A market listed less than 7 days ago shows how many hours it covers, for example **(last 6h)**.
+* **If a new reading fails,** the last good figure is used and shows its age, for example **(3h ago)**. With no figure at all it reads **Unavailable**, Risk Shield gives no verdict and the score leaves the candle out. Hest never fills the gap with an estimate.
 
 ### Data and Refresh
 
-Funding, open interest, volume and price change come from Hyperliquid's market data, refreshed every 10 seconds. The score is recomputed whenever that data or the worst candle changes.
+Prices stream live from Hyperliquid. Funding, open interest and volume are refreshed every 30 seconds while prices stream, and every 10 seconds otherwise. The score is recomputed whenever that data or the worst candle changes.
 
 ## The Super Intelligence Page
 
