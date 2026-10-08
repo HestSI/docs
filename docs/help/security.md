@@ -22,6 +22,7 @@ Hest holds a copy of your Trading Wallet key so it can trade for you without a w
 
 * Sign-in uses **Sign-In with Ethereum (EIP-4361)**: a plain-text message for the domain hest.si that your wallet shows you before you sign. It cannot move funds and costs no gas.
 * Each sign-in message carries a one-time nonce and expires after **5 minutes**. A signed message cannot be replayed, and a sign-in signature cannot be reused to show your key.
+* **Sign in with Google** uses Google's signed ID token. Hest checks Google's signature, that the token was issued for Hest, that it has not expired and that the email is verified. Showing the key needs a fresh Google confirmation (under 5 minutes old) from the same Google account.
 * A session lasts **7 days** on that browser. **Disconnect** ends it. Changing accounts in your wallet ends it.
 
 ## The Trading Wallet Key
@@ -45,6 +46,7 @@ The trading endpoint refuses every Hyperliquid action that moves funds, such as 
 ## Withdrawals
 
 * The destination is the connected wallet of your signed-in session. No request can name another address.
+* For Google accounts the destination is the account's withdrawal address. A new address applies only 48 hours after it is set, can be cancelled until then, and every change alerts the Hest team. A stolen Google account cannot redirect withdrawals at once.
 * Only one withdrawal can be in progress per Trading Wallet.
 * A withdrawal has a unique ID, so double clicks and retries never send twice.
 * Every signed transaction is recorded before broadcast, and unfinished withdrawals are settled automatically from the chain.
@@ -76,6 +78,7 @@ Exceeding a rate limit returns a short message such as "Too many orders. Wait a 
 
 1. **Your Trading Wallet key may be exposed:** withdraw everything from both sides to your connected wallet immediately. Anyone with the key can move funds too, so speed matters.
 2. **Your connected wallet may be compromised:** disconnect from Hest, move your funds to a new wallet, and open a ticket. Withdrawals from your Trading Wallet go to the connected wallet, so the Hest team needs to know.
+3. **Your Google account may be compromised** (if you sign in with Google): secure it with Google, check **Withdrawal Address** for a change you did not ask for and cancel it, and open a ticket.
 3. **You found a vulnerability:** open a ticket marked **Security** on [discord.gg/hest](https://discord.gg/hest). The team moves it to a private channel. Do not disclose it publicly until it is fixed.
 
 {% hint style="warning" %}

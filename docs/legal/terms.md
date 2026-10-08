@@ -16,6 +16,8 @@ Please read these Terms of Service (the "Terms") carefully. They are a binding a
 
 **Connected Wallet** means the wallet you connect to the Interface and sign in with. It identifies you, and withdrawals are sent only to it.
 
+**Google Account** means a Google account you use to sign in to the Interface instead of a Connected Wallet. It identifies you, and withdrawals are sent only to the **Withdrawal Address**: the wallet address you set on your account. References in these Terms to your Connected Wallet as the destination of withdrawals mean, for accounts signed in with a Google Account, the Withdrawal Address.
+
 **Trading Wallet** means the wallet Hest creates for you after you sign in, which holds your deposits and from which your trades are placed. Hest keeps a copy of its private key, as described in section 2.1.
 
 **Order Book Markets** means perpetual markets traded on the Hyperliquid protocol's order book from the Hyperliquid account of your Trading Wallet, and executed, margined and settled by Hyperliquid under Hyperliquid's own terms.
@@ -32,7 +34,7 @@ Please read these Terms of Service (the "Terms") carefully. They are a binding a
 
 ## 2. Nature of the Services
 
-2.1 **Trading Wallet and custody.** When you sign in, Hest creates a Trading Wallet for you. Its private key is shown to you at creation and again on a request signed with your Connected Wallet. Hest keeps a copy of the key and uses it to sign transactions on your instructions given through the Interface, including orders, transfers of collateral and withdrawals to your Connected Wallet. Hest is therefore not non-custodial for the Trading Wallet: you and Hest can both control it. Hest does not hold the keys of your Connected Wallet. Hest cannot reverse an on-chain transaction once it has been broadcast.
+2.1 **Trading Wallet and custody.** When you sign in, Hest creates a Trading Wallet for you. Its private key is shown to you at creation and again on a request signed with your Connected Wallet or confirmed with your Google Account. Hest keeps a copy of the key and uses it to sign transactions on your instructions given through the Interface, including orders, transfers of collateral and withdrawals to your Connected Wallet. Hest is therefore not non-custodial for the Trading Wallet: you and Hest can both control it. Hest does not hold the keys of your Connected Wallet. Hest cannot reverse an on-chain transaction once it has been broadcast.
 
 2.2 **Counterparties.** In Order Book Markets, Hest is not a party to your trades: your counterparty is another participant in the Hyperliquid order book. In Hest Pool Markets, Hest is your counterparty.
 
@@ -56,7 +58,7 @@ Please read these Terms of Service (the "Terms") carefully. They are a binding a
 
 ## 4. Your Wallets, Your Keys, Your Orders
 
-4.1 You are solely responsible for your Connected Wallet, its seed phrase and private keys, your copy of the Trading Wallet key, and the security of the device and software you use. Anyone with the Trading Wallet key can control the Trading Wallet. Hest will never ask for your seed phrase or for your Trading Wallet key.
+4.1 You are solely responsible for your Connected Wallet, its seed phrase and private keys, your Google Account and its security, the correctness of your Withdrawal Address, your copy of the Trading Wallet key, and the security of the device and software you use. Anyone with the Trading Wallet key can control the Trading Wallet. Hest will never ask for your seed phrase or for your Trading Wallet key.
 
 4.2 Every order, deposit, withdrawal and other action you submit through the Interface is your own instruction, whether you sign it with your Connected Wallet or Hest signs it with your Trading Wallet on your behalf. Review the confirmation shown by the Interface before you confirm. Confirmed transactions are final.
 
@@ -66,7 +68,7 @@ Please read these Terms of Service (the "Terms") carefully. They are a binding a
 
 4.5 **Deposits.** Deposits are routed to your Trading Wallet by Relay, a third-party service, through a deposit address shown in the Interface. The Interface shows the Hest deposit fee, Relay's fee and network fees before you send. You must send only the token and network shown for that deposit address; Hest cannot recover tokens that are not supported or that are sent on the wrong network.
 
-4.6 **Withdrawals.** Withdrawals from your Trading Wallet are sent only to your Connected Wallet. Withdrawals from Order Book Markets are subject to Hyperliquid's withdrawal fee and minimum. Bridged withdrawals are routed by Relay.
+4.6 **Withdrawals.** Withdrawals from your Trading Wallet are sent only to your Connected Wallet or, if you signed in with a Google Account, only to your Withdrawal Address. A change of Withdrawal Address takes effect 48 hours after you make it. Withdrawals from Order Book Markets are subject to Hyperliquid's withdrawal fee and minimum. Bridged withdrawals are routed by Relay.
 
 ## 5. Hest Pool Markets
 

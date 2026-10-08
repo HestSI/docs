@@ -37,10 +37,12 @@ Answers cost real compute, so every signed-in account has a daily allowance. It 
 * **What counts as trading volume:** the value of Hest Pools positions opened today plus the value of your Order Book fills today, both since midnight Pacific Time.
 * **When it updates:** a higher allowance applies within a few minutes of the trade that reaches the threshold.
 * **Where you see it:** the line under each chat shows how many questions are left today and what the next tier needs.
-* **What does not count:** greetings and small talk do not use a question and do not reach the model.
+* **What does not count:** greetings and small talk in English do not use a question and do not reach the model. Copilot replies that it helps with market and risk analysis and gives a short read of the market you are on. A greeting in another language is answered by the model in that language and counts as a question.
 * **Shared answers:** an identical question on the same market, in the same market state, within 5 minutes gets the same answer. It still counts as a question.
 
-When you are not signed in, or when your allowance is used up, Copilot still answers with Hest's built-in risk reads, computed in your browser from the same numbers.
+When you are not signed in, or when your allowance is used up, Copilot still answers with Hest's built-in risk reads, computed in your browser from the same numbers. These answers are marked **Built-in read**; when you are not signed in, **Sign in** under the chat starts the sign-in.
+
+If you ask whether your order is safe before entering a size, Copilot says that no order is drafted yet and reads the risk at the leverage you selected.
 
 {% hint style="success" %}
 Make each question count. Ask the hard ones: "What could liquidate me here this week?", "Is 3x reasonable on this pool right now?", "Which side is crowded and who pays funding?", "How does Hest price my fill on this pool?"

@@ -6,6 +6,8 @@ description: Withdraw from either side of your Trading Wallet to the wallet you 
 
 Withdrawals go **only to your connected wallet**: the wallet you signed in with. You never type a destination address; Hest takes it from your signed-in session, so a withdrawal cannot be sent anywhere else. **Hest charges no withdrawal fee.**
 
+If you signed in with Google, withdrawals go to the **withdrawal address** you set during setup, shown as **To Your Withdrawal Address**. **Change** next to it schedules a new address, which applies only after 48 hours; until then withdrawals keep going to the current one. See [Sign In with Google](connect-a-wallet.md#sign-in-with-google).
+
 ## How to Withdraw
 
 1. Click **Withdraw** in Portfolio (or in the wallet menu at the top right).
@@ -52,7 +54,7 @@ Bridged withdrawals are protected in two ways: the Relay route is checked field 
 
 ## Safeguards
 
-* **Destination fixed by your session.** The connected wallet you signed in with is the only possible destination.
+* **Destination fixed by your session.** The connected wallet you signed in with is the only possible destination. For Google accounts it is the withdrawal address on the account, and a new address applies only 48 hours after it is set.
 * **One withdrawal at a time.** While one is in progress, a second is refused with "Another withdrawal is still in progress."
 * **No double sends.** Each withdrawal has a unique ID created when you review it. A double click or a retry returns the same withdrawal instead of sending again.
 * **Recorded before sent.** Every signed transaction is recorded before it is broadcast, so an interruption can always be resolved from the chain. Withdrawals that stop half way are settled automatically, and the status shows the result.

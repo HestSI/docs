@@ -32,7 +32,7 @@ Deposits and trading unlock only after this confirmation. If you close the dialo
 ## The Private Key
 
 * **Format.** A standard Ethereum private key: `0x` followed by 64 hexadecimal characters. It is not a seed phrase. Any EVM wallet that can import a private key (MetaMask, Rabby, Phantom and others) opens the Trading Wallet with it.
-* **Shown again on request.** Click **Show Key** in Portfolio or in the wallet menu and sign the message "Reveal my Hest Trading Wallet private key." with your connected wallet. The signature must come from the wallet you signed in with. The key can be shown at most 5 times per hour.
+* **Shown again on request.** Click **Show Key** in Portfolio or in the wallet menu and sign the message "Reveal my Hest Trading Wallet private key." with your connected wallet. The signature must come from the wallet you signed in with. Accounts signed in with Google confirm with the same Google account instead (see [Sign In with Google](connect-a-wallet.md#sign-in-with-google)). The key can be shown at most 5 times per hour.
 * **Hest keeps a copy.** That is how Hest signs your trades and transfers on your instructions, and why there is no wallet pop-up on every order. Every use of the key, to sign or to show it, is logged with its purpose.
 * **What Hest signs with it.** Only actions you start in the interface: Order Book orders, cancels, leverage changes and TWAP orders; Hest Pools collateral transfers; market application payments; and withdrawals to your connected wallet. See [Security](../help/security.md).
 

@@ -82,6 +82,8 @@ description: The terms used across Hest and this documentation, defined precisel
 
 **SI Score**: Super Intelligence Score, 0 to 100, higher is safer.
 
+**Sign in with Google**: signing in with a Google account instead of a wallet. Withdrawals then go to the withdrawal address set on the account.
+
 **Sign-In with Ethereum (SIWE)**: the standard (EIP-4361) gas-free message your wallet signs to sign in to Hest.
 
 **Spot**: on Hest Pools, the current price in the token's Uniswap pool.
@@ -99,3 +101,5 @@ description: The terms used across Hest and this documentation, defined precisel
 **WETH**: wrapped ETH, the ERC-20 form of ETH. The collateral of Hest Pools markets.
 
 **Wick**: the thin line above or below a candle's body: the extreme the price touched in that period.
+
+**Withdrawal address**: for accounts signed in with Google, the wallet address that receives withdrawals. A change applies after 48 hours.

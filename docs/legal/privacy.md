@@ -6,7 +6,7 @@ description: What Hest collects, why, how long it is kept, and the choices you h
 
 **Last updated:** October 2026
 
-This Privacy Policy explains how Hest Super Intelligence ("Hest", "we", "us") handles information when you use hest.si, the Hest web application, the Hest Trading Wallet, Hest Pools and Super Intelligence (the "Services"). Hest does not require a name, an email address or identity documents to trade. Signing in with your wallet creates an account tied to your wallet address.
+This Privacy Policy explains how Hest Super Intelligence ("Hest", "we", "us") handles information when you use hest.si, the Hest web application, the Hest Trading Wallet, Hest Pools and Super Intelligence (the "Services"). Hest does not require a name, an email address or identity documents to trade, unless you choose to sign in with Google. Signing in with your wallet creates an account tied to your wallet address; signing in with Google creates an account tied to your Google account.
 
 ## 1. Who Is Responsible
 
@@ -15,6 +15,8 @@ The data controller for the Services is Hest Super Intelligence, reachable at le
 ## 2. Information We Collect
 
 **Account and wallet data.** The public address of the wallet you connect and sign in with, the network it is on, your sign-in records, the address of the Trading Wallet Hest creates for you, and the activity tied to these addresses on the Services: orders, positions, deposits, withdrawals, Earnings and their payment, market applications and seeds, and builder-fee approvals. Much of this is public on Robinhood Chain, Hyperliquid and the other networks you use; Hest keeps its own records to show you your account and to run the Services.
+
+**Sign in with Google.** If you sign in with Google, we receive your Google account ID, email address and name from Google, together with the withdrawal address you set and any change you make to it. We use them only to create and secure your Hest account, to sign you in, to send your withdrawals to the address you chose, and to confirm sensitive actions such as showing your Trading Wallet key. We do not sell this data, share it with third parties, or use it for advertising. Hest's use of information received from Google follows the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the Limited Use requirements. Hest does not access your Gmail, contacts, files or any other Google data.
 
 **Profile.** The username Hest assigns you or that you choose, and the profile picture you upload, if any. Your username and picture can be shown to others, for example on a P&L card you share.
 
@@ -55,6 +57,8 @@ Where the GDPR or UK GDPR applies, Hest processes information on these bases: pe
 
 **Wallet providers.** The wallet software you connect with processes your connection and signatures under its own policy.
 
+**Google.** If you sign in with Google, Google processes your sign-in under its own terms and privacy policy and tells Hest your Google account ID, email address and name. Hest sends nothing back to Google about your activity.
+
 **Infrastructure providers.** Hosting, content delivery, database, analytics and error-reporting providers process data on Hest's behalf under contract and only on our instructions. The current list is available on request.
 
 **AI providers.** When you ask Copilot a question while signed in, the question, the last few messages of the conversation and the market and order context are sent to a third-party language model provider to generate the answer. Your wallet address is not sent. These providers process the data under their own terms and privacy policies.
@@ -71,15 +75,15 @@ Hest's infrastructure providers may process data in countries other than yours, 
 
 ## 7. Retention
 
-Account and trading records tied to your wallet address, including your Trading Wallet, are kept while the address has activity on the Services and for as long as required by law or to resolve disputes. Raw usage events are aggregated and the raw rows deleted on a rolling basis after 90 days. Copilot messages are kept for 30 days for quality and abuse review, then deleted or anonymised. Infrastructure logs containing IP addresses are kept for no more than 30 days. Support communications are kept for 2 years.
+Account and trading records tied to your wallet address or Google account, including your Trading Wallet, your Google account ID, email address and withdrawal address, are kept while the account has activity on the Services and for as long as required by law or to resolve disputes. Raw usage events are aggregated and the raw rows deleted on a rolling basis after 90 days. Copilot messages are kept for 30 days for quality and abuse review, then deleted or anonymised. Infrastructure logs containing IP addresses are kept for no more than 30 days. Support communications are kept for 2 years.
 
 On-chain data, including your wallet address and transactions on Robinhood Chain and Hyperliquid, is public by nature and cannot be deleted by Hest.
 
 ## 8. Your Rights and Choices
 
-Depending on where you live, you may have the right to access, correct, delete or export the personal data we hold about you, to object to or restrict certain processing, and to withdraw consent. You can exercise these rights by writing to legal@hest.si or opening a ticket marked **Privacy** on [discord.gg/hest](https://discord.gg/hest), and verifying control of the wallet address concerned (for example, by signing a message). We respond within the time required by law, normally within 30 days. If you are in the EEA or UK you may also complain to your supervisory authority.
+Depending on where you live, you may have the right to access, correct, delete or export the personal data we hold about you, to object to or restrict certain processing, and to withdraw consent. You can exercise these rights by writing to legal@hest.si or opening a ticket marked **Privacy** on [discord.gg/hest](https://discord.gg/hest), and verifying control of the wallet address concerned (for example, by signing a message) or of the Google account concerned. We respond within the time required by law, normally within 30 days. If you are in the EEA or UK you may also complain to your supervisory authority.
 
-You can disconnect your wallet at any time from the Interface or from your wallet's connected-sites settings. You can revoke the builder-fee approval directly on Hyperliquid using your Trading Wallet key. Browser settings let you block cookies and local storage, though parts of the Interface may stop working.
+You can disconnect your wallet at any time from the Interface or from your wallet's connected-sites settings. If you signed in with Google, you can sign out in the Interface and remove Hest's access in your Google Account settings (Security, Third-party connections). You can revoke the builder-fee approval directly on Hyperliquid using your Trading Wallet key. Browser settings let you block cookies and local storage, though parts of the Interface may stop working.
 
 ## 9. Cookies and Local Storage
 

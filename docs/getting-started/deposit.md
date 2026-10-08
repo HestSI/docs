@@ -72,7 +72,7 @@ Relay can only refund a failed Solana deposit on Solana, so the dialog asks for 
 
 If Relay cannot complete a deposit, it refunds it on the network you sent from:
 
-* **EVM networks:** the refund goes to your **connected wallet address** on that network, even if you sent from an exchange.
+* **EVM networks:** the refund goes to your **connected wallet address** on that network (for Google accounts, your withdrawal address), even if you sent from an exchange.
 * **Solana:** the refund goes to the Solana address you entered.
 
 The dialog then shows **Refunded to your wallet** or **Deposit failed**. If you need help, open a ticket on [Discord](https://discord.gg/hest) with the deposit address.

@@ -63,6 +63,10 @@ The approval can be revoked on Hyperliquid by the account owner, using the Tradi
 
 When Hyperliquid lists a Robinhood Chain token, it trades here with real two-sided liquidity and Hest marks it **Robinhood Chain** in the Markets table. Leverage on these markets is set by Hyperliquid and is usually low on new listings. Robinhood Chain memecoins that Hyperliquid does not list trade on [Hest Pools](hest-pools.md), and a token that Hyperliquid lists cannot be opened as a Hest Pools market.
 
+## Paused Markets
+
+Hest can pause an Order Book market on Hest, for example during an incident on the market. While a market is paused, Hest does not sign new orders or orders that increase a position on it. Orders that only reduce a position, such as closing it or a take profit or stop loss, are still signed, so you can always get out. The market itself keeps trading on Hyperliquid.
+
 ## Read Next
 
 * [Order Types](../trading/order-types.md): how each order type is built and sent.

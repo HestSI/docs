@@ -55,9 +55,17 @@ The app shows times in your own time zone. Official dates are announced in Pacif
 
 <details>
 
+<summary>Can I sign in without a wallet?</summary>
+
+Yes. Click **Connect Wallet**, then **Continue with Google**. You then set one withdrawal address (a wallet you control) that receives your withdrawals; changing it later takes 48 hours, so a stolen Google account cannot move your funds out at once. A Google account and a wallet are separate Hest accounts. See [Sign In with Google](../getting-started/connect-a-wallet.md#sign-in-with-google).
+
+</details>
+
+<details>
+
 <summary>Which wallets work?</summary>
 
-MetaMask, Phantom, Rabby, Base (formerly Coinbase Wallet), Trust Wallet, OKX Wallet, Rainbow, Zerion, and Robinhood Wallet through its in-app browser on mobile. Smart-contract wallets such as Safe cannot sign in. See [Connect a Wallet](../getting-started/connect-a-wallet.md).
+MetaMask, Phantom, Rabby, Base (formerly Coinbase Wallet), Trust Wallet, OKX Wallet, Rainbow, Zerion, and Robinhood Wallet through its in-app browser on mobile. Smart-contract wallets such as Safe cannot sign in. You can also sign in with Google without a wallet. See [Connect a Wallet](../getting-started/connect-a-wallet.md).
 
 </details>
 
@@ -81,7 +89,7 @@ Partly. Your connected wallet stays fully yours. The Trading Wallet is shared co
 
 <summary>I lost my Trading Wallet key.</summary>
 
-Click **Show Key** in Portfolio or in the wallet menu and sign with your connected wallet to see it again. It can be shown up to 5 times per hour.
+Click **Show Key** in Portfolio or in the wallet menu and sign with your connected wallet (or confirm with Google, for Google accounts) to see it again. It can be shown up to 5 times per hour.
 
 </details>
 
@@ -123,7 +131,7 @@ Opening a Hest Pools position, applying to open a market and withdrawing from th
 
 <summary>Can I withdraw to a different address?</summary>
 
-No. Withdrawals only go to the wallet you signed in with. Hest charges no withdrawal fee. See [Withdraw](../getting-started/withdraw.md).
+No. Withdrawals only go to the wallet you signed in with, or for Google accounts to the withdrawal address set on the account (a change takes 48 hours). Hest charges no withdrawal fee. See [Withdraw](../getting-started/withdraw.md).
 
 </details>
 

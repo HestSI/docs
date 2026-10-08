@@ -34,7 +34,7 @@ Deposits reach your Trading Wallet from eight networks through Relay, and withdr
 
 ## Start Here
 
-1. [Connect a Wallet](getting-started/connect-a-wallet.md): sign in with a gas-free signature.
+1. [Connect a Wallet](getting-started/connect-a-wallet.md): sign in with a gas-free signature, or with Google.
 2. [Hest Trading Wallet](getting-started/trading-wallet.md): create it and save its key.
 3. [Deposit](getting-started/deposit.md): fund the Hest Pools side, the Order Book side, or both.
 4. [Your First Trade](getting-started/first-trade.md): from the market list to an open position.
