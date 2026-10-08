@@ -1,46 +1,46 @@
-# Table of Contents
+# Table of contents
 
 * [Welcome to Hest](README.md)
 
 ## Markets
 
-* [Hest Pools](hest-pools.md)
-* [How Hest Pools Work](how-hest-pools-work.md)
-* [Hest Pools Pricing](hest-pools-pricing.md)
-* [Open a Market](open-a-market.md)
-* [Hest Pools Risks](hest-pools-risks.md)
-* [Order Book Markets](order-book-markets.md)
+* [Hest Pools](markets/hest-pools.md)
+* [How Hest Pools Work](markets/how-hest-pools-work.md)
+* [Hest Pools Pricing](markets/hest-pools-pricing.md)
+* [Open a Market](markets/open-a-market.md)
+* [Hest Pools Risks](markets/hest-pools-risks.md)
+* [Order Book Markets](markets/order-book-markets.md)
 
 ## Trading
 
-* [Order Types](order-types.md)
-* [Leverage and Liquidation](leverage-and-liquidation.md)
-* [Funding](funding.md)
-* [Fees](fees.md)
+* [Order Types](trading/order-types.md)
+* [Leverage and Liquidation](trading/leverage-and-liquidation.md)
+* [Funding](trading/funding.md)
+* [Fees](trading/fees.md)
 
 ## Super Intelligence
 
-* [SI Score](si-score.md)
-* [Risk Shield](risk-shield.md)
-* [Copilot](copilot.md)
+* [SI Score](super-intelligence/si-score.md)
+* [Risk Shield](super-intelligence/risk-shield.md)
+* [Copilot](super-intelligence/copilot.md)
 
 ## Getting Started
 
-* [Connect a Wallet](connect-a-wallet.md)
-* [Hest Trading Wallet](trading-wallet.md)
-* [Deposit](deposit.md)
-* [Your First Trade](first-trade.md)
-* [Withdraw](withdraw.md)
-* [Earnings](earnings.md)
+* [Connect a Wallet](getting-started/connect-a-wallet.md)
+* [Hest Trading Wallet](getting-started/trading-wallet.md)
+* [Deposit](getting-started/deposit.md)
+* [Your First Trade](getting-started/first-trade.md)
+* [Withdraw](getting-started/withdraw.md)
+* [Earnings](getting-started/earnings.md)
 
 ## Help
 
-* [FAQ](faq.md)
-* [Glossary](glossary.md)
-* [Security](security.md)
+* [FAQ](help/faq.md)
+* [Glossary](help/glossary.md)
+* [Security](help/security.md)
 
 ## Legal
 
-* [Risk Disclosure](risk-disclosure.md)
-* [Terms of Service](terms.md)
-* [Privacy Policy](privacy.md)
+* [Risk Disclosure](legal/risk-disclosure.md)
+* [Terms of Service](legal/terms.md)
+* [Privacy Policy](legal/privacy.md)
