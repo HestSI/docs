@@ -9,7 +9,7 @@ description: >-
 
 Risk Shield is the check that runs **before you click buy**, on every trade page, under the order form. It answers one question: _would a normal bad hour in this market liquidate this position?_ It updates live as you change leverage, side or market, and its verdict is repeated in the confirmation dialog before anything is signed.
 
-![Risk Shield on BTC: the verdict turns as leverage goes to 40x and back to 5x, then Copilot answers a question](<../.gitbook/assets/risk-shield (1).gif>)
+![Risk Shield on BTC: the verdict turns as leverage goes to 40x and back to 5x, then Copilot answers a question](../.gitbook/assets/risk-shield.gif)
 
 ## The Calculation
 
