@@ -62,6 +62,10 @@ The deposit dialog lists **You Send**, **Hest Fee (0.8%)**, **Network and Bridge
 
 **No Hest fee** applies when you already hold ETH on Robinhood Chain and send it straight to your Trading Wallet address for Hest Pools.
 
+## Referral Share
+
+If you joined through someone's referral link, nothing changes for you: your fees are exactly those above. Your referrer earns **10% of your Hest Pools fees**, paid out of Hest's part. See [Referrals](../getting-started/referrals.md).
+
 ## Withdrawals
 
 Hest charges **no withdrawal fee**.
