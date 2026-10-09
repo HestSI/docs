@@ -18,6 +18,7 @@ Share the link any way you like. The Referrals card can also draw your personal 
 
 * **10% of the Hest Pools trading fees** of everyone who joins through your link. Hest Pools charges 0.30% to open and 0.30% to close a position; every time one of your invitees pays such a fee, 10% of it is credited to you. The share comes out of Hest's part of the fee, so your invitees pay nothing extra.
 * Referral earnings are credited in WETH, appear under **Earnings** in Portfolio as "Referral fee share", and follow the same rules as every other earning: **locked for 7 days**, then reviewed by Hest and paid manually, with the transaction link shown when it is paid.
+* **Hest Pools fees only.** Order Book (Hyperliquid) trades and positions paid from a Whitelist Loan do not count toward referral earnings.
 * There is no limit on how many people you can invite or on how much you can earn.
 
 ## How Someone Counts as Your Invitee
