@@ -69,3 +69,11 @@ Times in the app are shown in your own time zone. Official dates (launches, prog
 * X: [@HestSI](https://x.com/HestSI)
 * Discord: [discord.gg/hest](https://discord.gg/hest) (support tickets)
 * Legal: legal@hest.si
+
+## From Our Developers
+
+The math behind the SI Levels on Hest's charts is open source. [**chart-levels**](https://github.com/hest-si/chart-levels) is a zero-dependency library that reads support and resistance, the best-fit trend channel, expected daily range, volume nodes and RSI divergence from raw candles, with a one-call adapter for TradingView Lightweight Charts.
+
+[![chart-levels on a live BTC chart](.gitbook/assets/chart-levels.png)](https://github.com/hest-si/chart-levels)
+
+Use it, audit it, star it: [github.com/hest-si/chart-levels](https://github.com/hest-si/chart-levels).
