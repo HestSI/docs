@@ -21,6 +21,7 @@
 ## Super Intelligence
 
 * [SI Score](super-intelligence/si-score.md)
+* [SI Levels](super-intelligence/si-levels.md)
 * [Risk Shield](super-intelligence/risk-shield.md)
 * [Copilot](super-intelligence/copilot.md)
 
