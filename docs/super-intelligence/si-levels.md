@@ -12,15 +12,17 @@ Super Intelligence does not only score a market. It also reads the chart and dra
 | --- | --- |
 | **Support 1 / Support 2** | Price areas below the current price where selling has stopped before. Computed by clustering the swing lows and highs of the recent candles; the strongest two below the price are kept. |
 | **Resist 1 / Resist 2** | The same read above the price: areas where rallies have stalled before. |
-| **Trend channel** | A regression line through the recent closes, with a band two standard deviations wide on each side. The slope is the trend: rising, falling or flat. |
+| **Trend channel** | A regression line through the recent closes, with a band two standard deviations wide on each side. Super Intelligence tries several window lengths and keeps the one that explains the closes best (the highest R&sup2;); when no window fits well, the market is called a range instead of forcing a trend. |
+| **Trend line** | In a clear trend, the classic line through the last two higher lows (uptrend) or lower highs (downtrend), extended to the current bar. |
+| **Vol Node** | The price where the most volume traded in the recent window. Markets remember where the money changed hands; this level tends to attract and hold price. |
 | **24h Range** | The band the price is expected to stay inside for the next 24 hours with roughly 68% probability, from the market's own recent volatility. A calm market gets a narrow band, a violent one a wide band. |
 | **Worst 1h** | The price the market would hit if the worst 1-hour candle of the last 7 days repeated from here. This is the same candle Risk Shield checks your liquidation against. |
 | **Your Liq** | Only when you have an order drafted: the liquidation price of that draft. If this line sits inside the Worst 1h move, one bad hour can close you. |
 
 ## Where It Lives
 
-- **The trade page.** The chart toolbar has a **Super Intelligence** toggle. Turn it off and the chart is a plain chart again; the choice is remembered.
-- **The Super Intelligence page.** Every market's page shows a clean analysis chart with the levels always on, plus a summary row: trend and slope, support and resistance, the 24h range, RSI and ATR.
+- **The trade page.** The chart toolbar has an **SI** toggle. It starts off; turn it on and the analysis is drawn over the chart, and the choice is remembered.
+- **The Super Intelligence page.** Every market's page shows a clean analysis chart with the levels always on, plus a summary row: trend, slope and regression fit, support and resistance, the Vol Node, the 24h range, RSI and ATR, and an RSI divergence flag when price makes a new extreme that RSI refuses to confirm.
 
 Copilot and the SI Brief read the same levels, so when the text says "support near a price", that price is the line on the chart.
 
@@ -28,10 +30,11 @@ Copilot and the SI Brief read the same levels, so when the text says "support ne
 
 Everything is computed from the market's real candles, in code, at the moment you look:
 
-- Support and resistance come from pivot points (local highs and lows) clustered together when they sit within half an ATR of each other. More touches and more recent touches make a level stronger.
-- The trend channel is a least-squares regression over the recent closes.
-- The 24h range scales the standard deviation of recent returns to one day.
-- RSI 14 and ATR 14 use their standard definitions.
+- Support and resistance come from pivot points (local highs and lows) clustered together when they sit within half an ATR of each other. More touches, more recent touches and more volume behind them make a level stronger.
+- The trend channel is a least-squares regression over the recent closes; several window lengths compete and the best R&sup2; wins.
+- The 24h range uses an exponentially weighted volatility of recent returns (the RiskMetrics convention), scaled to one day, so it reacts to a regime change faster than a flat average.
+- The Vol Node is a volume profile over the recent window: the price bucket with the most traded volume.
+- RSI 14 (Wilder smoothing) and ATR 14 use their standard definitions.
 
 With too little candle history the layer hides instead of guessing: a market that is a few hours old shows no levels, because there is nothing honest to draw.
 
