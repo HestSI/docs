@@ -27,7 +27,7 @@
 
 ## Getting Started
 
-* [Whitelist and Your First Loan](getting-started/whitelist-loan.md)
+* [Your First Hest Loan](getting-started/whitelist-loan.md)
 * [Referrals](getting-started/referrals.md)
 * [Connect a Wallet](getting-started/connect-a-wallet.md)
 * [Hest Trading Wallet](getting-started/trading-wallet.md)
