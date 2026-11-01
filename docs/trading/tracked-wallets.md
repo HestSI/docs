@@ -35,7 +35,7 @@ Each wallet opens into two lists, read live from each venue and never mixed:
 * **Hest Pools:** the wallet's most recent positions, with market, side and leverage, size, entry, exit, PNL and the time it opened or closed. Open positions show **Open** instead of an exit. Amounts are converted to dollars at the live SOL or ETH price of that market.
 * **Hyperliquid:** the wallet's most recent fills, with market, action, size, price, closed PNL and time, straight from Hyperliquid's public API.
 
-A wallet with a Hest profile shows its **username and picture**. Wallets without one show a letter avatar made from the address. Each wallet's lists are refreshed about once a minute while you are looking at them.
+A wallet with a Hest profile shows its **username and picture**. Wallets without one show a letter avatar made from the address. Each read is kept for about a minute, so opening the card again, or going back to a trade page, gives you a fresh one.
 
 ## On the Chart
 
@@ -63,7 +63,7 @@ If you would rather not be followed, keep in mind that both venues are public by
 | Wallets tracked         | 12                                                                  |
 | Positions read          | The 60 most recent per wallet, the newest 25 shown                  |
 | Hyperliquid fills read  | The 80 most recent per wallet, the newest 25 shown                 |
-| Refresh                 | About once a minute per wallet                                      |
+| How long a read is kept | About a minute per wallet                                           |
 | Lookups                 | Rate limited per IP address. Too many at once return "Too many lookups." |
 
 ## Read Next
