@@ -20,16 +20,16 @@ No. Anything claiming to be a Hest token without an official announcement on hes
 
 <summary>What is the difference between Hest Pools and Order Book markets?</summary>
 
-|              | Hest Pools                                          | Order Book                                                                 |
-| ------------ | --------------------------------------------------- | -------------------------------------------------------------------------- |
-| Tokens       | Robinhood Chain memecoins Hyperliquid does not list | BTC, ETH, SOL, 180+ more, and the Robinhood Chain tokens Hyperliquid lists |
-| Counterparty | Hest                                                | Other traders on Hyperliquid                                               |
-| Price        | Worse of the Uniswap pool's spot and 15-minute TWAP | Hyperliquid's order book                                                   |
-| Collateral   | WETH on Robinhood Chain                             | USDC on Hyperliquid                                                        |
-| Fees         | 0.30% to open, 0.30% to close                       | Hyperliquid's fee plus the 0.05% Hest fee                                  |
-| Leverage     | Up to 5x                                            | Up to the market's maximum                                                 |
-| Funding      | None                                                | Hourly                                                                     |
-| Profits      | To Earnings, locked 7 days, then paid               | Settled immediately on Hyperliquid                                         |
+|              | Hest Pools                                                        | Order Book                                                                             |
+| ------------ | ----------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| Tokens       | Solana and Robinhood Chain memecoins Hyperliquid does not list    | BTC, ETH, SOL, 180+ more, and the Solana and Robinhood Chain tokens Hyperliquid lists  |
+| Counterparty | Hest                                                              | Other traders on Hyperliquid                                                           |
+| Price        | Worse of the token's DEX pool spot and its 15-minute TWAP         | Hyperliquid's order book                                                               |
+| Collateral   | SOL on Solana markets, WETH on Robinhood Chain markets            | USDC on Hyperliquid                                                                    |
+| Fees         | 0.30% to open, 0.30% to close                                     | Hyperliquid's fee plus the 0.05% Hest fee                                              |
+| Leverage     | Up to 5x                                                          | Up to the market's maximum                                                             |
+| Funding      | None                                                              | Hourly                                                                                 |
+| Profits      | To Earnings, locked 7 days, then paid                             | Settled immediately on Hyperliquid                                                     |
 
 The **Route** column in Markets shows which is which.
 
@@ -37,9 +37,17 @@ The **Route** column in Markets shows which is which.
 
 <details>
 
-<summary>Why are CASHCAT and PONS on the Order Book and not on Hest Pools?</summary>
+<summary>Why are PUMP, WIF, CASHCAT and PONS on the Order Book and not on Hest Pools?</summary>
 
-Hyperliquid lists them, which gives them real two-sided liquidity. Robinhood Chain tokens that Hyperliquid lists trade on its order book through Hest, and cannot be opened as Hest Pools markets.
+Hyperliquid lists them, which gives them real two-sided liquidity. A memecoin Hyperliquid lists trades on its order book through Hest and cannot be opened as a Hest Pools market. Hest Pools is for the ones it does not list.
+
+</details>
+
+<details>
+
+<summary>Which chains does Hest trade?</summary>
+
+Hest Pools markets run on **Solana** (PumpSwap pools, SOL collateral) and on **Robinhood Chain** (Uniswap v3 pools, WETH collateral). Order Book markets run on **Hyperliquid**, which lists majors and the memecoins of several chains, Solana and Robinhood Chain among them. The **Solana** filter in Markets shows both routes for Solana in one list.
 
 </details>
 
@@ -97,7 +105,7 @@ Click **Show Key** in Portfolio or in the wallet menu and sign with your connect
 
 <summary>Can I use my Trading Wallet outside Hest?</summary>
 
-Yes. Import the key into any EVM wallet that supports private-key import. You can then move its ETH and WETH on Robinhood Chain and manage its Order Book positions directly on Hyperliquid. Hest Pools positions are managed only through Hest.
+Yes. Import the key into any EVM wallet that supports private-key import. You can then move its ETH and WETH on Robinhood Chain and manage its Order Book positions directly on Hyperliquid. If you have a Solana Trading Wallet, **Show Key** also gives you its key, which Phantom, Solflare and Backpack accept. Hest Pools positions themselves are managed only through Hest.
 
 </details>
 
@@ -123,7 +131,7 @@ Relay refunds a failed deposit on the network you sent from: to your connected w
 
 <summary>Why do I need ETH on Robinhood Chain?</summary>
 
-Opening a Hest Pools position, applying to open a market and withdrawing from the Hest Pools side are Robinhood Chain transactions from your Trading Wallet, paid in ETH (not WETH). About $1 of ETH covers hundreds of them. Closing a Hest Pools position costs you nothing: Hest sends the refund.
+Opening a Hest Pools position, applying to open a market and withdrawing from the Hest Pools side are Robinhood Chain transactions from your Trading Wallet, paid in ETH (not WETH). About $1 of ETH covers hundreds of them. On Solana markets the same role is played by SOL, out of the balance you trade with. Closing a position costs you nothing on either chain: Hest sends the refund.
 
 </details>
 
@@ -157,7 +165,7 @@ Close your position, if you have one: closing always works, and liquidation, tak
 
 <summary>Why are my Hest Pools profits locked?</summary>
 
-Profits on Hest Pools go to your Earnings balance, are locked for 7 days, then reviewed and paid by Hest in WETH to your Trading Wallet, with a transaction link. The lock protects the markets from manipulation. Losses settle immediately, and the remaining collateral returns to your Trading Wallet at once. See [Earnings](../getting-started/earnings.md).
+Profits on Hest Pools go to your Earnings balance, are locked for 7 days, then reviewed and paid by Hest to your Trading Wallet, in SOL or WETH depending on the market, with a transaction link. The lock protects the markets from manipulation. Losses settle immediately, and the remaining collateral returns to your Trading Wallet at once. See [Earnings](../getting-started/earnings.md).
 
 </details>
 
@@ -165,7 +173,7 @@ Profits on Hest Pools go to your Earnings balance, are locked for 7 days, then r
 
 <summary>My closed position shows as closing. Is my refund lost?</summary>
 
-No. The settlement amount was fixed when you closed. If the refund transaction could not be sent at once, the engine retries every minute until it is confirmed on Robinhood Chain.
+No. The settlement amount was fixed when you closed. If the refund transaction could not be sent at once, the engine retries every minute until it is confirmed on chain.
 
 </details>
 
@@ -207,7 +215,7 @@ The largest 1-hour candle of the last 7 days. If your liquidation distance is sm
 
 <summary>What is the minimum order?</summary>
 
-$10 on Order Book markets, a Hyperliquid rule (reduce-only orders are exempt). On Hest Pools the minimum margin is 0.002 WETH.
+$10 on Order Book markets, a Hyperliquid rule (reduce-only orders are exempt). On Hest Pools the minimum margin is 0.05 SOL on Solana markets and 0.002 WETH on Robinhood Chain markets. The order button shows the minimum for the market you are on.
 
 </details>
 
@@ -228,6 +236,14 @@ No. On a Hest Pools position or an isolated Order Book position, your loss is li
 </details>
 
 ## Help
+
+<details>
+
+<summary>Can I follow another wallet's trades?</summary>
+
+Yes. Paste its address into **Tracked Wallets** in Portfolio and you see its Hest Pools positions and its Hyperliquid fills, listed separately, with markers on the chart where it opened and closed. There is no public feed of anyone's trades; you see a wallet only when you ask for its address. See [Tracked Wallets](../trading/tracked-wallets.md).
+
+</details>
 
 <details>
 

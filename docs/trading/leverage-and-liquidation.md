@@ -20,7 +20,7 @@ Choose it with the leverage control in the order panel. Presets show the common 
 * **Cross:** all your free USDC backs all your cross positions. A losing position can draw on the rest of your balance before it is liquidated; a winning one supports the others.
 * **Isolated:** only the margin assigned to this position is at risk. Liquidation comes sooner, but the rest of your balance is untouched.
 
-Hest Pools positions are always isolated: each position has its own WETH margin and can lose at most that margin.
+Hest Pools positions are always isolated: each position has its own margin, in SOL on a Solana market and in WETH on a Robinhood Chain market, and can lose at most that margin.
 
 ## Maintenance Margin
 
@@ -84,7 +84,7 @@ closing fee     = 0.30% × position value at exit
 liquidation fee = 1% × position value at entry
 ```
 
-The return is sent in WETH to your Trading Wallet at once and can never be negative. Example: a 3x long with $500 of margin ($1,500 position) liquidated exactly at its liquidation price returns $500 − $410 − $3.27 − $15.00 = **$71.73**. If the price gaps past the liquidation price between two checks, the return is smaller, down to zero. See [How Hest Pools Work](../markets/how-hest-pools-work.md#worked-example).
+The return is sent to your Trading Wallet at once, in the market's own collateral, and can never be negative. Example: a 3x long with $500 of margin ($1,500 position) liquidated exactly at its liquidation price returns $500 − $410 − $3.27 − $15.00 = **$71.73**. If the price gaps past the liquidation price between two checks, the return is smaller, down to zero. See [How Hest Pools Work](../markets/how-hest-pools-work.md#worked-example).
 {% endtab %}
 {% endtabs %}
 

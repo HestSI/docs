@@ -1,5 +1,5 @@
 ---
-description: Withdraw from either side of your Trading Wallet to the wallet you signed in with. Destinations, minimums, fees, timing, statuses and what happens when something fails.
+description: Withdraw from any side of your Trading Wallet to the wallet you signed in with. Destinations, minimums, fees, timing, statuses and what happens when something fails.
 ---
 
 # Withdraw
@@ -11,7 +11,7 @@ If you signed in with Google, withdrawals go to the **withdrawal address** you s
 ## How to Withdraw
 
 1. Click **Withdraw** in Portfolio (or in the wallet menu at the top right).
-2. Choose the side: **Hest Pools** or **Order Book**. The dialog shows your live balances.
+2. Choose the side: **Hest Pools**, **Order Book** or **Solana**. The dialog shows your live balances.
 3. Enter the amount, or click **Max**.
 4. Click **Review Withdrawal**. Hest checks the amount against your live balance and shows **You Withdraw**, the network, bridge or Hyperliquid fee, **Hest Fee $0.00**, **You Receive** and **Arrives In**.
 5. Click **Confirm Withdrawal**. The dialog follows it until it settles, with a transaction link. The withdrawal is also listed under **Deposits and Withdrawals** in Portfolio.
@@ -28,6 +28,19 @@ If you signed in with Google, withdrawals go to the **withdrawal address** you s
 | Costs | Robinhood Chain network fee, plus Relay's fee when bridged |
 
 Bridged withdrawals are protected in two ways: the Relay route is checked field by field before use (recipient, amount, network, output token), and if the amount you would receive drops by more than 1% between review and confirmation, you are asked to review the new amount and confirm again.
+
+## Solana Side
+
+| | |
+| --- | --- |
+| Asset | SOL from your Solana Trading Wallet |
+| Receive On | Arbitrum, Ethereum or Base |
+| Delivered | As ETH to your connected wallet, bridged by Relay |
+| Gas reserve | 0.003 SOL stays in the wallet for network fees. **Max** takes this into account. |
+| Costs | The Solana network fee plus Relay's fee, quoted before you confirm |
+| Time | Usually under a minute |
+
+Solana withdrawals leave as SOL and arrive as ETH on an EVM network, because your connected wallet is an EVM wallet. If you want to keep SOL instead, use **Show Key** and move it yourself from the Solana Trading Wallet.
 
 ## Order Book Side (Hyperliquid)
 
@@ -72,5 +85,5 @@ If you need help, open a ticket on [Discord](https://discord.gg/hest).
 
 ## What You Cannot Withdraw
 
-* **Margin that backs open positions or resting orders.** On Hest Pools it is held in the collateral wallet until the position closes; on the Order Book, Hyperliquid reserves it.
-* **Your [Earnings](earnings.md) balance.** Profits and owner shares are paid by Hest into your Trading Wallet after their 7-day lock and review. Once paid, they are ordinary WETH you can withdraw.
+* **Margin that backs open positions or resting orders.** On Hest Pools it is held in the collateral wallet of that chain until the position closes; on the Order Book, Hyperliquid reserves it.
+* **Your [Earnings](earnings.md) balance.** Profits and owner shares are paid by Hest into your Trading Wallet after their 7-day lock and review, in SOL or WETH depending on the market. Once paid, they are ordinary funds you can withdraw.

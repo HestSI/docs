@@ -14,7 +14,7 @@ The data controller for the Services is Hest Super Intelligence, reachable at le
 
 ## 2. Information We Collect
 
-**Account and wallet data.** The public address of the wallet you connect and sign in with, the network it is on, your sign-in records, the address of the Trading Wallet Hest creates for you, and the activity tied to these addresses on the Services: orders, positions, deposits, withdrawals, Earnings and their payment, market applications and seeds, and builder-fee approvals. Much of this is public on Robinhood Chain, Hyperliquid and the other networks you use; Hest keeps its own records to show you your account and to run the Services.
+**Account and wallet data.** The public address of the wallet you connect and sign in with, the network it is on, your sign-in records, the addresses of the Trading Wallets Hest creates for you, including the Solana address, and the activity tied to these addresses on the Services: orders, positions, deposits, withdrawals, Earnings and their payment, market applications and seeds, and builder-fee approvals. Much of this is public on Solana, Robinhood Chain, Hyperliquid and the other networks you use; Hest keeps its own records to show you your account and to run the Services.
 
 **Sign in with Google.** If you sign in with Google, we receive your Google account ID, email address and name from Google, together with the withdrawal address you set and any change you make to it. We use them only to create and secure your Hest account, to sign you in, to send your withdrawals to the address you chose, and to confirm sensitive actions such as showing your Trading Wallet key. We do not sell this data, share it with third parties, or use it for advertising. Hest's use of information received from Google follows the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the Limited Use requirements. Hest does not access your Gmail, contacts, files or any other Google data.
 
@@ -77,7 +77,7 @@ Hest's infrastructure providers may process data in countries other than yours, 
 
 Account and trading records tied to your wallet address or Google account, including your Trading Wallet, your Google account ID, email address and withdrawal address, are kept while the account has activity on the Services and for as long as required by law or to resolve disputes. Raw usage events are aggregated and the raw rows deleted on a rolling basis after 90 days. Copilot messages are kept for 30 days for quality and abuse review, then deleted or anonymised. Infrastructure logs containing IP addresses are kept for no more than 30 days. Support communications are kept for 2 years.
 
-On-chain data, including your wallet address and transactions on Robinhood Chain and Hyperliquid, is public by nature and cannot be deleted by Hest.
+On-chain data, including your wallet addresses and transactions on Solana, Robinhood Chain and Hyperliquid, is public by nature and cannot be deleted by Hest.
 
 ## 8. Your Rights and Choices
 

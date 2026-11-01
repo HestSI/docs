@@ -18,11 +18,11 @@ Please read these Terms of Service (the "Terms") carefully. They are a binding a
 
 **Google Account** means a Google account you use to sign in to the Interface instead of a Connected Wallet. It identifies you, and withdrawals are sent only to the **Withdrawal Address**: the wallet address you set on your account. References in these Terms to your Connected Wallet as the destination of withdrawals mean, for accounts signed in with a Google Account, the Withdrawal Address.
 
-**Trading Wallet** means the wallet Hest creates for you after you sign in, which holds your deposits and from which your trades are placed. Hest keeps a copy of its private key, as described in section 2.1.
+**Trading Wallet** means the wallet or wallets Hest creates for you after you sign in, which hold your deposits and from which your trades are placed, including the separate Solana address Hest creates for Solana Hest Pool Markets. Hest keeps a copy of each private key, as described in section 2.1.
 
 **Order Book Markets** means perpetual markets traded on the Hyperliquid protocol's order book from the Hyperliquid account of your Trading Wallet, and executed, margined and settled by Hyperliquid under Hyperliquid's own terms.
 
-**Hest Pool Markets** means perpetual markets on Robinhood Chain tokens in which Hest is the counterparty, priced from the token's Uniswap pools on Robinhood Chain and collateralised in WETH.
+**Hest Pool Markets** means perpetual markets on Solana or Robinhood Chain tokens in which Hest is the counterparty, priced from the token's own decentralised exchange pools on that network and collateralised in SOL on Solana and in WETH on Robinhood Chain.
 
 **Market Opener** means a user whose application to open a Hest Pool Market has been accepted by Hest and who has provided the market's seed.
 
@@ -30,7 +30,7 @@ Please read these Terms of Service (the "Terms") carefully. They are a binding a
 
 **Super Intelligence** or **SI** means Hest's automated market analysis, including the SI Score, Risk Shield and Copilot.
 
-**Digital Assets** means USDC, ETH, WETH and any other token supported by the Services.
+**Digital Assets** means USDC, ETH, WETH, SOL and any other token supported by the Services.
 
 ## 2. Nature of the Services
 
@@ -72,7 +72,7 @@ Please read these Terms of Service (the "Terms") carefully. They are a binding a
 
 ## 5. Hest Pool Markets
 
-5.1 **Hest as counterparty.** When you open a position on a Hest Pool Market, Hest takes the other side. Every open and close is priced at the less favourable to you of the token's spot price and its 15-minute time-weighted average price (TWAP) on its Uniswap pools on Robinhood Chain. Hest does not guarantee that this price reflects any price at which you could trade elsewhere.
+5.1 **Hest as counterparty.** When you open a position on a Hest Pool Market, Hest takes the other side. Every open and close is priced at the less favourable to you of the token's spot price and its 15-minute time-weighted average price (TWAP) on its decentralised exchange pools, where that average is read from the pool itself on Robinhood Chain and compiled by Hest from its own periodic price samples on Solana. Hest does not guarantee that this price reflects any price at which you could trade elsewhere.
 
 5.2 **Settlement.** When a position closes at a loss, the loss is retained and the remaining collateral is returned to your Trading Wallet. When a position closes at a profit, the collateral is returned to your Trading Wallet and the profit is credited to your Earnings.
 
@@ -80,7 +80,7 @@ Please read these Terms of Service (the "Terms") carefully. They are a binding a
 
 5.4 **Limits and parameters.** Each Hest Pool Market has a capacity. Position size and open interest are capped as described in [How Hest Pools Work](../markets/how-hest-pools-work.md). Hest may change market parameters (maximum leverage, capacity, caps, fees, maintenance margin, price sources), a market may pause automatically on abnormal price moves, and Hest may pause or close a market whose token no longer meets the listing criteria, whose price source fails, or where Hest reasonably suspects manipulation.
 
-5.5 **Opening a market.** You may apply to open a Hest Pool Market for a token that meets the criteria published in [Open a Market](../markets/open-a-market.md) by paying the listing fee and providing a seed in WETH. Hest reviews every application and may reject any application; if it does, the listing fee and the seed are refunded.
+5.5 **Opening a market.** You may apply to open a Hest Pool Market for a Robinhood Chain token that meets the criteria published in [Open a Market](../markets/open-a-market.md) by paying the listing fee and providing a seed in WETH. Hest opens Solana Hest Pool Markets itself, without an applicant or a seed. Hest reviews every application and may reject any application; if it does, the listing fee and the seed are refunded.
 
 5.6 **Market Opener terms.** The seed bears the market's losses first. In return the Market Opener receives a share of the market's trading fees and of its profit, as described in [Open a Market](../markets/open-a-market.md), credited to Earnings and paid under section 5.3. The seed is locked for 7 days; its value at withdrawal includes the unrealised profit and loss of open positions; and withdrawing the seed ends the Market Opener's shares. The fee and profit shares are not a guarantee of income and may be suspended if the Market Opener breaches these Terms.
 
@@ -88,9 +88,9 @@ Please read these Terms of Service (the "Terms") carefully. They are a binding a
 
 6.1 Fees are shown in the Interface before you confirm and are described in [Fees](../trading/fees.md). Hest may change fees with notice on the official channels. Fees on Order Book Markets consist of Hyperliquid's own fees plus Hest's builder fee. Hest charges a deposit fee and no withdrawal fee.
 
-6.2 You are responsible for network (gas) fees, including ETH for transactions from your Trading Wallet on Robinhood Chain, and for Relay's fees.
+6.2 You are responsible for network (gas) fees, including ETH for transactions from your Trading Wallet on Robinhood Chain and SOL for transactions from your Solana Trading Wallet, and for Relay's fees.
 
-6.3 Trading fees are collected in the collateral of the market (USDC on Order Book Markets, WETH on Hest Pool Markets) and are non-refundable once an order is executed, except as stated in section 5.5.
+6.3 Trading fees are collected in the collateral of the market (USDC on Order Book Markets, SOL or WETH on Hest Pool Markets) and are non-refundable once an order is executed, except as stated in section 5.5.
 
 ## 7. Taxes
 
@@ -127,11 +127,11 @@ Hest may restrict, suspend or terminate access to the Interface for any address 
 
 10.2 Hest grants you a limited, revocable, non-exclusive, non-transferable licence to use the Interface for its intended purpose in accordance with these Terms. You may not copy, modify, distribute, sell or lease any part of the Services except as permitted by an open-source licence.
 
-10.3 Third-party names and logos, including Hyperliquid and Robinhood, belong to their owners. Their appearance on the Interface describes integration and does not imply endorsement or partnership.
+10.3 Third-party names and logos, including Hyperliquid, Solana and Robinhood, belong to their owners. Their appearance on the Interface describes integration and does not imply endorsement or partnership.
 
 ## 11. Third-Party Services
 
-The Services depend on third parties that Hest does not control, including Hyperliquid, Robinhood Chain and the other supported networks, Relay, wallet providers, Uniswap and other DEX price sources, data providers, hosting and infrastructure providers. Your use of those services is governed by their own terms. Hest is not responsible for their availability, accuracy, security or conduct, and does not endorse any token that can be traded through the Services.
+The Services depend on third parties that Hest does not control, including Hyperliquid, Solana, Robinhood Chain and the other supported networks, Relay, wallet providers, PumpSwap, Uniswap and other DEX price sources, data providers, hosting and infrastructure providers. Your use of those services is governed by their own terms. Hest is not responsible for their availability, accuracy, security or conduct, and does not endorse any token that can be traded through the Services.
 
 ## 12. Beta Status and Availability
 

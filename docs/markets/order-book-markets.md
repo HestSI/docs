@@ -1,12 +1,12 @@
 ---
 description: >-
-  BTC, ETH, SOL and 180+ more perpetuals on Hyperliquid's order book, traded
-  from your Hest Trading Wallet. How orders are signed, sent and settled.
+  BTC, ETH, SOL, the Solana memecoins and 180+ more perpetuals on Hyperliquid's
+  order book, traded from your Hest Trading Wallet.
 ---
 
 # Order Book Markets
 
-Order Book markets trade on **Hyperliquid**, a perpetuals exchange with a fully on-chain central limit order book: BTC, ETH, SOL and 180+ more, plus the Robinhood Chain tokens Hyperliquid lists (today **CASHCAT** and **PONS**).
+Order Book markets trade on **Hyperliquid**, a perpetuals exchange with a fully on-chain central limit order book: BTC, ETH, SOL and 180+ more, including the **Solana memecoins** Hyperliquid lists (PUMP, WIF, BONK, POPCAT, FARTCOIN, PENGU, USELESS and others) and the Robinhood Chain tokens it lists (today **CASHCAT** and **PONS**).
 
 Hest is the interface and the risk layer on top of that book. Your orders are signed by your [Hest Trading Wallet](../getting-started/trading-wallet.md) and placed on Hyperliquid's order book; your positions and margin live in that wallet's own Hyperliquid account. Hest adds Super Intelligence, Risk Shield and Copilot, and charges a builder fee on each fill.
 
@@ -59,9 +59,11 @@ The approval can be revoked on Hyperliquid by the account owner, using the Tradi
 * **Thousand-unit markets.** Hyperliquid quotes some low-priced coins per 1,000 tokens (kPEPE, kBONK and others). Hest shows them per single token under the plain symbol and converts sizes and prices when it builds the order.
 * **Data refresh.** Market prices, volume, open interest and funding for the whole list update every 10 seconds; the order book and recent trades on the trade page refresh every 2 seconds, and the chart every 3 seconds.
 
-## Robinhood Chain Tokens on the Book
+## Solana and Robinhood Chain Tokens on the Book
 
-When Hyperliquid lists a Robinhood Chain token, it trades here with real two-sided liquidity and Hest marks it **Robinhood Chain** in the Markets table. Leverage on these markets is set by Hyperliquid and is usually low on new listings. Robinhood Chain memecoins that Hyperliquid does not list trade on [Hest Pools](hest-pools.md), and a token that Hyperliquid lists cannot be opened as a Hest Pools market.
+A memecoin Hyperliquid lists trades here with real two-sided liquidity, and Hest tags it in the Markets table: **SOLANA** or **ROBINHOOD CHAIN**. The **Solana** filter in Markets gathers every Solana market, these order book listings and the Solana [Hest Pools](hest-pools.md) markets together, so you can see both routes for the chain in one list.
+
+Leverage on memecoin markets is set by Hyperliquid and is usually low on new listings. Memecoins Hyperliquid does **not** list trade on Hest Pools, and a token Hyperliquid lists cannot be opened as a Hest Pools market.
 
 ## Paused Markets
 

@@ -26,6 +26,10 @@ Wallets installed in your browser are discovered automatically (EIP-6963), shown
 
 Any of these works for every network Hest uses: you sign in with an Ethereum-style (EVM) account, and Hest never asks your connected wallet to hold funds on a specific network.
 
+{% hint style="info" %}
+Sign-in is with an EVM account or with Google. Solana markets do not need a Solana wallet of your own: Hest creates a [Solana Trading Wallet](trading-wallet.md#the-solana-address) for you, and withdrawals from it are bridged back to your connected EVM wallet.
+{% endhint %}
+
 ## Sign In
 
 1. Click your wallet and approve the connection in the wallet's own window.
@@ -85,7 +89,7 @@ Open hest.si inside your wallet app's built-in browser (MetaMask, Phantom, Trust
 
 ## The Wallet Menu
 
-Once signed in, your short address sits at the top right. Hover or tap it for your Hyperliquid and Hest Pools balances, how many Robinhood Chain transactions your ETH still covers, and **Deposit**, **Withdraw**, **Show Key** (once you have a Trading Wallet) and **Disconnect**. **Portfolio** in the top menu opens the full account page.
+Once signed in, your short address sits at the top right. Hover or tap it for your Hyperliquid, Hest Pools and **Hest Pools · Solana** balances, how many Robinhood Chain transactions your ETH still covers, and **Deposit**, **Withdraw**, **Show Key** (once you have a Trading Wallet) and **Disconnect**. **Portfolio** in the top menu opens the full account page.
 
 ## Your Profile
 

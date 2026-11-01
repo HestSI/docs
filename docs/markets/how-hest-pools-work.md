@@ -6,20 +6,20 @@ description: >-
 
 # How Hest Pools Work
 
-A Hest Pools market is a perpetual contract on a Robinhood Chain memecoin, settled against Hest. Collateral is **WETH** on Robinhood Chain, prices come from the token's Uniswap v3 pool (see [Hest Pools Pricing](hest-pools-pricing.md)), and every position is opened, monitored and closed by the Hest Pools engine. This page follows one position through its whole life.
+A Hest Pools market is a perpetual contract on a memecoin, settled against Hest. Collateral is **SOL** on Solana markets and **WETH** on Robinhood Chain markets, prices come from the token's own DEX pool (see [Hest Pools Pricing](hest-pools-pricing.md)), and every position is opened, monitored and closed by the Hest Pools engine. This page follows one position through its whole life. Where the two chains differ, both are given; everything else is identical.
 
 ## Parameters
 
 | Parameter              | Value                                                                                  |
 | ---------------------- | -------------------------------------------------------------------------------------- |
-| Collateral             | WETH on Robinhood Chain                                                                |
+| Collateral             | SOL on Solana markets, WETH on Robinhood Chain markets                                 |
 | Leverage               | 1x to 5x, whole numbers. A market can have a lower maximum, shown next to its name.    |
 | Opening fee            | 0.30% of the order value                                                               |
 | Closing fee            | 0.30% of the position value at exit                                                    |
 | Maintenance margin     | 6% of the position value at entry                                                      |
 | Liquidation fee        | 1% of the position value at entry                                                      |
 | Funding                | None                                                                                   |
-| Minimum margin         | 0.002 WETH                                                                             |
+| Minimum margin         | 0.05 SOL on Solana markets, 0.002 WETH on Robinhood Chain markets                      |
 | Largest position       | 10% of the market's capacity, and 2% of the token's DEX liquidity, whichever is lower  |
 | Open interest per side | 50% of the market's capacity, and 10% of the token's DEX liquidity, whichever is lower |
 | Order types            | Market, with optional take profit and stop loss                                        |
@@ -27,7 +27,7 @@ A Hest Pools market is a perpetual contract on a Robinhood Chain memecoin, settl
 
 ## 1. Opening a Position
 
-You choose the side, the leverage and the **order value** (the size of the position in dollars). The order panel converts it to WETH at the live ETH price and computes:
+You choose the side, the leverage and the **order value** (the size of the position in dollars). The order panel converts it to the market's collateral at the live SOL or ETH price and computes:
 
 ```
 margin      = order value / leverage
@@ -39,14 +39,17 @@ When you confirm, the engine runs these checks in order. If any fails, nothing i
 
 1. The market is active (not paused or closed).
 2. Leverage is between 1x and the market's maximum.
-3. The margin is at least 0.002 WETH.
+3. The margin is at least the minimum for that chain: 0.05 SOL or 0.002 WETH.
 4. Spot and the 15-minute TWAP are read from the pool. If they are more than 10% apart, the market pauses and the order is rejected.
 5. The position fits the caps: the position limit, and the open interest left on your side of the market.
 6. The entry price is set: the higher of spot and TWAP for a long, the lower for a short.
 
-The engine then sends **margin plus opening fee** in WETH from your [Trading Wallet](../getting-started/trading-wallet.md) to the Hest Pools collateral wallet, a Hest wallet used only for Hest Pools. If your Trading Wallet holds ETH but not enough WETH, the missing amount is wrapped from ETH first, and a small amount of ETH is always kept back for network fees. Opening is one or two Robinhood Chain transactions, paid in ETH from your Trading Wallet.
+The engine then sends **margin plus opening fee** from your [Trading Wallet](../getting-started/trading-wallet.md) to the Hest Pools collateral wallet of that chain, a Hest wallet used only for Hest Pools:
 
-The position is open once the transfer is confirmed on Robinhood Chain, usually within seconds. One opening or closing per account runs at a time; a second request while the first is going through returns "Another trade is still going through. Wait a moment."
+* **Solana markets:** SOL from your Solana Trading Wallet. One transaction, whose fee is a fraction of a cent in SOL.
+* **Robinhood Chain markets:** WETH from your Trading Wallet. If it holds ETH but not enough WETH, the missing amount is wrapped from ETH first, and a small amount of ETH is always kept back for network fees. Opening is one or two transactions, paid in ETH.
+
+The position is open once the transfer is confirmed on chain, usually within seconds. One opening or closing per account runs at a time; a second request while the first is going through returns "Another trade is still going through. Wait a moment."
 
 {% hint style="info" %}
 If the collateral transfer is not confirmed within 5 minutes, the opening is marked as failed and no position exists. If the transfer did confirm, the position is opened by the engine on its next run.
@@ -62,7 +65,7 @@ The position is valued at its **mark**: the price it would close at now, which i
 
 The first condition met closes the position at the mark of that run. Because checks run once a minute, a fast market can move past your trigger before the position is closed; the close happens at the price of the run that caught it, not at the trigger price.
 
-Take profit and stop loss prices are stored in WETH per token. The dollar value shown next to them moves with ETH.
+Take profit and stop loss prices are stored in the market's own unit, SOL or WETH per token. The dollar value shown next to them moves with SOL or ETH.
 
 ## 3. Closing a Position
 
@@ -80,10 +83,10 @@ closing fee            = 0.30% × position value at exit
 | **Loss**   | margin − loss − closing fee             | nothing                                                            |
 | **Profit** | margin − closing fee                    | the full profit, locked for 7 days, then reviewed and paid by Hest |
 
-The refund is sent in WETH from the collateral wallet by Hest, so **closing costs you no network fee**. Losses and fees stay with Hest. Closing works even while a market is paused.
+The refund is sent by Hest from the collateral wallet, in the market's own collateral, so **closing costs you no network fee**. Losses and fees stay with Hest. Closing works even while a market is paused.
 
 {% hint style="warning" %}
-If the refund transaction cannot be sent at once, the position shows as closing and the engine retries every minute until the refund is confirmed on Robinhood Chain. The settlement amount is fixed at the moment you close and does not change while the refund is pending.
+If the refund transaction cannot be sent at once, the position shows as closing and the engine retries every minute until the refund is confirmed on chain. The settlement amount is fixed at the moment you close and does not change while the refund is pending.
 {% endhint %}
 
 ## 4. Liquidation
@@ -107,7 +110,7 @@ At liquidation the position is closed at the mark, the closing fee and a **liqui
 
 ## Worked Example
 
-A **3x long** with **$500 of margin** on a token whose pool shows spot $0.0100 and TWAP $0.0098. Amounts are settled in WETH; dollar figures assume the ETH price does not move during the trade.
+A **3x long** with **$500 of margin** on a token whose pool shows spot $0.0100 and TWAP $0.0098. Amounts are settled in the market's collateral, SOL or WETH; dollar figures assume the SOL or ETH price does not move during the trade.
 
 | Step                          | Calculation                   | Amount    |
 | ----------------------------- | ----------------------------- | --------- |
@@ -163,9 +166,9 @@ If the price gaps past the liquidation price between two engine runs, the loss i
 
 ## Capacity and Caps
 
-Every market has a **capacity**: the amount of open interest Hest is prepared to carry as counterparty. For markets opened through [Open a Market](open-a-market.md) it is set at 20% of the token's DEX liquidity, between $10,000 and $20,000, and fixed in WETH when the market opens. Hest can adjust it.
+Every market has a **capacity**: the amount of open interest Hest is prepared to carry as counterparty. For markets opened through [Open a Market](open-a-market.md) it is set at 20% of the token's DEX liquidity, between $10,000 and $20,000, and fixed in the market's collateral when the market opens. Markets Hest opens itself have the same kind of capacity, currently about $20,000 each. Hest can adjust it.
 
-The caps are computed in WETH from the capacity and from the pool's current DEX liquidity:
+The caps are computed in the market's collateral from the capacity and from the pool's current DEX liquidity:
 
 |                        | Formula                                  | Capacity $20,000, DEX liquidity $200,000 | Capacity $10,000, DEX liquidity $50,000 |
 | ---------------------- | ---------------------------------------- | ---------------------------------------- | --------------------------------------- |
@@ -178,7 +181,7 @@ Positions count toward open interest at their value at entry, and positions stil
 
 * **Trade page:** Spot, TWAP 15m, Capacity and DEX Liquidity in the panel next to the chart, with long and short usage. The order panel shows the liquidation price, order value, margin, fee and route before you confirm.
 * **Positions tab and Portfolio:** open Hest Pools positions with entry, mark, profit and loss, liquidation price and margin.
-* **Earnings tab in Portfolio:** each credited profit with its unlock countdown and, once paid, a link to the transaction on robin.etherscan.io.
+* **Earnings tab in Portfolio:** each credited profit with its unlock countdown and, once paid, a link to the transaction on solscan.io or robin.etherscan.io.
 
 ## Read Next
 

@@ -12,14 +12,14 @@ Every fee is shown before you confirm: in the order panel and confirmation dialo
 
 | Activity                                                | Hest fee                                                  | Other costs                                                                             |
 | ------------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| Hest Pools: open                                        | 0.30% of order value                                      | ETH network fee for the collateral transfer                                             |
+| Hest Pools: open                                        | 0.30% of order value                                      | Network fee for the collateral transfer: SOL on Solana, ETH on Robinhood Chain          |
 | Hest Pools: close                                       | 0.30% of position value at exit                           | None (the refund is sent by Hest)                                                       |
 | Hest Pools: liquidation                                 | 1% of position value at entry, plus the 0.30% closing fee | None                                                                                    |
 | Order Book: trade                                       | 0.05% builder fee on every fill                           | Hyperliquid's trading fee                                                               |
 | Deposit through Relay                                   | 0.8%                                                      | Relay's fee and network fees                                                            |
-| Deposit of ETH already on Robinhood Chain to Hest Pools | None                                                      | Network fee                                                                             |
+| Deposit straight to your own address (ETH on Robinhood Chain, SOL on Solana) | None                                 | Network fee                                                                             |
 | Withdrawal                                              | None                                                      | Network fees; Relay's fee when bridged; 1 USDC to Hyperliquid on Order Book withdrawals |
-| Open a Market                                           | $20 listing fee                                           | A seed of 10% of capacity (refunded with the fee if the application is rejected)        |
+| Open a Market (Robinhood Chain)                         | $20 listing fee                                           | A seed of 10% of capacity (refunded with the fee if the application is rejected)        |
 | Funding (Order Book)                                    | None                                                      | Paid or received hourly between traders                                                 |
 
 ## Hest Pools
@@ -30,7 +30,7 @@ Every fee is shown before you confirm: in the order panel and confirmation dialo
 | Closing fee     | 0.30% | Position value at exit (`value at entry × exit price / entry price`) | Deducted from the collateral returned to you |
 | Liquidation fee | 1%    | Position value at entry                                              | Deducted from the collateral returned to you |
 
-There is no maker or taker distinction and no funding. Fees are paid in WETH, the collateral of these markets. On a market opened by a user through [Open a Market](../markets/open-a-market.md), 15% of every opening and closing fee is credited to the market's owner; this comes out of Hest's fee, not on top of it.
+There is no maker or taker distinction and no funding. Fees are paid in the collateral of the market: SOL on Solana markets, WETH on Robinhood Chain markets. On a market opened by a user through [Open a Market](../markets/open-a-market.md), 15% of every opening and closing fee is credited to the market's owner; this comes out of Hest's fee, not on top of it.
 
 **Example.** A $1,500 position (3x on $500 of margin) pays $4.50 to open. Closed at +10%, its exit value is $1,650 and the closing fee is $4.95: **$9.45** in fees for the round trip, 0.63% of the entry value.
 
@@ -60,7 +60,7 @@ The deposit dialog lists **You Send**, **Hest Fee (0.8%)**, **Network and Bridge
 
 **Example.** Sending 1,000 USDC from Arbitrum to the Order Book side: the Hest fee is $8.00, and you receive about 992 USDC on Hyperliquid minus Relay's fee and network fees as quoted. If this is the account's first deposit, Hyperliquid keeps 1 USDC once to activate the account.
 
-**No Hest fee** applies when you already hold ETH on Robinhood Chain and send it straight to your Trading Wallet address for Hest Pools.
+**No Hest fee** applies when you send funds straight to your own Trading Wallet address: ETH on Robinhood Chain for Hest Pools, or SOL on Solana for Solana markets.
 
 ## Referral Share
 
@@ -74,12 +74,18 @@ Hest charges **no withdrawal fee**.
 | -------------------------------------------------- | ---------------------------------------------------------------------------------- |
 | Hest Pools, received on Robinhood Chain            | Network fee in ETH, quoted before you confirm                                      |
 | Hest Pools, received on Arbitrum, Ethereum or Base | Network fees on Robinhood Chain plus Relay's bridge fee, quoted before you confirm |
+| Solana, received on Arbitrum, Ethereum or Base     | The Solana network fee plus Relay's bridge fee, quoted before you confirm          |
 | Order Book                                         | 1 USDC, charged by Hyperliquid. Minimum withdrawal 2 USDC.                         |
 
 ## Opening a Market
 
-A **$20 listing fee** plus a **seed** of 10% of the market's capacity (at least $1,000), both paid in WETH. If the application is rejected, both are refunded in full. See [Open a Market](../markets/open-a-market.md).
+A **$20 listing fee** plus a **seed** of 10% of the market's capacity (at least $1,000), both paid in WETH. Applications are for Robinhood Chain tokens; Solana markets are opened by Hest. If the application is rejected, both are refunded in full. See [Open a Market](../markets/open-a-market.md).
 
-## Network Fees on Robinhood Chain
+## Network Fees
 
-Every Hest Pools opening, market application and Robinhood Chain withdrawal is a transaction from your Trading Wallet, paid in **ETH** (not WETH). Robinhood Chain fees are small: about $1 of ETH covers hundreds of transactions. When ETH is wrapped for you, or withdrawn with **Max**, a small reserve is always left in the Trading Wallet for these fees.
+Openings, market applications and withdrawals are transactions from your Trading Wallet, paid in the chain's native token:
+
+* **Robinhood Chain: ETH** (not WETH). Fees are small: about $1 of ETH covers hundreds of transactions. When ETH is wrapped for you, or withdrawn with **Max**, a small reserve is always left in the Trading Wallet for these fees.
+* **Solana: SOL**, out of the balance you trade with. A transaction costs a fraction of a cent, and 0.003 SOL stays behind when you withdraw with **Max**.
+
+Closing a Hest Pools position costs you no network fee: Hest sends the refund. Trading on Order Book markets costs no network fee either.

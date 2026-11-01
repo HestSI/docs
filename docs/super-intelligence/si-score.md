@@ -34,6 +34,18 @@ On Order Book markets the score is computed **live from the market itself**, fro
 | **Liquidity depth** | 24h traded volume                                            | Rises on a logarithmic scale: every tenfold increase in volume adds the same number of points. Deep markets absorb liquidations; thin ones gap through them. |
 | **Worst candle**    | The worst 1-hour candle of the last 7 days                   | Falls as the candle grows. This is the same number Risk Shield uses.                                                                                         |
 
+On Hest Pools markets the score is computed the same way, from a different set of five factors: the risk of a young token lives in its pool, not in positioning.
+
+| Factor                | Input                                                 | How it scores                                                                                                                      |
+| --------------------- | ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| **DEX liquidity**     | The dollar value of the token's pool                  | Rises with depth. Deep pools are expensive to push, so both the spot price and the 15-minute TWAP are harder to manipulate.        |
+| **Volatility**        | Today's price change and the worst 1-hour candle      | Falls with both, as on Order Book markets.                                                                                        |
+| **Spot vs TWAP**      | How far spot sits from the 15-minute TWAP right now   | Falls as the gap grows. The gap is also what you pay on a fill, and above 10% the market pauses itself.                           |
+| **Trading activity**  | 24h volume in the pool                                | Rises with volume. Active pools reprice smoothly; quiet ones jump when someone finally trades.                                    |
+| **Worst candle**      | The worst 1-hour candle of the last 7 days            | Falls as the candle grows. The same number Risk Shield uses.                                                                      |
+
+The Super Intelligence page names the set it used: **Market Read** or **Pool Read**. Nothing that cannot be measured from live data, such as the team behind a token or its social buzz, is part of the score.
+
 ### The Worst Candle
 
 The worst candle (shown as **Max Wick 7d** in Risk Shield) is read from the market's 1-hour candles over the last 7 days. For each candle Hest takes the larger of:
@@ -44,7 +56,7 @@ The worst candle (shown as **Max Wick 7d** in Risk Shield) is read from the mark
 and keeps the largest value across the week, rounded to 0.1%. The value is refreshed every 10 minutes.
 
 * **Order Book markets:** the candles come from Hyperliquid.
-* **Hest Pools markets:** Hest reads each pool's price on Robinhood Chain every minute and keeps its own hourly candles; the hourly candles from GeckoTerminal are used too, and the larger of the two figures counts. A market listed less than 7 days ago shows how many hours it covers, for example **(last 6h)**.
+* **Hest Pools markets:** Hest reads each pool's price on chain every minute, on Solana and on Robinhood Chain alike, and keeps its own hourly candles; the hourly candles from GeckoTerminal are used too, and the larger of the two figures counts. A market listed less than 7 days ago shows how many hours it covers, for example **(last 6h)**.
 * **If a new reading fails,** the last good figure is used and shows its age, for example **(3h ago)**. With no figure at all it reads **Unavailable**, Risk Shield gives no verdict and the score leaves the candle out. Hest never fills the gap with an estimate.
 
 ### Data and Refresh

@@ -29,7 +29,7 @@ The amount is drawn at random when the account is created and shown immediately.
 
 ## The Rules
 
-* **Where you can use it.** On Hest Pools markets only. When you open a position you choose **Pay With: Wallet** or **Hest Loan**.
+* **Where you can use it.** On Hest Pools markets only, on Solana and on Robinhood Chain alike. When you open a position you choose **Pay With: Wallet** or **Hest Loan**. A loan position moves no funds on chain: it is an account at Hest, so it needs no deposit and no gas.
 * **It is a loan, not a gift.** The loan itself can never be withdrawn. It exists to let you trade without depositing first.
 * **Profits above the loan are yours.** Whatever your loan account holds beyond the original loan amount can be requested as a withdrawal.
 * **Withdrawal requests take 7 days.** Each request is locked for 7 days, then reviewed by Hest and paid manually to your connected wallet (or, for Google accounts, to your withdrawal address). You see the status and the countdown in Portfolio, and the transaction link once it is paid.

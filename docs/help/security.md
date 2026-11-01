@@ -14,8 +14,9 @@ Hest holds a copy of your Trading Wallet key so it can trade for you without a w
 | --------------------------------------- | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Your connected wallet                   | Only you         | Hest never holds its key and never asks for it. It only signs messages: sign-in and key display.                                                           |
 | Trading Wallet on Robinhood Chain       | You and Hest     | Hest signs only actions you start in the interface. Withdrawals can only go to your connected wallet.                                                      |
+| Solana Trading Wallet                   | You and Hest     | A separate address and key, created the same way. Hest signs only Solana Hest Pools transfers and withdrawals you start.                                  |
 | Trading Wallet's Hyperliquid account    | You and Hest     | Hest signs only trading actions there. Withdrawals can only go to your connected wallet.                                                                   |
-| Collateral of open Hest Pools positions | Hest             | Held in a Hest wallet used only for Hest Pools. Every minute its balance is checked against the collateral and refunds owed to open and closing positions. |
+| Collateral of open Hest Pools positions | Hest             | Held in a Hest wallet used only for Hest Pools, one per chain. Every minute each balance is checked against the collateral and refunds owed to open and closing positions. |
 | Earnings                                | Hest, until paid | Paid by Hest from its treasury into your Trading Wallet after review.                                                                                      |
 
 ## Sign-In
@@ -27,7 +28,7 @@ Hest holds a copy of your Trading Wallet key so it can trade for you without a w
 
 ## The Trading Wallet Key
 
-* **Created safely.** When your Trading Wallet is created, the key is stored and read back to confirm it matches the new address before it is shown to you or used. If the check fails, nothing is created.
+* **Created safely.** When a Trading Wallet is created, EVM or Solana, the key is stored and read back to confirm it matches the new address before it is shown to you or used. If the check fails, nothing is created. The stored key is also kept in a sealed encrypted backup, so a database failure cannot lose it.
 * **Shown only to you, only with your signature.** After creation, the key is shown only when you sign a separate message ("Reveal my Hest Trading Wallet private key.") with the wallet you signed in with. A signature from any other wallet is refused. The key can be shown at most **5 times per hour**.
 * **Every use is logged.** Each time the key is used to sign or is shown, the use is recorded with its purpose. Repeated failed attempts to show a key raise an alert to the Hest team.
 * **Checked before every use.** Before signing anything, Hest checks that the stored key still opens your Trading Wallet address. If it does not, nothing is signed.
@@ -40,6 +41,7 @@ Hest signs with your Trading Wallet key only for actions you start in the interf
 | --------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | Hyperliquid     | Orders, cancels, leverage and margin-mode changes, TWAP orders and TWAP cancels, and the one-time builder fee approval (maximum 0.05%) |
 | Robinhood Chain | Hest Pools collateral transfers when you open a position, market application payments, and withdrawals to your connected wallet        |
+| Solana          | Hest Pools collateral transfers when you open a position, and withdrawals bridged to your connected wallet                             |
 
 The trading endpoint refuses every Hyperliquid action that moves funds, such as transfers to other accounts or agent approvals. Every order it signs carries Hest's builder fee and nothing else is added. Orders are submitted to Hyperliquid by your own browser.
 
@@ -77,7 +79,7 @@ Exceeding a rate limit returns a short message such as "Too many orders. Wait a 
 
 ## If Something Goes Wrong
 
-1. **Your Trading Wallet key may be exposed:** withdraw everything from both sides to your connected wallet immediately. Anyone with the key can move funds too, so speed matters.
+1. **Your Trading Wallet key may be exposed:** withdraw everything, from every side, to your connected wallet immediately. Anyone with the key can move funds too, so speed matters.
 2. **Your connected wallet may be compromised:** disconnect from Hest, move your funds to a new wallet, and open a ticket. Withdrawals from your Trading Wallet go to the connected wallet, so the Hest team needs to know.
 3. **Your Google account may be compromised** (if you sign in with Google): secure it with Google, check **Withdrawal Address** for a change you did not ask for and cancel it, and open a ticket.
 3. **You found a vulnerability:** open a ticket marked **Security** on [discord.gg/hest](https://discord.gg/hest). The team moves it to a private channel. Do not disclose it publicly until it is fixed.

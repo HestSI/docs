@@ -14,16 +14,17 @@ A trade on Hest takes a few decisions, and Super Intelligence checks the dangero
 
 You need a signed-in wallet, a Trading Wallet whose key you saved, and funds on the right side:
 
-| Market     | Funds needed                                                                               |
-| ---------- | ------------------------------------------------------------------------------------------ |
-| Order Book | USDC in your Trading Wallet's Hyperliquid account. See [Deposit](deposit.md).              |
-| Hest Pools | ETH or WETH in your Trading Wallet on Robinhood Chain, plus a little ETH for network fees. |
+| Market                            | Funds needed                                                                               |
+| --------------------------------- | ------------------------------------------------------------------------------------------ |
+| Order Book                        | USDC in your Trading Wallet's Hyperliquid account. See [Deposit](deposit.md).              |
+| Hest Pools, Solana                | SOL in your Solana Trading Wallet. The same balance pays the network fee.                  |
+| Hest Pools, Robinhood Chain       | ETH or WETH in your Trading Wallet on Robinhood Chain, plus a little ETH for network fees.  |
 
 If anything is missing, the order button says what (for example **Deposit USDC to Trade**) and opens a **Not Ready to Trade** checklist with a button for the next step: Log In, Create, Finish or Deposit.
 
 ## 1. Pick a Market
 
-Open **Markets**, or use the market picker at the top left of the trade page. Filters: **All**, **Majors**, **Robinhood Chain**, **Hest Pools**, **Other Memes**. Every row shows the price, 24h change, 24h volume, open interest, hourly funding, capacity (Hest Pools), maximum leverage, the SI Score and the route.
+Open **Markets**, or use the market picker at the top left of the trade page. Filters: **All**, **Majors**, **Solana**, **Robinhood Chain**, **Hest Pools**, **Other Memes**. The **Solana** filter gathers both routes for the chain: the Solana memecoins on Hyperliquid's book and the Solana Hest Pools markets. Every row shows the price, 24h change, 24h volume, open interest, hourly funding, capacity (Hest Pools), maximum leverage, the SI Score and the route.
 
 ## 2. Read the Strip
 
@@ -65,17 +66,17 @@ The other tabs keep the full record: **Balances**, **Open Orders**, **TWAP**, **
 {% endtab %}
 
 {% tab title="Hest Pools" %}
-Your margin plus the 0.30% opening fee moves in WETH from your Trading Wallet to the Hest Pools collateral wallet (ETH is wrapped first if needed), and the position opens at the worse of spot and TWAP. It appears in the **Positions** tab within seconds. Close it from there; what is left of your collateral returns at once and any profit goes to [Earnings](earnings.md). See [How Hest Pools Work](../markets/how-hest-pools-work.md).
+Your margin plus the 0.30% opening fee moves from your Trading Wallet to the Hest Pools collateral wallet of that chain (SOL on a Solana market; WETH on a Robinhood Chain market, wrapped from ETH first if needed), and the position opens at the worse of spot and TWAP. It appears in the **Positions** tab within seconds. Close it from there; what is left of your collateral returns at once and any profit goes to [Earnings](earnings.md). See [How Hest Pools Work](../markets/how-hest-pools-work.md).
 {% endtab %}
 {% endtabs %}
 
 ## 6. Follow It in Portfolio
 
-**Portfolio** in the top menu shows your total equity on both sides, positions on both venues, open orders, trade history, funding, **Earnings** and **Deposits and Withdrawals**, with account value and profit and loss over 1D, 7D, 30D or All.
+**Portfolio** in the top menu shows your total equity across every side, positions on both venues, open orders, trade history, funding, **Earnings** and **Deposits and Withdrawals**, with account value and profit and loss over 1D, 7D, 30D or All.
 
 How the numbers are counted:
 
 * **Periods are rolling:** 1D is the last 24 hours, 7D the last 7 days and 30D the last 30 days, the same for every time zone. Dates and times are shown in your browser's time zone.
-* **PNL and Volume** cover the side you choose: Order Book, Hest Pools, or both. Hest Pools PNL counts closed positions after fees (what came back, plus profit, minus the margin and opening fee you put in). Volume counts both the opening and the closing of each position. Hest Pools amounts are shown in dollars at the current ETH price.
+* **PNL and Volume** cover the side you choose: Order Book, Hest Pools, or both. Hest Pools PNL counts closed positions after fees (what came back, plus profit, minus the margin and opening fee you put in). Volume counts both the opening and the closing of each position. Hest Pools amounts are shown in dollars at the current SOL or ETH price of each market.
 * **14 Day Volume** adds your Order Book and Hest Pools volume over the last 14 days.
 * **Account Value** history and **Max Drawdown** are available for the Order Book side only.

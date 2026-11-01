@@ -34,9 +34,9 @@ Order Book Markets are executed, margined and settled by the Hyperliquid protoco
 
 ## 5. Hest Pools Markets
 
-On Hest Pools Markets, Hest is your counterparty. Prices come from the token's Uniswap pools on Robinhood Chain: every open and close uses the worse, for you, of the spot price and the 15-minute time-weighted average price (TWAP). Your entry and exit are therefore worse than either price alone, and after fast moves the price you receive can differ materially from prices shown elsewhere. The reference pools can be manipulated, drained or abandoned, and a token can lose most of its value faster than positions can be closed.
+On Hest Pools Markets, Hest is your counterparty. Prices come from the token's own decentralised exchange pools, on Solana or on Robinhood Chain: every open and close uses the worse, for you, of the spot price and the 15-minute time-weighted average price (TWAP). Your entry and exit are therefore worse than either price alone, and after fast moves the price you receive can differ materially from prices shown elsewhere. The reference pools can be manipulated, drained or abandoned, and a token can lose most of its value faster than positions can be closed.
 
-Collateral is WETH, whose dollar value moves with the price of ETH. Network fees on Robinhood Chain are paid in ETH; without enough ETH in your Trading Wallet, transactions cannot be sent.
+Collateral is SOL on Solana Markets and WETH on Robinhood Chain Markets, whose dollar value moves with the price of SOL or ETH. Network fees are paid in the chain's native token, SOL or ETH; without enough of it in your Trading Wallet, transactions cannot be sent. On Solana the 15-minute average is built from Hest's own price samples, and a market without that history can be neither opened nor closed until the samples resume.
 
 Position size and open interest are capped. A market can pause automatically on abnormal price moves, during which you cannot open new positions, and Hest can change parameters or stop a market.
 
@@ -52,7 +52,7 @@ Hest creates a Trading Wallet for you and keeps a copy of its private key so tha
 
 ## 8. Technology and Third Parties
 
-Hest relies on Robinhood Chain, Arbitrum and the other networks it supports, Uniswap pools as price sources, the Hyperliquid protocol, Relay for deposits and bridged withdrawals, wallet software and ordinary web infrastructure. Any of these can contain bugs, be exploited, be congested, fork or go offline. A failure can cause delayed or failed transactions, incorrect prices, unexpected liquidations, locked funds or permanent loss. Hest cannot reverse on-chain transactions.
+Hest relies on Solana, Robinhood Chain, Arbitrum and the other networks it supports, PumpSwap and Uniswap pools as price sources, the Hyperliquid protocol, Relay for deposits and bridged withdrawals, wallet software and ordinary web infrastructure. Any of these can contain bugs, be exploited, be congested, fork or go offline. A failure can cause delayed or failed transactions, incorrect prices, unexpected liquidations, locked funds or permanent loss. Hest cannot reverse on-chain transactions.
 
 ## 9. Interface Availability
 
@@ -72,7 +72,7 @@ Order Book perpetual contracts carry hourly funding between longs and shorts. Fu
 
 ## 13. Regulatory and Legal Risk
 
-The legal treatment of digital assets, perpetual contracts and decentralised protocols is uncertain and differs between countries. Laws can change, and regulators can take action that restricts or ends access to the Services, to Hyperliquid, to Robinhood Chain or to particular tokens. You are responsible for knowing and complying with the laws that apply to you, including tax laws. Hest may restrict access from certain jurisdictions at any time.
+The legal treatment of digital assets, perpetual contracts and decentralised protocols is uncertain and differs between countries. Laws can change, and regulators can take action that restricts or ends access to the Services, to Hyperliquid, to Solana, to Robinhood Chain or to particular tokens. You are responsible for knowing and complying with the laws that apply to you, including tax laws. Hest may restrict access from certain jurisdictions at any time.
 
 ## 14. Deposits, Withdrawals and Stablecoins
 

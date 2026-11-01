@@ -6,11 +6,11 @@ description: The terms used across Hest and this documentation, defined precisel
 
 **Builder fee**: the Hest fee on Order Book trades, 0.05% of every fill, collected through Hyperliquid's builder code mechanism. Your Trading Wallet approves a maximum of 0.05% once, with its first order.
 
-**Capacity**: the open interest a Hest Pools market can carry. For markets opened through Open a Market, 20% of the token's DEX liquidity, between $10,000 and $20,000, fixed in WETH when the market opens. Position and open interest limits are shares of it.
+**Capacity**: the open interest a Hest Pools market can carry. For markets opened through Open a Market, 20% of the token's DEX liquidity, between $10,000 and $20,000, fixed in the market's collateral when the market opens. Position and open interest limits are shares of it.
 
 **Closing fee**: 0.30% of a Hest Pools position's value at exit, deducted from the collateral returned to you.
 
-**Collateral wallet**: the Hest-controlled wallet on Robinhood Chain used only for Hest Pools. It receives position collateral and market application payments, and sends refunds when positions close or applications are rejected.
+**Collateral wallet**: a Hest-controlled wallet used only for Hest Pools, one per chain. It receives position collateral and market application payments, and sends refunds when positions close or applications are rejected.
 
 **Connected wallet**: the wallet you sign in with. It is your identity on Hest, and withdrawals always go back to it.
 
@@ -22,17 +22,17 @@ description: The terms used across Hest and this documentation, defined precisel
 
 **Deviation**: on Hest Pools, `|spot − TWAP| / TWAP`. Above 10% a market pauses for new positions; below 5% it resumes.
 
-**DEX liquidity**: on Hest Pools, twice the WETH held by the token's Uniswap pool, valued in dollars at the live ETH price.
+**DEX liquidity**: on Hest Pools, twice the SOL or WETH held by the token's pool, valued in dollars at the live SOL or ETH price.
 
-**Earnings**: Hest Pools profits, market owner shares and any bonuses. Each amount is locked for 7 days, then reviewed and paid by Hest in WETH to your Trading Wallet.
+**Earnings**: Hest Pools profits, market owner shares, referral shares and any bonuses. Each amount is locked for 7 days, then reviewed and paid by Hest to your Trading Wallet, in SOL or WETH depending on the market it came from.
 
 **Entry price**: the price a position opened at. On Hest Pools, the higher of spot and TWAP for a long and the lower for a short.
 
-**First-loss seed**: the WETH a market owner puts up when opening a market. Losses on the market come out of it first.
+**First-loss seed**: the WETH a market owner puts up when opening a Robinhood Chain market. Losses on the market come out of it first.
 
 **Funding**: hourly payment between longs and shorts on Order Book markets. Positive rate: longs pay shorts. Hest Pools have no funding.
 
-**Hest Pools**: perpetual markets on Robinhood Chain memecoins that Hyperliquid does not list, priced on the token's Uniswap pool, with Hest as the counterparty.
+**Hest Pools**: perpetual markets on Solana and Robinhood Chain memecoins that Hyperliquid does not list, priced on the token's own DEX pool, with Hest as the counterparty.
 
 **Hest Pools engine**: the Hest service that opens, monitors and settles Hest Pools positions. It checks liquidation, take profit and stop loss once a minute.
 
@@ -64,9 +64,11 @@ description: The terms used across Hest and this documentation, defined precisel
 
 **Oracle price**: an external reference price that anchors the mark on Order Book markets.
 
-**Order value**: the size of a position in dollars (or WETH), before leverage is applied to margin.
+**Order value**: the size of a position in dollars (or in SOL or WETH), before leverage is applied to margin.
 
 **Perpetual (perp)**: a futures contract with no expiry.
+
+**PumpSwap**: the Solana AMM whose pools price Hest's Solana Hest Pools markets. Its pools pair a token with SOL and keep no price history of their own, so Hest samples their price every minute to build the 15-minute TWAP.
 
 **Reduce Only**: an order that can only shrink an existing position.
 
@@ -74,7 +76,7 @@ description: The terms used across Hest and this documentation, defined precisel
 
 **Risk Shield**: the pre-trade check that compares your liquidation distance with the worst 1-hour candle of the past week.
 
-**Robinhood Chain**: the Arbitrum Orbit network (chain ID 4663) where Hest Pools tokens, their Uniswap pools and Hest Pools collateral live.
+**Robinhood Chain**: the Arbitrum Orbit network (chain ID 4663) of the Robinhood Chain Hest Pools markets, their Uniswap pools and their collateral.
 
 **Safer leverage**: the highest whole leverage whose liquidation distance is at least 1.5 times the worst 1-hour candle of the week.
 
@@ -86,19 +88,27 @@ description: The terms used across Hest and this documentation, defined precisel
 
 **Sign-In with Ethereum (SIWE)**: the standard (EIP-4361) gas-free message your wallet signs to sign in to Hest.
 
-**Spot**: on Hest Pools, the current price in the token's Uniswap pool.
+**SOL**: the native token of Solana. The collateral of Solana Hest Pools markets, and the token their network fees are paid in.
+
+**Solana**: the network of Hest's Solana Hest Pools markets, priced from PumpSwap pools and collateralised in SOL. The Solana filter in Markets also includes the Solana memecoins listed on Hyperliquid's order book.
+
+**Solana Trading Wallet**: the Solana address Hest creates for you alongside your Trading Wallet, which holds the SOL you trade Solana markets with. It has its own private key.
+
+**Spot**: on Hest Pools, the current price in the token's pool. On Robinhood Chain it is read from the pool's tick; on Solana it is the pool's SOL balance divided by its token balance.
 
 **TP / SL**: take profit and stop loss prices attached to a position.
 
-**Trading Wallet**: the wallet Hest creates for you to trade from. You hold its key and Hest keeps a copy to sign your trades.
+**Tracked Wallets**: the Portfolio card that follows wallets you choose, showing their Hest Pools positions and Hyperliquid fills separately and marking them on the chart.
+
+**Trading Wallet**: the wallet Hest creates for you to trade from, plus the Solana address created next to it when you trade Solana markets. You hold the keys and Hest keeps a copy of each to sign your trades.
 
 **Trigger price**: the price at which a stop or take profit order activates.
 
-**TWAP (pricing)**: time-weighted average price. Hest Pools read the 15-minute TWAP from the token's Uniswap v3 pool, a time-weighted geometric mean of the pool price over the last 900 seconds.
+**TWAP (pricing)**: time-weighted average price over the last 15 minutes. On Robinhood Chain markets it is read from the Uniswap v3 pool's own observations, a time-weighted geometric mean of the pool price over 900 seconds. On Solana markets it is the average of Hest's own minute samples of the pool price, which needs at least 12 samples in the window.
 
 **TWAP (order)**: on Order Book markets, an order Hyperliquid executes in slices every 30 seconds over a running time of 5 to 1,440 minutes.
 
-**WETH**: wrapped ETH, the ERC-20 form of ETH. The collateral of Hest Pools markets.
+**WETH**: wrapped ETH, the ERC-20 form of ETH. The collateral of Robinhood Chain Hest Pools markets.
 
 **Wick**: the thin line above or below a candle's body: the extreme the price touched in that period.
 

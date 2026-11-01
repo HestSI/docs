@@ -46,4 +46,4 @@ Super Intelligence uses this in two places:
 
 ## Hest Pools Markets
 
-Hest Pools markets have **no funding**. Their price is not a separate perpetual price that needs anchoring: every open and close is priced directly from the token's Uniswap pool, at the worse of spot and the 15-minute TWAP. The strip on a Hest Pools trade page shows **Pricing: Worse of Spot / TWAP** where Order Book markets show funding. Holding a Hest Pools position costs nothing per hour; its costs are the opening and closing fees. See [Fees](fees.md).
+Hest Pools markets have **no funding**. Their price is not a separate perpetual price that needs anchoring: every open and close is priced directly from the token's own DEX pool, at the worse of spot and the 15-minute TWAP. The strip on a Hest Pools trade page shows **Pricing: Worse of Spot / TWAP** where Order Book markets show funding. Holding a Hest Pools position costs nothing per hour; its costs are the opening and closing fees. See [Fees](fees.md).

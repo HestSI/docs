@@ -9,6 +9,10 @@ description: >-
 
 Anyone can apply to open a Hest Pools market for a Robinhood Chain token that is not yet traded on Hest. The applicant pays a **$20 listing fee** and puts up a **seed** in WETH. If Hest approves the application, the market opens with the applicant as its **owner**: the owner earns a share of the market's fees and profit, and the seed absorbs the market's losses first.
 
+{% hint style="info" %}
+**Applications are for Robinhood Chain tokens.** The on-chain check reads Uniswap v3 pools on Robinhood Chain. **Solana markets are opened by Hest** for now, with no owner and no seed; ask for a token in [Discord](https://discord.gg/hest) and it goes on the list Hest reviews.
+{% endhint %}
+
 ## How to Apply
 
 1. Open **Open a Market** (from the Markets or Pools page).
@@ -86,7 +90,7 @@ A seed can lose value, and can be lost entirely, if traders on the market win. F
 
 <summary>Can I apply with the token's contract address?</summary>
 
-No. The check reads a pool, because the pool is the market's price source. Paste the address of the token's Uniswap v3 pool paired with WETH.
+Yes. Paste either one: if you paste a token contract, Hest looks for its Uniswap v3 WETH pool on chain across every fee tier and checks the most liquid one. Pasting the pool address itself is the direct route.
 
 </details>
 
@@ -95,6 +99,14 @@ No. The check reads a pool, because the pool is the market's price source. Paste
 <summary>The token trades on Hyperliquid. Can I open a Hest Pools market for it?</summary>
 
 No. Robinhood Chain tokens that Hyperliquid lists trade on its order book through Hest, with real two-sided liquidity. The check links you to that market instead.
+
+</details>
+
+<details>
+
+<summary>Can I apply for a Solana token?</summary>
+
+Not yet. The check and the payment are built around Uniswap v3 WETH pools on Robinhood Chain. Solana markets are listed by Hest; suggest a token in [Discord](https://discord.gg/hest).
 
 </details>
 
@@ -110,6 +122,6 @@ It sits in the Hest Pools collateral wallet. It becomes the market's seed if the
 
 <summary>Does Hest open markets itself?</summary>
 
-Yes. Hest also opens markets itself, without a seed, as their only backer. Those markets have no owner and pay no owner shares.
+Yes. Hest also opens markets itself, without a seed, as their only backer. Those markets have no owner and pay no owner shares. Every Solana market, and the Robinhood Chain markets that were live at launch, are Hest's own.
 
 </details>

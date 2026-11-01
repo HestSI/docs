@@ -16,6 +16,7 @@
 * [Order Types](trading/order-types.md)
 * [Leverage and Liquidation](trading/leverage-and-liquidation.md)
 * [Funding](trading/funding.md)
+* [Tracked Wallets](trading/tracked-wallets.md)
 * [Fees](trading/fees.md)
 
 ## Super Intelligence
