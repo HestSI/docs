@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://hest.si"><img src="assets/hest-docs-banner.png" alt="Hest Docs. Perpetual markets on Robinhood Chain." width="100%"></a>
+  <a href="https://hest.si"><img src="assets/hest-docs-banner.png" alt="Hest Docs. Perpetual markets on Solana." width="100%"></a>
 </p>
 
 <p align="center">
