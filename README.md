@@ -11,7 +11,7 @@
 
 <br>
 
-**Hest** is a perpetuals exchange for Robinhood Chain memecoins and 180+ majors. Robinhood Chain memecoins that Hyperliquid does not list trade on **Hest Pools**, priced on their own Uniswap pools with Hest as the counterparty. BTC, ETH, SOL and 180+ more trade on Hyperliquid's order book. Every market is read by **Super Intelligence** before you click buy.
+**Hest** is a perpetuals exchange for Solana and Robinhood Chain memecoins and 180+ majors. The memecoins Hyperliquid does not list trade on **Hest Pools**, priced on their own DEX pools with Hest as the counterparty: PumpSwap pools on Solana, collateralised in SOL, and Uniswap pools on Robinhood Chain, collateralised in WETH. BTC, ETH, SOL and 180+ more trade on Hyperliquid's order book. Every market is read by **Super Intelligence** before you click buy.
 
 This repository is the source of the Hest documentation. It is published with GitBook, and every page is a plain Markdown file, so fixes and additions arrive as pull requests.
 
@@ -28,15 +28,15 @@ This repository is the source of the Hest documentation. It is published with Gi
 
 <a href="docs/markets/order-book-markets.md"><img src="assets/section-orderbook.png" alt="Order Book" width="100%"></a>
 
-[Order Book Markets](docs/markets/order-book-markets.md) · [Order Types](docs/trading/order-types.md) · [Leverage and Liquidation](docs/trading/leverage-and-liquidation.md) · [Funding](docs/trading/funding.md) · [Fees](docs/trading/fees.md)
+[Order Book Markets](docs/markets/order-book-markets.md) · [Order Types](docs/trading/order-types.md) · [Leverage and Liquidation](docs/trading/leverage-and-liquidation.md) · [Funding](docs/trading/funding.md) · [Tracked Wallets](docs/trading/tracked-wallets.md) · [Fees](docs/trading/fees.md)
 
 <a href="docs/super-intelligence/si-score.md"><img src="assets/section-si.png" alt="Super Intelligence" width="100%"></a>
 
-[SI Score](docs/super-intelligence/si-score.md) · [Risk Shield](docs/super-intelligence/risk-shield.md) · [Copilot](docs/super-intelligence/copilot.md)
+[SI Score](docs/super-intelligence/si-score.md) · [SI Levels](docs/super-intelligence/si-levels.md) · [Risk Shield](docs/super-intelligence/risk-shield.md) · [Copilot](docs/super-intelligence/copilot.md)
 
 <a href="docs/getting-started/connect-a-wallet.md"><img src="assets/section-account.png" alt="Getting Started" width="100%"></a>
 
-[Connect a Wallet](docs/getting-started/connect-a-wallet.md) · [Hest Trading Wallet](docs/getting-started/trading-wallet.md) · [Deposit](docs/getting-started/deposit.md) · [Your First Trade](docs/getting-started/first-trade.md) · [Withdraw](docs/getting-started/withdraw.md) · [Earnings](docs/getting-started/earnings.md)
+[Your First Hest Loan](docs/getting-started/whitelist-loan.md) · [Referrals](docs/getting-started/referrals.md) · [Connect a Wallet](docs/getting-started/connect-a-wallet.md) · [Hest Trading Wallet](docs/getting-started/trading-wallet.md) · [Deposit](docs/getting-started/deposit.md) · [Your First Trade](docs/getting-started/first-trade.md) · [Withdraw](docs/getting-started/withdraw.md) · [Earnings](docs/getting-started/earnings.md)
 
 <a href="docs/help/faq.md"><img src="assets/section-help.png" alt="Help and Legal" width="100%"></a>
 
