@@ -26,6 +26,8 @@ Each amount is held in the currency it was earned in: **SOL** from Solana market
 3. **Reviewed.** When the lock ends the status becomes **Awaiting review**. Hest reviews the trades behind it; an amount cleared for payment can show **Approved** until it is sent.
 4. **Paid.** Hest sends the funds from its treasury to the Trading Wallet that earned them: **SOL** to your Solana Trading Wallet, **WETH** to your Trading Wallet on Robinhood Chain. The status becomes **Paid**, with a **View** link to the transaction on solscan.io or robin.etherscan.io. From there they are ordinary funds that you can trade or [withdraw](withdraw.md).
 
+The bell in the top bar tells you when an amount is paid, so you do not have to watch Portfolio for it.
+
 An amount that fails review is marked **Rejected**. Open a ticket on [Discord](https://discord.gg/hest) if you want to know why.
 
 ## Example

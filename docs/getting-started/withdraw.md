@@ -34,13 +34,14 @@ Bridged withdrawals are protected in two ways: the Relay route is checked field 
 | | |
 | --- | --- |
 | Asset | SOL from your Solana Trading Wallet |
-| Receive On | Arbitrum, Ethereum or Base |
-| Delivered | As ETH to your connected wallet, bridged by Relay |
+| Receive On | **Solana** (accounts that signed in with a Solana wallet), Arbitrum, Ethereum or Base |
+| Delivered on Solana | As SOL, straight to the wallet you signed in with. One transaction, a few seconds, no bridge and no Relay fee. |
+| Delivered elsewhere | As ETH to your connected wallet, bridged by Relay |
 | Gas reserve | 0.003 SOL stays in the wallet for network fees. **Max** takes this into account. |
 | Costs | The Solana network fee plus Relay's fee, quoted before you confirm |
 | Time | Usually under a minute |
 
-Solana withdrawals leave as SOL and arrive as ETH on an EVM network, because your connected wallet is an EVM wallet. If you want to keep SOL instead, use **Show Key** and move it yourself from the Solana Trading Wallet.
+If you signed in with a Solana wallet, **Solana** is the default destination and you receive SOL itself. If you signed in with an EVM wallet or with Google, your connected wallet is an EVM address, so SOL is bridged and arrives as ETH; to keep SOL instead, use **Show Key** and move it yourself from the Solana Trading Wallet.
 
 ## Order Book Side (Hyperliquid)
 

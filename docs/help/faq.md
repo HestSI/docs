@@ -73,7 +73,23 @@ Yes. Click **Log In**, then **Continue with Google**. You then set one withdrawa
 
 <summary>Which wallets work?</summary>
 
-MetaMask, Phantom, Rabby, Base (formerly Coinbase Wallet), Trust Wallet, OKX Wallet, Rainbow, Zerion, and Robinhood Wallet through its in-app browser on mobile. Smart-contract wallets such as Safe cannot sign in. You can also sign in with Google without a wallet. See [Connect a Wallet](../getting-started/connect-a-wallet.md).
+**On Solana:** Phantom, Solflare and Backpack. **On EVM:** MetaMask, Phantom, Rabby, Base (formerly Coinbase Wallet), Trust Wallet, OKX Wallet, Rainbow, Zerion, and Robinhood Wallet through its in-app browser on mobile. Smart-contract wallets such as Safe cannot sign in. You can also sign in with Google without a wallet. See [Connect a Wallet](../getting-started/connect-a-wallet.md).
+
+</details>
+
+<details>
+
+<summary>I signed in with Phantom. Why is my account empty?</summary>
+
+Phantom can sign in two ways, and each one is a separate Hest account: the **Solana** tile in the login dialog creates a Solana account, the **Phantom** tile under Ethereum and Robinhood Chain creates an EVM account. Sign out and come back through the same tile you used the first time.
+
+</details>
+
+<details>
+
+<summary>How do I know when something happens while I am away?</summary>
+
+The bell next to your account in the top bar. It tells you when a position was liquidated or closed by a take profit or stop loss, and when Hest has paid an earning or a loan withdrawal request. Opening it marks everything read.
 
 </details>
 

@@ -6,7 +6,7 @@ description: Which wallets work with Hest, how the gas-free sign-in works, signi
 
 Your wallet is your identity on Hest. You connect it, sign in with a signature, and Hest creates a separate [Trading Wallet](trading-wallet.md) for you to trade from. Withdrawals always go back to the wallet you connected.
 
-No wallet yet? You can also [sign in with Google](#sign-in-with-google). Your Google account becomes your identity, and you choose one address that receives your withdrawals.
+Three ways in: a **Solana wallet**, an **EVM wallet**, or **Google**. No wallet yet? [Sign in with Google](#sign-in-with-google) and choose one address that receives your withdrawals.
 
 ## Supported Wallets
 
@@ -22,7 +22,9 @@ Open [hest.si](https://hest.si) and click **Log In**. The **Log In to Hest** dia
 * Zerion
 * Robinhood Wallet (on mobile, see below)
 
-Wallets installed in your browser are discovered automatically (EIP-6963), shown in colour and marked **Detected**. The others are greyed out; clicking one opens its download page.
+The dialog has two groups. **Solana**: Phantom, Solflare and Backpack. **Ethereum and Robinhood Chain**: the wallets listed above.
+
+Wallets installed in your browser are discovered automatically (EIP-6963 for EVM wallets, the injected provider for Solana ones), shown in colour and marked **Detected**. The others are greyed out; clicking one opens its download page.
 
 Any of these works for every network Hest uses: you sign in with an Ethereum-style (EVM) account, and Hest never asks your connected wallet to hold funds on a specific network.
 
@@ -50,6 +52,15 @@ The first sign-in creates your Hest account, tied to your wallet address. No ema
 {% hint style="info" %}
 Sign-in needs a regular wallet account that signs with its own key. Smart-contract wallets (for example Safe multisigs) cannot sign in to Hest.
 {% endhint %}
+
+## Sign In with a Solana Wallet
+
+Click **Log In** and pick **Phantom**, **Solflare** or **Backpack** under **Solana**. The wallet asks you to sign a short message; a Solana address is itself a public key, so the signature proves the account with nothing else to check. It costs no gas and moves no funds.
+
+* **It is its own Hest account.** Signing in with the Solana side of Phantom creates a different account from signing in with its EVM side, the same way a Google account is separate. Funds, Trading Wallet and history are not shared.
+* **Your trading funds.** Hest creates your [Solana Trading Wallet](trading-wallet.md#the-solana-address) for the SOL you trade Solana markets with, and an EVM Trading Wallet for Robinhood Chain and Hyperliquid if you use those.
+* **Withdrawals.** SOL goes straight back to the wallet you signed in with, on Solana, with no bridge. For the Hyperliquid and Robinhood Chain sides you set one **withdrawal address** (an EVM address you control) the first time you withdraw from them; a later change waits 48 hours, exactly as for a Google account.
+* **Showing your key.** **Show Key** asks the same Solana wallet to sign again.
 
 ## Sign In with Google
 

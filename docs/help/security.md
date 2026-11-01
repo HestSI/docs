@@ -23,6 +23,7 @@ Hest holds a copy of your Trading Wallet key so it can trade for you without a w
 
 * Sign-in uses **Sign-In with Ethereum (EIP-4361)**: a plain-text message for the domain hest.si that your wallet shows you before you sign. It cannot move funds and costs no gas.
 * Each sign-in message carries a one-time nonce and expires after **5 minutes**. A signed message cannot be replayed, and a sign-in signature cannot be reused to show your key.
+* **Sign in with a Solana wallet** uses a plain-text message your wallet signs. A Solana address is an ed25519 public key, so the signature is checked against the address itself. The message carries our domain, a one-time nonce and the time it was issued, and it is accepted only if it matches, character for character, the message Hest would have built.
 * **Sign in with Google** uses Google's signed ID token. Hest checks Google's signature, that the token was issued for Hest, that it has not expired and that the email is verified. Showing the key needs a fresh Google confirmation (under 5 minutes old) from the same Google account.
 * A session lasts **7 days** on that browser. **Disconnect** ends it. Changing accounts in your wallet ends it.
 
